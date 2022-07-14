@@ -1,0 +1,94 @@
+.tablesValuesHeader{
+  width: 790px;
+  border-radius: 12px;
+  background-color: #e9ebf1;
+  height: 36px;
+  margin-bottom: 14px;
+}
+
+.tableValuesBotonHeader1{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 155px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tableValuesBotonHeader2{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 172px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tableValuesBotonHeader3{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 202px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tableValuesBotonHeader4{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 234px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tableValuesFlex{
+  display: flex;
+  justify-content: space-between;
+}
+.tableValuesValorUno{
+  margin-right: 10px;
+}
+
+.tableValuesListaTabla{
+  width: auto;
+  height: 32px;
+  padding: 9px 92px 8px 18px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-bottom: solid 1px #c7ccdc ;
+  margin-left: 0;
+}
+
+.tableValuesPrimerElemento{
+  margin-left: -17px;
+}
+
+.tableValuesTextoPrimerElemento{
+  color: #303030;
+  font-weight: bold;
+  letter-spacing: 0.36px;
+  font-size: 13px;
+}
+
+.tableValuesSegundoElemento{
+  margin-right: -90px;
+  opacity: 0.8;
+  font-size: 13px;
+  letter-spacing: 0.36px;
+}
+
+.tableValuesValorSegudoElemento{
+  font-size: 13px;
+  font-weight: bold;
+  color: #303030;
+  letter-spacing: 0.36px;
+}
+
+.tableValuesFlexPrueba{
+  width: 55px;
+  display: flex;
+  justify-content: space-between;
+}

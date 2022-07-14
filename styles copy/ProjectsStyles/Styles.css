@@ -1,0 +1,62 @@
+.iconoAgregar{
+
+    height: 33px !important;
+    width: 33px !important;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ListaAdministradores{
+    margin-left: 15px;
+}
+
+.imagenAdministradores{
+    margin-left: 5px;
+}
+
+.circulo {
+    width: 33px;
+    height: 33px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.colorYellow{
+    background-color: #fabb00;
+    font-size: 28px;
+}
+
+.colorBlue{
+    background-color: #0a3d5c;
+}
+
+.colorBlue_secundario{
+    background-color: #b3daf4;
+}
+
+
+.circulo_secundario {
+    width: 33px;
+    height: 33px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3px;
+}

@@ -1,0 +1,182 @@
+.tablesValuesHeader{
+  width: 790px;
+  border-radius: 12px;
+  background-color: #e9ebf1;
+  height: 36px;
+  margin-bottom: 14px;
+}
+
+.tableValuesBotonHeader1{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 155px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tableValuesBotonHeader2{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 172px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tableValuesBotonHeader3{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 202px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tableValuesBotonHeader4{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 234px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.tableValuesFlex{
+  display: flex;
+  justify-content: space-between;
+}
+.tableValuesValorUno{
+  margin-right: 10px;
+}
+
+.tableValuesListaTabla{
+  width: auto;
+  height: 32px;
+  padding: 9px 92px 8px 18px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-bottom: solid 1px #c7ccdc ;
+  margin-left: 0;
+}
+
+.tableValuesPrimerElemento{
+  margin-left: -17px;
+}
+
+.tableValuesTextoPrimerElemento{
+  color: #303030;
+  font-weight: bold;
+  letter-spacing: 0.36px;
+  font-size: 13px;
+}
+
+.tableValuesSegundoElemento{
+  margin-right: -90px;
+  opacity: 0.8;
+  font-size: 13px;
+  letter-spacing: 0.36px;
+}
+
+.tableValuesValorSegudoElemento{
+  font-size: 13px;
+  font-weight: bold;
+  color: #303030;
+  letter-spacing: 0.36px;
+}
+
+.tableValuesFlexPrueba{
+  width: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* =================================================
+*
+*  N U E V O
+*
+================================================= */
+.contenedorTabla {
+  font-size: 13px;
+  color: #303030;
+}
+
+.d-flex-grow {
+  flex-grow: 4;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.table-row{
+  height: 40px;
+  border-bottom: 1px solid #DADADA;
+  display: flex;
+  align-items: center;
+}
+
+.col-1 {
+  width: calc(100% / 12);
+  display: inline-block;
+}
+
+.col-2 {
+  width: calc(100% / 6);
+  display: inline-block;
+}
+
+.col-3 {
+  width: calc(100% / 4);
+  display: inline-block;
+}
+
+.col-4 {
+  width: calc(100% / 3);
+  display: inline-block;
+}
+
+.col-5 {
+  width: 41.67%;
+  display: inline-block;
+}
+
+.col-6 {
+  width: 50%;
+  display: inline-block;
+}
+
+.col-7 {
+  width: 58.33%;
+  display: inline-block;
+}
+
+.col-8 {
+  width: 66.67%;
+  display: inline-block;
+}
+
+.col-9 {
+  width: 75%;
+  display: inline-block;
+}
+
+.col-10 {
+  width: 83.33%;
+  display: inline-block;
+}

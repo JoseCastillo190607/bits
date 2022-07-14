@@ -1,0 +1,47 @@
+.botonsubirArchivosLlaves{
+    background-color: #ffffff;
+    border: 0.8px solid #C7CCDC;
+    border-radius: 4px;
+    width: 150px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #093C5D;
+    cursor: pointer;
+}
+
+.iconoSubirArchivos{
+    background-image: url('/src/assets/svg/icono_subir_archivo_empresa.svg');
+    width: 10.67px;
+    height: 13.33px;
+    margin-right: 8px;
+}
+
+.botonSeleccionarArchivo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 32px;
+    border: none;
+    background-color: #FABB00;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #093C5D
+}
+
+.iconoSubirArchivos{
+    background-image: url('/src/assets/svg/icono_subir_archivo_empresa.svg');
+    width: 10.67px;
+    height: 13.33px;
+    margin-right: 8px;
+}

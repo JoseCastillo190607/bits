@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.h_contenedor{
+  width: 100%;
+  height: 74px;
+  min-width: 604px;
+  display: flex;
+  align-items: center;
+}
+
+.h_contenedorLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 217px;
+  min-width: 217px;
+  height: 74px;
+  border-right: 1px solid rgba(245, 246, 249, 0.2);
+}
+
+.h_imagenLogo{
+  width: 95.44px;
+  height: 42px;
+}
+
+.h_titulo{
+  color:white;
+}
+
+.h_espacio{
+  width: 70%;
+}
+
+.h_notificaciones{
+  min-width: 84.86px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(245,246,249, 0.2);
+  border-right: 1px solid rgba(245,246,249,0.2);
+  cursor: pointer;
+}
+
+.h_iconoNotificaciones{
+  background-image: url('/src/assets/svg/icono_notificaciones.svg');
+  width: 26.55px;
+  height: 34.13px;
+}
+
+.h_menuHeader{
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+/*Notificaciones*/
+.n_contenedor{
+  position: absolute;
+  width: 308px;
+  max-height: 322.32px;
+  height: auto;
+  top: 66px;
+  background-color: white;
+  z-index: 20;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+
+.n_contenedorTitulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.n_titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 308px;
+  height: 49.55px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;  
+  color: #093c5d;
+  margin-left: 50px;
+}
+
+.n_contenedorPrincipal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 308px;
+  max-width: 308px;
+  box-sizing: border-box;
+  height: auto;
+  max-height: 255px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.n_menu{
+  margin-right: -5px;
+}
+
+.n_notificacion{
+  width: 283.17px;
+  min-height: 51px;
+  display: flex;
+  align-items: center;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  border-bottom: 1px solid #c7ccdc;
+  box-sizing: content-box;
+}
+
+.n_iconoNotificacion{
+  background-image: url('/src/assets/svg/icono_notificacion_atencion.svg');
+  height: 19px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10.27px;
+  margin-left: 8.13px;
+}
+
+.n_iconoInternoNotificacion{
+  background-image: url('/src/assets/svg/icono_interno_notificacion_atencion.svg');
+  width: 2.15px;
+  height: 9.78px;
+}
+
+.n_textoNotificacion{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color:#303030;
+  width: 78%;
+  text-align: left;
+}
+
+.n_menuLista{
+  margin-right: -18px;
+}
+
+/*Contador*/
+.nc_contenedor{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fa3939;
+  border: 2px solid #022338;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 21px;
+  right: 323px;
+}
+
+/*Menu lista principal*/
+.mn_contenedor{
+  display: flex;
+  align-items: center;
+  height: 29px;
+}
+
+.mn_iconoMarcarLeidas{
+  background-image: url('/src/assets/svg/icono_marcar_leidas.svg');
+  width: 10px;
+  height: 8px;
+  margin-right: 7.43px;
+}
+
+.mn_iconoEliminarTodas{
+  background-image: url('/src/assets/svg/icono_eliminar_notificacion.svg');
+  height: 11px;
+  width: 8.21px;
+  margin-right: 7.99px;
+}
+
+.mn_iconoIralProceso{
+  background-image: url('/src/assets/svg/icono_ir_al_proceso.svg');
+  width: 11.73px;
+  height: 9px;
+  margin-right: 6.37px;
+}
+
+.mn_texto{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #303030;
+}
+
+.n_flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* iconos notificaciones */
+.n_iconoCorrecto{
+  background-image: url('/src/assets/svg/icono_notificacion_correcto.svg');
+  width: 22px;
+  height: 21px;
+  margin-right: 9.98px;
+  margin-left: 6.13px;
+}
+
+.n_iconoCorrectoInterno{
+  background-image: url('/src/assets/svg/icono_notificacion_correcto_interno.svg');
+  width: 13.18px;
+  height: 9.59px; 
+}
+
+.n_iconoFallo{
+  background-image: url('/src/assets/svg/icono_notificacion_fallo.svg');
+  width: 22px;
+  height: 17.7px;
+  margin-right: 9.98px;
+  margin-left: 6.13px;
+}
+
+.n_iconoAtencionAzul{
+  background-image: url('/src/assets/svg/icono_notificacion_atencionAzul.svg');
+  width: 20px;
+  height: 19px;
+  margin-right: 10.27px;
+  margin-left: 8.13px;
+}
+.n_iconoAtencionAzulInterno{
+  background-image: url('/src/assets/svg/icono_notificacion_atencionAzul_interno.svg');
+  width: 2.15px;
+  height: 9.78px;
+}
+
+.n_sinNotificaciones{
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #303030;
+}

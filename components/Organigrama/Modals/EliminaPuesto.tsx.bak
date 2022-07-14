@@ -1,0 +1,101 @@
+import react, {useState, useEffect, useContext} from "react";
+import {
+    Paper,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TablePagination,
+    TableRow,
+    TextField
+  } from '@material-ui/core';
+import { Box, Button, Dialog, DialogContent, Grid, Modal } from "@material-ui/core"
+import { getUsersDisponiblesPuesto, putUserPuestos } from "../../../services/auth/userService";
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+
+import '../Organigrama.css'
+
+import OrganigramaContext from "../../../context/OrganigramaContext/OrganigramaContext"
+import { closeOrganigramaModal } from "../../Team/Modals/ModalOrganigramaModal";
+import { inactivePuesto } from '../../../services/PuestoService';
+
+
+const EliminaPuesto = (props: any) =>{
+    const {state, dispatch} = useContext(OrganigramaContext)
+    const [activo, setactivo] = useState(false)
+    const [adminsDisponibles, setUserDisponibles] = useState([])
+    const handleChange = (e: any) =>{ 
+        if(e.target.value === 'ELIMINAR'){
+            setactivo(true)
+        }else{
+            setactivo(false)
+        }
+    }
+
+    const handleDelete = async () =>{
+        try{
+                await inactivePuesto(state._id);
+                await closeOrganigramaModal(dispatch);
+                setactivo(false)
+                await props.getDatos();
+        }
+        catch{
+
+        }
+    }
+
+    const handleClose =  async () => {
+        state.showEliminar = false;
+        await closeOrganigramaModal(dispatch);
+    }
+
+
+
+    return(
+        <Dialog aria-labelledby='costumized-dialog-title' open={state.showEliminar} fullWidth={true}  onClose={handleClose} maxWidth={"md"}>
+            <Box>
+                <div className="contenedorCentrado">
+                    <p className="titulo">¿Confirmas eliminar este puesto?</p>
+                </div>
+                <div className="contenedorCentrado">
+                    <span className="nombreEliminar">{state.NombrePuesto}</span>
+                </div>
+                <div className="contenedorCentrado">
+                    <span className="textoEliminar">Una vez eliminado no podrás recuperar la información</span>
+                </div>
+                <div className="contenedorCentrado">
+                    <span className="textoEliminar" >Escribe ELIMINAR para confirmar</span>
+                </div>
+                <div className="contenedorCentrado">
+                    <TextField
+                        error={false}
+                        type="text"
+                        variant="outlined"
+                        size="small"
+                        className="inputEliminar"
+                        onChange={(e) => handleChange(e)}
+                />
+                </div>
+                {(activo === true)?
+                <div className="contenedorCentrado">
+                    <button className="botonEliminarPuesto" onClick = {handleDelete} >
+                        Confirmar
+                    </button>                            
+                </div>
+                :
+                <div className="contenedorCentrado">
+                    <button className="botonEliminarPuestoFalse">
+                        Confirmar
+                    </button>
+                </div>
+                }
+
+            </Box>
+            <DialogContent>
+
+            </DialogContent>
+        </Dialog>
+    )
+}
+
+export default EliminaPuesto

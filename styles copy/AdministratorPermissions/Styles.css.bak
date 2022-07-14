@@ -1,0 +1,186 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline{
+    display: inline;
+}
+
+.correo{
+    width: 70%;
+}
+
+.contenedor_Permisos{
+    justify-content: center;
+    margin: 0 auto;
+    width:90%;
+
+}
+
+.contenedor{
+    width: 100%;
+    background-color: #ffffff;
+    height: auto;
+    border-radius: 5px;
+    height: auto;
+}
+.contenedor_Principal{
+    width: 100%;
+    background-color: #ffffff;
+    height: auto;
+    border-radius: 5px;
+    height: auto;
+    border-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.correo_label{
+    color:rgb(170, 166, 166);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.correoButton{
+    margin-left: 10px;
+}
+.titulo_informacion{
+    font-weight: 700;
+}
+
+.subtitulo_informacion{
+    font-weight: 700;
+    font-size: 18px;    
+}
+
+.correo_informacion{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.listaProyectos_container{
+    margin: 0px;
+    padding: 0px
+}
+
+.lista_Proyectos{
+    background-color: #f5f6f9;
+    border-radius: 5px;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 1px;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    width: 70%;
+}
+/**Permisos Conteiner **/
+.permisos_Container{
+    background-color: #f5f6f9;
+    border-radius: 15px;
+    margin-top: 28px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+    width: 95%;
+    height: auto;
+}
+.titulo_Permisos{
+    padding-top: 20px;
+    padding-left: 33px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.titulosDashboard{
+    font-size: 16px;
+}
+
+.titulos_tablaPermisos{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 33px;
+    padding-right: 33px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.DashBoardElements{
+    display: flex;
+    align-items: center;
+}
+
+.lista_Permisos{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 5px 20px 5px 40px;
+    width: 90.6%;
+    margin: 0 20px 1px 0;
+    border-radius: 5px;
+}
+
+.Activo{
+    border: solid 2px #fde499;
+    box-shadow: 0px 6px 14px -3px rgba(94,94,94,0.75);
+    -webkit-box-shadow: 0px 6px 14px -3px rgba(94,94,94,0.75);
+    -moz-box-shadow: 0px 6px 14px -3px rgba(94,94,94,0.75);    
+}
+.PrimerNivel{
+    background-color: #ffffff !important;    
+}
+.SegundoNivel{
+    background-color: #eef0f3 !important;
+}
+.TercerNivel{
+    background-color: #d6dde4 !important;
+}
+.CuartoNivel{
+    background-color: #afbfcb !important;
+}
+.QuintoNivel{
+    background-color: #7e99aa !important;
+}
+.Arrow{
+    border-radius: 3px;
+    margin-right: 10px;
+    height: 22px;
+    width: 22px;
+    border-radius: 5px;
+}
+
+.Up{
+    background-color: #fabb00;
+}
+
+.ArrowWhite{
+    background-color: #ffffff;
+}
+
+.radiosElements{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 30px;
+}
+
+.radioLabels{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.switch{
+    margin-right: 20px;
+}
+
+.botonGuardaPermisos{
+    margin-top: 20px !important;
+}
+
+.ContenedorBoton{
+    margin-right: 45px;
+    display: flex;
+    justify-content: end;
+}
+  /*Container Real*/

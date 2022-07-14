@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+.BodyContainer,
+.BodyContainer {
+  padding-bottom: 0px !important;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fabb00;
+  height: 42px;
+  border-radius: 8px;
+  margin-left: 24px;
+  border: none;
+  margin: auto;
+}
+
+.botonaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fabb00;
+  height: 42px;
+  width: 250px;
+  border-radius: 8px;
+  margin-left: 24px;
+  border: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.iconoAgregar {
+  font-family: "Roboto", sans-serif;
+  color: #093c5d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.iconoContrato {
+  color: #42dbbe;
+}
+
+.divContratos {
+  background-color: #154565;
+  border-radius: 8px;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.pc_contenedorIconoSeguimiento {
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  display: inline-flex !important;
+}
+
+.textoAgregar {
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #093c5d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textoAgregarDetalle {
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #093c5d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+
+.divazul {
+  background-color: #005ce5;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divSupBorder {
+  border-right: 2px solid #416782;
+}
+
+.div {
+  background-color: #154565;
+  border-radius: 8px;
+  border: none;
+  padding: 15px;
+  text-align: center;
+}
+
+.divscrollcon {
+  max-height: 280px !important;
+  overflow-y: scroll;
+}
+
+.divscrollcon::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #d6d6d6;
+}
+
+.divGrafica {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.textognral {
+  color: white;
+}
+
+.textoTotal {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.textognralmayor {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.textognralmin {
+  color: white;
+  font-size: 12px;
+}
+
+.textognralmingray {
+  color: darkgray;
+  font-size: 10px;
+}
+
+.aniversario {
+  color: #c387ff;
+  font-size: 10px;
+}
+
+.cumple {
+  color: #8dffe9;
+  font-size: 10px;
+}
+
+.dia {
+  color: #179dff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.myteam {
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+  margin: 5px;
+}
+
+.estatuspre {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+  margin: 10px;
+}
+
+.principal {
+  margin: 1em;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.wrappertwo {
+  background-color: #154565;
+  border-radius: 8px;
+  border: none;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.detalle {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  margin: 10px 0px 10px 0px;
+}
+
+.detalleSup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+.detallegrupo {
+  text-align: left;
+}
+
+.detallegrupor {
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.detallegruporm {
+  text-align: right;
+  padding: 5px;
+  border: 2px solid #c387ff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.detallegruporv {
+  padding: 5px;
+  border: 2px solid #8dffe9;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.detallegrupora {
+  text-align: right;
+  padding: 5px;
+  border: 2px solid #367eea;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.usr {
+  height: 30px;
+  width: 40px;
+}
+
+.mood1 {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #367eea;
+}
+
+.mood2 {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #42dbbe;
+}
+
+.mood3 {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #9c54e5;
+}
+.mood4 {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #fec104;
+}
+.mood5 {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #fb337b;
+}
+
+.moods {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35);
+  padding: 8px;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.moods > div.texxt {
+  margin-right: 8px;
+  margin-left: 4px;
+  width: 68px;
+}
+
+.moodsGrafica {
+  border-radius: 10px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
+  display: grid;
+  padding: 10px;
+  text-align: center;
+}
+
+.divPieChart {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  height: 68px;
+  width: 83px;
+}
+.divPieChartPrincipal {
+  position: relative;
+}
+
+.divFelicitar {
+  position: relative;
+  background-color: #154565;
+  border-radius: 8px;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  background-image: url("/src/assets/svg/Confeti.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right bottom;
+  background-color: #154565;
+}
+
+.buttonFelicitarPosicion {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.botonesAction {
+  display: flex;
+  justify-content: right;
+}
+
+.progress {
+  border-radius: 10px;
+  background: rgba(54, 126, 234, 0.5);
+  position: relative;
+  margin-top: 8px;
+  height: 18px;
+  width: 300px;
+}
+
+.progressdone {
+  background: #005ce5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+}
+
+.progressnomina {
+  display: grid;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.carousel__wrap {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel__inner {
+  height: 300px;
+  width: 300px;
+  display: inline-flex;
+}
+
+.carousel__container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 10%;
+}
+
+.carousel__slide_list {
+  height: 100%;
+  list-style-type: none;
+  position: absolute;
+  width: calc(330rem);
+}
+
+.carousel__slide_item {
+  position: absolute;
+  transition: all 0.3s;
+  height: 290px;
+  width: 260px;
+}
+
+.carousel__slide_item .space {
+  margin: 10px;
+}
+
+.carousel__btn {
+  align-items: center;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+}
+.carousel__btn_prev {
+  left: -2px;
+}
+.carousel__btn_next {
+  right: -2px;
+}
+
+.carousel__btn_arrow {
+  border: solid #fabb00;
+  border-width: 0 0.4rem 0.4rem 0;
+  height: 10px;
+  padding: 3px;
+  width: 10px;
+  z-index: 10;
+}
+.carousel__btn_arrow_left {
+  transform: rotate(135deg);
+}
+.carousel__btn_arrow_right {
+  transform: rotate(-45deg);
+}
+
+.carousel__dots {
+  display: inline-block;
+  left: 50%;
+  margin-top: 2rem;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.carousel__dots .dot {
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  margin: 0 0.3rem;
+  outline: none;
+  transform: scale(0.5);
+  width: 2rem;
+}
+.carousel__dots .dot.active {
+  background: black;
+}
+
+.espaciotexto {
+  margin: 4px;
+}
+
+.CircularProgressbar
+{
+  margin: 10px;
+}
+
+.semaforo{
+  display: inline-flex;
+}
+
+.semaforo_1
+{
+  height: 40px;
+  width: 40px;
+  background-color: #367EEA;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.semaforo_2
+{
+  height: 40px;
+  width: 40px;
+  background-color: #FEC104;
+  border-radius: 50%;
+  margin: 10px;
+  
+}
+
+.semaforo_3
+{
+  height: 40px;
+  width: 40px;
+  background-color: #FB337B; 
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.detalleColaboladores
+{
+  background-color: #154565;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  border: none;
+  padding: 20px;
+  z-index: 1;
+  text-align: left;
+  position: absolute;
+  margin-left: -39px;
+}
+

@@ -1,0 +1,210 @@
+
+
+
+.columnaGeneralPuesto{
+  width: 100%;
+  height: 100%;
+}
+
+.titulos{
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 0!Important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.filaInput{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.espacioTitulos{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.espacioTitulosTextarea{
+  margin-top: 10px;
+  
+}
+
+.espacioInputs{
+  margin-top: 10px;
+}
+
+.contenedorizquierdo{
+  margin-left: 10%;
+}
+
+.inputSelect{
+  width: 100%;
+  height: 40px;
+  background-color: white !important;
+}
+.inputSelect:focus{
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: yellow!important;
+  height: 40px !important;
+}
+
+.optionSelect{
+  height: 40px !important;
+  background-color: white !important;
+
+}
+
+.optionSelect:focus{
+  background-color: none !important;
+  height: 40px !important;
+  color: yellow!important;
+}
+
+.tituloDescripcion{
+  font-size: 13px;
+}
+
+.espacioTextArea{
+  width: 100%;
+  font-size: 100px !important;
+  color: red !important;
+}
+
+.espacioTextArea::placeholder{
+  font-size: 100px !important;
+  color: red !important;
+}
+
+.busquedaColaborador{
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.botonAgregarPuesto{
+  background-color: #fabb00;
+}
+
+.contenedorUsuarios{
+  height: 270px!Important;
+  overflow-y: scroll;
+}
+
+.contenedorUsuariosPuesto{
+  height: 100%;
+}
+
+.contenedorUsuariosPuestoInfo{
+  height: 100%;
+  margin-left: 25px;
+}
+.contenedorListaUsuariosPuesto{
+  border-radius: 4px;
+  border-radius: 4px;
+  height: 50px;
+  margin-top: 2px;
+  width: 100%;
+  list-style: none;
+}
+.contenedorLista{
+  border: solid 1px #c7ccdc;
+  border-radius: 4px;
+  border-radius: 4px;
+  height: 50px;
+  margin-top: 2px;
+  width: 95%;
+}
+.textoListaUsuario{
+  color: #093c5d;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.correoListaUsuario{
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222;
+  opacity: 0.6;
+}
+
+.bottonAgregarUsuario{
+  background-color: #fabb00;
+  border-radius: 12px;
+  margin: 5px 10px 4px 66px;
+  padding: 4px 6px 4px 13px;
+  box-shadow: 0 2px 4px 0 rgba(250, 187, 0, 0.4);
+  border: none;
+  
+}
+
+.textoBotonAgregaUsuario{
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #093c5d;
+}
+.ulLista{
+  margin: 0px;
+	padding: 0px;
+  margin-left: 0%!Important;
+}
+
+.alineacionPuestoUsuario{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.iconoEliminaUsuario{
+  display: flex;
+  justify-content:flex-end;
+}
+
+
+.contenedorListaUsuarioBoton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContenedorBotonCrearOrganigrama{
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+}
+
+
+.contenedorTituloModal
+{
+  width: auto!important;
+  position: initial;
+}
+
+.ColumnaEditarPuesto
+{
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.dialogoContent 
+{
+  max-width: 100%!Important;
+}

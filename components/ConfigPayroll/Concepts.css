@@ -1,0 +1,214 @@
+.conceptsHeaders{
+  width: 237px;
+  border-radius: 12px;
+  background-color: #e9ebf1;
+  height: 36px;
+  margin-bottom: 14px;
+}
+
+.conceptsHeaders2{
+  width:100%;
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.concepTitle p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.444444px;
+  color: #323232;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-top: 8px;
+  margin-right: 18px;
+  margin-left: 26px;
+}
+
+.concepConteinerYears{
+  background: #E9EBF1;
+  border-radius: 12px;
+  width: 122px;
+  height: 36px;
+}
+
+.concepYear{
+  margin-left: 4.93px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.ctnConfigBotonesHeader{
+  display: flex;
+  align-items: center;
+}
+
+.configBotonHeader{
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 110px;
+  height: 28px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+}
+
+.configBotonHeader2{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.361111px;
+  color: #093C5D;
+  background: #FABB00;
+  border-radius: 8px;
+  width: 54px;
+  height: 28px;
+  border-style: none;
+
+}
+
+.containderImputs-playroll{
+  width: 50%;
+  height: 47px;
+  margin-left: auto;
+}
+
+.containderImputsSearcher-playroll{
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #C7CCDC;
+  border-radius: 8px;
+  height: 47px;
+  display: flex;
+}
+
+.inputSearcher-playroll{
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.361111px;
+  color: #303030;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-left: 27px;
+  margin-top: 8px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid rgb(255,255,255);
+  outline: none;
+}
+
+.buttonSearch{
+  background: #FABB00;
+  border-radius: 8px;
+  border-style: none;
+  width: 86px;
+  height: 32px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: 6px;
+}
+
+.buttonSearch p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.361111px;
+  color: #093C5D;
+  margin-top: 7.5px;
+  margin-right: 9.5px;
+  margin-left: 11.25px;
+  text-align: right;
+  background-repeat: no-repeat;
+  background-position: calc(1%); 
+  background-image: url('/src/assets/svg/search_blue.svg');
+}
+
+.mainConceptsHeader{
+  margin-top: -22px;
+}
+
+.activo{
+  background-color: #fabb00;
+  color: #093c5d;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.desactivo {
+  background-color: #e9ebf1;
+  color: #828385;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.tituloHeader-playroll{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.361111px;
+  color: #323232;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  text-transform: capitalize;
+}
+
+.conteinerPlayRoll{
+  box-shadow: none;
+}
+
+.textotituloTabla-playroll{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.361111px;
+  color: #303030;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.textotituloTablaDetalle-playroll{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.361111px;
+
+  color: #303030;
+}
+
+.textoTablaDetalle-playroll{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.361111px;
+  
+  color: #303030;
+  
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.conteinerDetails-playroll{
+  display: flex;
+}
+
+.counteinderText-playroll{
+  margin-left: 10px;
+}

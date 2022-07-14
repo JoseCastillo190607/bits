@@ -1,0 +1,276 @@
+import { useContext, useEffect, useState } from "react";
+import {
+  Box,
+  Checkbox,
+  FormControlLabel,
+  Grid,
+  Button,
+} from "@material-ui/core";
+import CollaboratorContext from "../../../../context/CollaboratorContext/CollaboratorContext";
+import { putCandidate } from "../../../../services/candidateService";
+import { SuccessfulAlert } from "../../../../alerts/successAlerts";
+import { ErrorAlert } from "../../../../alerts/errorAlert";
+import { AdminContext } from "../../../../context/AdminContext/AdminContext";
+import SaveIcon from "@material-ui/icons/Save";
+import EyeIcon from "../../../../assets/svg/eye.svg";
+import RemoveFile from "../../../../assets/svg/remove_file.svg";
+import File_Helper from "../Fields/File_Helper";
+
+const OptionalDocumentsNuevoIngreso = () => {
+  const { state, dispatch } = useContext(CollaboratorContext);
+  const [checked, setChecked] = useState(true);
+  const { adminState } = useContext(AdminContext);
+  const [archives, setArchives] = useState([]);
+
+  useEffect(() => {
+    if (state.collaborator?.archive) {
+      setArchives(state.collaborator.archive);
+    }
+  }, []);
+
+  const uploadFileAws = async (e: any): Promise<void> => {
+    // if(state.collaborator.Archivos.AvisoRetencion_PDF) {
+    //     state.collaborator.Archivos.AvisoRetencion_PDF = undefined;}
+    //     else{
+    //         state.collaborator.Archivos.AvisoRetencion_PDF = 'NA';
+    //     }
+    // let result = await putCandidate(state.collaborator, state.collaborator.Estatus === "rejected" ? 'si' : 'no');
+    // if (result) {
+    //     await updateData(e, state, dispatch, 6);
+    //     state.collaborator.Archivos[e.target.name] = result;
+    // } else await ErrorAlert({ text: "Ocurrio un error!" });
+  };
+
+  const uploadFileAws2 = async (e: any): Promise<void> => {
+    console.log("e", e);
+
+    // if (state.collaborator?.CartaGMM_PDF) {
+    //   state.collaborator.CartaGMM_PDF = undefined;
+    // } else {
+    //   state.collaborator.CartaGMM_PDF = "NA";
+    // }
+    // let result = await putCandidate(
+    //   state.collaborator,
+    //   state.collaborator.Estatus === "rejected" ? "si" : "no"
+    // );
+    // if (result) {
+    //   await updateData(e, state, dispatch, 6);
+    //   state.collaborator[e.target.name] = result;
+    //   await updateCollaborator(state.collaborator, dispatch);
+    // } else await ErrorAlert({ text: "Ocurrio un error!" });
+  };
+
+  const UpdateCandidate = async () => {
+    let result = await putCandidate(
+      state.collaborator,
+      state.collaborator.Estatus === "sent" ? "si" : "no"
+    );
+    if (result === true) {
+      await SuccessfulAlert({ text: "Datos guardados correctamente." });
+    }
+  };
+
+  return (
+    <>
+      <div
+        className={
+          state.sections[1] >= 100 ? `validate__border` : `novalidate__border`
+        }
+      >
+        <Grid direction="row" container>
+          <Grid xs={6} item className="aviso-retencion">
+            {/*AVISO DE RETENCIÓN  */}
+            {archives?.map(
+              (archive: any, index: number) =>
+                archive?.name === "AvisoRetencion_PDF" && (
+                  <div className="flex-container">
+                    <div className="flex-child">
+                      <label>Aviso de retención</label>
+                      <span className="span-file">
+                        (En caso de tener crédito de Infonavit)
+                      </span>
+                      <span className="span-file">
+                        <a
+                          className="view-document"
+                          target="_blank"
+                          href={archive.URL}
+                        >
+                          <img
+                            style={{ height: "10px", marginTop: "5px" }}
+                            src={EyeIcon}
+                            alt=""
+                          />
+                          Ver documento
+                        </a>
+                      </span>
+                    </div>
+
+                    <div className="flex-child-2">
+                      <File_Helper
+                        name="AvisoRetencion_PDF"
+                        accept=".pdf"
+                        parametrofrom="collaborator"
+                        idUsr={state.collaborator?.id}
+                        className="image-file"
+                        setArchives={setArchives}
+                        archives={archives}
+                        image={RemoveFile}
+                        remove_file={true}
+                      />
+                    </div>
+                  </div>
+                )
+            )}
+
+            {!state.collaborator?.AvisoRetencion_PDF && (
+              <div className="flex-container">
+                <div className="flex-child">
+                  <label>Aviso de retención</label>
+                  <span className="span-file">
+                    (En caso de tener crédito de Infonavit)
+                  </span>
+                </div>
+
+                <div className="flex-child-2">
+                  <File_Helper
+                    name="AvisoRetencion_PDF"
+                    accept=".pdf"
+                    parametrofrom="collaborator"
+                    idUsr={state.collaborator?.id}
+                    className="image-file"
+                    setArchives={setArchives}
+                    archives={archives}
+                  />
+                </div>
+              </div>
+            )}
+            <br />
+            <div className="">
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    checked={true}
+                    // checked={(state.collaborator.Archivos.AvisoRetencion_PDF?.toString() == 'NA' )}
+                    onChange={uploadFileAws}
+                    name="checkedA"
+                    color="primary"
+                  />
+                }
+                label="Seleccione esta opción si no cuenta con el documento"
+              />
+            </div>
+          </Grid>
+          <Grid xs={6} item className="aviso-retencion">
+            <Box ml={1}>
+              {archives?.map(
+                (archive: any, index: number) =>
+                  archive?.name === "CartaGMM_PDF" && (
+                    <div className="flex-container">
+                      <div className="flex-child">
+                        <label>
+                          Carta de Antigüedad de Seguro de Gastos Médicos
+                          Mayores
+                        </label>
+                        <span className="span-file">
+                          En caso de contar con algún plan de la prestación de
+                          SGMM, deberás entregar dentro del plazo de 30 días
+                          posterior a fecha de baja)
+                        </span>
+                        <span className="span-file">
+                          <a
+                            className="view-document"
+                            target="_blank"
+                            href={archive.URL}
+                          >
+                            <img
+                              style={{ height: "10px", marginTop: "5px" }}
+                              src={EyeIcon}
+                              alt=""
+                            />
+                            Ver documento
+                          </a>
+                        </span>
+                      </div>
+
+                      <div className="flex-child-2">
+                        <File_Helper
+                          name="CartaGMM_PDF"
+                          accept=".pdf"
+                          parametrofrom="collaborator"
+                          idUsr={state.collaborator?.id}
+                          className="image-file"
+                          setArchives={setArchives}
+                          archives={archives}
+                          image={RemoveFile}
+                          remove_file={true}
+                        />
+                      </div>
+                    </div>
+                  )
+              )}
+
+              {!state.collaborator?.CartaGMM_PDF && (
+                <div className="flex-container">
+                  <div className="flex-child">
+                    <label>
+                      Carta de Antigüedad de Seguro de Gastos Médicos Mayores
+                    </label>
+                    <span className="span-file">
+                      En caso de contar con algún plan de la prestación de SGMM,
+                      deberás entregar dentro del plazo de 30 días posterior a
+                      fecha de baja)
+                    </span>
+                  </div>
+
+                  <div className="flex-child-2">
+                    <File_Helper
+                      name="CartaGMM_PDF"
+                      accept=".pdf"
+                      parametrofrom="collaborator"
+                      idUsr={state.collaborator?.id}
+                      className="image-file"
+                      setArchives={setArchives}
+                      archives={archives}
+                    />
+                  </div>
+                </div>
+              )}
+              <br />
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    //checked={(state.collaborator.Archivos.CartaGMM_PDF?.toString() == 'NA')}
+
+                    onChange={uploadFileAws2}
+                    name="checkedA"
+                    color="primary"
+                  />
+                }
+                label="Seleccione esta opción si no cuenta con el documento"
+              />
+            </Box>
+          </Grid>
+        </Grid>
+      </div>
+      <div>
+        <Grid direction="row" container justify="flex-end" alignItems="center">
+          <Box mt={0} pt={1}>
+            {adminState?.PermisosContex?.Modulos?.Colaboradores?.NuevoIngreso
+              ?.Ver?.Expediente?.DocumentosOpcionales.Editar === true ? (
+              <Button
+                type="submit"
+                className="buttonSave"
+                onClick={UpdateCandidate}
+              >
+                Guardar y Continuar&nbsp;
+                <SaveIcon />
+              </Button>
+            ) : null}
+          </Box>
+        </Grid>
+      </div>
+    </>
+  );
+};
+
+export default OptionalDocumentsNuevoIngreso;

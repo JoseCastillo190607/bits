@@ -1,0 +1,40 @@
+.title__list{
+    margin: 9px 111px 45px 13px;
+    opacity: 0.8;
+    font-size: 10px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #093c5d;
+}
+
+.selected__label{
+    margin: 45px 24px 48px 17px;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    color: #093c5d;
+    cursor: pointer;
+}
+
+.noselected__label{
+    margin: 49px 16px 43px 15px;
+    opacity: 0.6;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    color: #093c5d;
+    cursor: pointer;
+}
+
+.MuiStepper-root{
+    background-color: #f5f6f9 !important;
+}

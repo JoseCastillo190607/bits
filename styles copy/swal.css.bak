@@ -1,0 +1,8 @@
+.denyButton{
+    color: #222 !important;
+    border: 1px solid #eee !important;
+}
+
+.confirmButton{
+    background: #ea5455 !important;
+}

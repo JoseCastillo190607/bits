@@ -1,0 +1,112 @@
+
+.tituloTablasValores{
+  align-items: left;
+}
+
+.contenedorTituloTablaValores{
+  width: auto;
+  height: 32px;
+  margin-top: 25px;
+  padding: 9px 92px 8px 18px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.contenedorTablaValores{
+  width: auto;
+  height: 34px;
+  background-color: #f1f2f5;
+}
+.filaTablaValores{
+  border-bottom: solid 1px #fff;
+}
+
+.filaTablaValoresTop{
+  border-top: solid 1px #ccc;
+  width: auto;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+
+.flexFila{
+  display: flex;
+  justify-content: space-between;
+}
+
+.centrado{
+  display: flex;
+  align-items: center;
+}
+
+.iconoLista{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconoListaNoActivo{
+  background-color: #c7ccdc;
+  color: #093c5d;
+}
+
+.iconoListaActivo{
+  background-color: #fabb00;
+  color: #093c5d;
+  transform: rotate(180deg);
+}
+
+.iconoNoActivo{
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.iconoActivo{
+  margin-bottom: -4px;
+  font-size: 10px;
+}
+
+.primerElementoTablaValores{
+  margin-right: 30px;
+  margin-left: -21px;
+}
+
+.segundoElementoTabla{
+  margin-left: -40px;
+}
+
+.tercerElementoTabla{
+  margin-left: -50px;
+}
+
+.cuartoElementoTabla{
+  margin-left: -60px;
+}
+.quintoElementoTabla{
+  margin-left: -80px;
+}
+
+.textoValoresTabla{
+  font-size: 13px;
+  color: #303030;
+  letter-spacing: 0.36px;
+}
+
+
+.contenedorTituloTablaValores2{
+  width: auto;
+  height: 32px;
+  padding: 9px 92px 8px 18px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.ultimoAccordion{
+  margin-bottom: 1000px;
+}

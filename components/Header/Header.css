@@ -1,0 +1,22 @@
+header{
+    height: 30px;
+    background-color: #022338;
+    height: 74px;
+    box-sizing: border-box;
+}
+
+#IconNotification{
+    color: white !important;
+}
+
+.colum{
+    height: 42px;
+    width: 90px;
+    margin: 10px;
+}
+
+.UserButton span{
+    color: white !important;
+    margin-left: 10px !important;
+    text-transform: capitalize;
+}

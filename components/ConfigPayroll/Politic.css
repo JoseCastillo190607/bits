@@ -1,0 +1,292 @@
+li {
+	margin: 0px;
+	padding: 0px;
+	
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.mt-10PoliticsModal{
+  margin-top: -10px;
+}
+.mb32PoliticsModal{
+  margin-bottom: 32px;
+}
+
+.mb21PoliticsModal{
+  margin-bottom: 21px;
+}
+
+.mb31PoliticsModal{
+  margin-bottom: 31px;
+}
+
+.mb10PoliticsModal{
+  margin-bottom: 10px
+}
+
+.mb17PoliticsModal{
+  margin-bottom: 17px;
+}
+
+.contenedorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tituloHeader {
+  color: #323232;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.botonHeader{
+  background-color: #fabb00;
+  padding: 8px 14px 9px 10px;
+  border-radius: 8px;
+  width: 200px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.textoBotonHeader{
+  font-weight: bold;
+  font-size: 13px;
+  color: #093c5d;
+  margin: 0 0 0 7px;
+}
+
+.contenedorBotonHeader{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorTabla{
+  margin-top: 25px;
+  width: auto;
+  height: auto;
+}
+
+.contenedorTituloTabla{
+  width: auto;
+  height: 32px;
+  margin-top: 25px;
+  padding: 9px 92px 8px 18px;
+  background-color: #e9ebf1;
+  display: flex;
+  align-items: center;
+}
+
+.tituloTabla{
+  align-items: left;
+}
+
+.textotituloTabla{
+  font-size: 13px;
+  font-weight: bold;
+  color: #303030;
+}
+
+.textoTabla {
+  color: #303030;
+  font-size: 13px;
+  letter-spacing: 0.36px;
+}
+
+.listaTabla{
+  width: auto;
+  height: 32px;
+  padding: 9px 92px 8px 18px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-bottom: solid 1px #c7ccdc ;
+}
+
+.tablaColumnaFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.menuTabla{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 important!;
+}
+
+.contenedorTituloModal{
+  display: flex;
+  justify-content: center;
+}
+
+.tituloModalPolitics{
+  font-size: 24px;
+  color: #093c5d;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+
+.contenedorSegundoModalPolitics{
+  display: flex;
+  justify-content: center;
+  width: 473px;
+  margin-bottom: 10px;
+}
+.filaDobleModalPolitics{
+  display: flex;
+  justify-content: flex-start;
+  width: 473px;
+  margin-bottom: 32px;
+  margin-left: 30px;
+}
+
+.fieldsetModalPolitics{
+  width: 379px;
+  height: 35px;
+  border: solid 0.8px #c7ccdc;
+  border-radius: 4px;
+}
+
+.fieldsetModalPolitics:focus{
+  outline: none !important;
+}
+
+
+.inputFieldsetModalPolitics{
+  width: 379px;
+  height: 33px;
+  border: none; 
+  margin-top: -10px;
+}
+.inputFieldsetModalPolitics:focus{
+  outline: none !important;
+  border: solid 1px #fff;
+}
+
+.contenedorTituloModalPolitics{
+  display: flex;
+  justify-content: center;
+  max-width: 510px;
+  box-sizing: border-box;
+}
+
+.contenedorModalPolitics{
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.legendFieldset{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  opacity: 0.6;
+}
+
+.inputModalPolitics{
+  max-width: 402px;
+  width: 394px;
+  height: 40px;
+  border: solid 0.8px #c7ccdc;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+
+.inputModalPolitics:focus{
+  outline: none !important;
+}
+
+.filaDobleCheck{
+  width: 412px;
+  display: flex;
+  align-items: center;
+}
+
+.checkBoxModalPolitics{
+  width: 18px;
+  height: 18px;
+  margin-right: 17px;
+}
+
+.textoModalPolitics{
+  font-family: 'Roboto',sans-serif;
+  color: #222;
+  opacity: 0.6;
+  font-size: 13px;
+  margin-left: 1rem;
+}
+
+.selectModalPolitics{
+  width: 145px;
+  height: 40px;
+  background-color: #fff;
+  border: solid 0.8px #c7ccdc !important;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin-right: 1rem;
+}
+
+.inputMedioModalPolitics{
+  width: 60px;
+  height: 35px;
+  margin-left: 16px;
+  border: solid 0.8px #c7ccdc;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.subtituloModalPolitics{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #222;
+}
+
+.iconoAtencion{
+  background-color: #093c5d;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  font-size: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 8px;
+}
+
+.contenedorsubtituloModalPolitics{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 380px;
+}
+.contenedorSelectModalPolitics{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 410px;
+  box-sizing: border-box;
+
+}
+
+.dialogModalPolitics{
+  margin-top: -25px;
+}
+
+.contenedorBotonesPoliticsModal{
+  display: flex;
+  justify-content: center;
+  width: 480px;
+  height: 50px;
+}

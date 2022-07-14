@@ -1,0 +1,195 @@
+
+.botonAgregar{
+    background-color: #fabb00;
+    border: none;
+    border-radius: 8px;
+    height: 28px;
+    padding-right: 10px;
+  }
+  
+  .textoBoton{
+    font-family: 'Roboto', sans-serif !important;
+    color: #093c5d;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.36px;
+  }
+
+  .dialogContainer {
+    padding:15px;
+}
+
+
+.dialogFields {
+    margin-bottom:24px !important;
+}
+
+.centerContainer{
+    display: flex;
+    align-content: center;
+    justify-content: center !important;
+}
+
+.endContainer{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end !important;
+}
+
+  .flex{
+    display: flex;
+    justify-content: center;
+  }
+    
+  .tituloDatosUpdate{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+  }
+  .tituloNombreUpdate{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #323232;
+    margin-top: 10px;
+  }
+  .tituloNombreCard{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #323232;
+    margin-top: 10px;
+  }
+.tituloRazon{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #323232;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+.tituloEnter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #323232;
+    margin-top: 10px;
+}
+.calendarContainer{
+    padding:20px;
+    max-height: 500px;
+    overflow: scroll;
+}
+.calendarContainerName{
+    margin:10px
+}
+    
+  .botonEliminar{
+    background-color: #d31313 !important;
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 0 rgba(211, 19, 19, 0.4);
+    font-size: 16px;
+    color: #ffffff !important;
+  }
+
+.selectedTab{
+  background-color: #093C5D !important;
+  color:white !important;
+  opacity:1 !important
+}
+ 
+.unselectedTab{
+  background-color: #022338 !important;
+  color:white !important;
+  opacity:1 !important
+
+}
+
+.columnaTres{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom:24px ;
+}
+
+.contenedorFechas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  width: 100%;
+  border: solid 1px #c3c3c3; 
+  padding-left: 18px;
+  padding-right: 12px;
+  border-radius: 4px;
+}
+
+.textoFechas{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #222;
+  opacity: 0.6;
+}
+
+.calendario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+}
+
+.buttonCancelCalendar{
+  width: 129px;
+  height: 40.96px;
+  border: 1px solid #C7CCDC;
+  border-radius: 8px !important;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttonCancelCalendarText{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 8px !important;
+  
+  color: #093C5D;
+}
+
+.conteinerSave{
+  margin-left: 24px;
+}
+
+.buttonSaveCalendar2{
+  width: 136px;
+  height: 40.96px;
+  background: #FABB00;
+  border-radius: 8px !important; 
+  background-image: url('/src/assets/svg/Save.svg');
+  background-repeat: no-repeat;
+  background-position: 20px;
+  cursor: pointer;
+  border-color:transparent
+}
+
+.buttonSaveCalendarText{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #093C5D;
+  margin-left: 10px;
+  border-radius: 8px !important;
+}

@@ -1,0 +1,67 @@
+input.collaboratorTab__searcher::-webkit-input-placeholder {
+    color: #c7ccdc;
+    font-size: 14px;
+}
+
+input.collaboratorTab__searcher::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #c7ccdc;
+    font-size: 14px;
+}
+
+input.collaboratorTab__searcher::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c7ccdc;
+}
+
+input.collaboratorTab__searcher:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #c7ccdc;
+    font-size: 14px;
+}
+
+input.collaboratorTab__searcher:-moz-placeholder {
+    /* Firefox 18- */
+    color: #c7ccdc;
+    font-size: 14px;
+}
+
+.buttonContent {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    position: relative;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buttonContent:hover {
+    background: #f5f5f5 radial-gradient(circle, transparent 1%, #f5f5f5 1%) center/15000%;
+}
+
+.btnY {
+    background-color: #fabb00;
+    margin: 0;
+    /* z-index: 999; */
+}
+
+.btnY:hover {
+    background: #fddb73 radial-gradient(circle, transparent 1%, #f5f5f5 1%) center/15000%;
+}
+
+.buttonContent:active {
+    background-color: #c0c0c0;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.btnY:active {
+    background-color: #fddb73;
+    background-size: 100%;
+    transition: background 0s;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+.misOutSourcersGeneralDiv {
+  width: 100%;
+  height: 572px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleButonBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  margin-left: 26px;
+  margin-right: 32px;
+  margin-bottom: 26px;
+  width: 97%;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.61px;
+  color: #323232;
+}
+
+.ButtonOutsources {
+  background-color: #fabb00;
+  border: none;
+  width: 160px;
+  font-family: 'Roboto';
+  border-radius: 8px !important;
+  height: 40px; 
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #093c5d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+}
+
+.ButtonOutsources:active{
+  background-color: #fddb73;
+}
+
+.boxEmptyNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(50, 50, 50, 0.8);
+}
+
+.cajaTabla{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}

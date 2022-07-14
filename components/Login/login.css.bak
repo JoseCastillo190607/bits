@@ -1,0 +1,410 @@
+.login {
+    background-color: #f5f6f9;
+    text-align: center !important;
+    height: 100vh !important;
+}
+
+.container-left,.container-right{
+    height: 100vh !important;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.container-right{
+    background-image:url('../../assets//svg/Login_IMG.svg') !important;
+    background-size: cover;                     
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+    object-fit: fill !important; 
+}
+
+.container-full{
+    background-image:url('../../assets//svg/Login_IMG2.svg') !important;
+    background-size: cover;                     
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+    object-fit: fill !important; 
+    overflow-y: auto;
+
+}
+
+.container-multilogin{
+    margin-left: 94.2px;
+    /*
+    margin-top: 65.66px;
+    margin-bottom: 65.66px;
+    */
+    margin-top: calc(10%);
+    margin-bottom: calc(10%);
+}
+
+.multilogin{
+    height: 744.67px;
+    /*height: 100%;*/
+    width: 569.6px;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.welcome-div{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #093C5D;
+    margin-bottom: 49.75px;
+}
+
+#GoogleButton{
+    width: 400px;
+    height: 56.86px;
+    margin-bottom: 23.45px;
+    border:none;
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: url('https://img.icons8.com/color/452/google-logo.png');
+    background-size: 30px;
+    background-repeat:no-repeat;
+    background-position:left;
+    background-position-x: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 2px rgb(230,230,230);
+    color: #323232;
+    letter-spacing: 0.5625px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#MicrosoftButton{
+    width: 400px;
+    height: 56.86px;
+    margin-bottom: 53.45px;
+    border:none;
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: url('../../assets//svg/microsoft-logo.svg');
+    background-size: 30px;
+    background-repeat:no-repeat;
+    background-position:left;
+    background-position-x: 20px!important;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 2px rgb(230,230,230);
+    color: #323232;
+    letter-spacing: 0.5625px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.terms_conditions{
+    position: absolute;
+    bottom: 10vh;
+    opacity: 0.6;
+    letter-spacing: 0.5px;
+    color: #093c5d;
+}
+
+.containder_login{
+    height: 20px;
+}
+
+#EmailButton{
+    width: 400px;
+    height: 70px;
+    border:none;
+    border-radius: 20px;
+    background-color: #fff;
+    background-image: url('https://img.icons8.com/color/452/google-logo.png');
+    background-size: 30px;
+    background-repeat:no-repeat;
+    background-position:left;
+    background-position-x: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.div-input-standard-login {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255,255,255);
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: calc(90%) 10px; 
+}
+
+.input-standard-login{
+    height: 42px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgb(230,230,230);
+    width: 400px;
+    margin-right: auto;
+    margin-left: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    
+}
+
+.input-password-login{
+    height: 42px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgb(230,230,230);
+    width: 400px;
+    margin-right: auto;
+    margin-left: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.Conteiner-input{
+    margin-bottom: 32px;
+}
+
+.container-line-login{
+    display: flex;
+    margin-bottom: 53.45px;
+}
+
+.line-login{
+    width: 188.03px;
+    border: 1px solid rgb(230,230,230);
+}
+
+.div-lineleft-login{
+    margin-left: auto;
+}
+
+.div-linecenter-login{
+    margin:0 5.97px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.5625px;
+    color: #323232;;
+}
+
+.div-linerigt-login{
+    margin-right: auto;
+}
+
+.conteiner-text-login{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: rgb(120, 120, 120);
+    margin-top: 28.5px;
+    margin-bottom: 24.91px;
+    cursor: pointer;
+}
+
+.boton-Header-login{
+    background: #FABB00;
+    border-radius: 10px;
+    width: 153.13px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.text-BotonHeader-login{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #093C5D;
+}
+
+.conteiner-footer-login{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: rgb(107, 138, 158);
+    margin-top: 68.62px;
+}
+
+
+.container-full-recover-password{
+    background-image:url('../../assets//svg/recover-password.svg') !important;
+    background-size: cover;                     
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+    object-fit: fill !important; 
+}
+
+.conteiner-recoverpasword{
+    height: 100%;
+    width: 100%;
+}
+
+.recoverpasword{
+    width: 569.6px;
+    height: 412.34px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14%;
+}
+
+.conteiner-text-recoverpasword{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #093C5D;
+    padding-top: 50.86px
+
+}
+
+.Conteiner-input-recoverpasword{
+    margin-top: 59.07px;
+}
+
+.div-input-standard-recoverpasword {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255,255,255);
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: calc(90%) 10px; 
+}
+
+.input-standard-recoverpasword{
+    height: 42px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #C7CCDC;
+    width: 400px;
+    margin-right: auto;
+    margin-left: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    
+}
+
+.conteiner-botton-recoverpasword{
+    margin-top: 56.65px;
+}
+
+.boton-Header-recoverpasword{
+    background: #FABB00;
+    border-radius: 10px;
+    width: 249.43px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.text-BotonHeader-recoverpasword{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #093C5D;
+}
+
+.conteiner-text-recoverpasword-return{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: (78, 78, 78);
+    margin-top: 67.35px;
+}
+
+.return-icon {
+    background-repeat: no-repeat;
+    background-position: 10px; 
+    background-image: url('/src/assets/svg/Return_login.svg');
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .conteiner-botton-message{
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .conteiner-text-message{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;    
+    text-align: center;    
+    color: #222222;    
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 56px;
+    margin-top: 5px;
+}
+
+.conteiner-title-message-img{
+    background-repeat: no-repeat;
+    background-position: top center; 
+    background-image: url('/src/assets/svg/Atencion.svg');
+    height: 143.2px;
+}
+.conteiner-title-message{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #093C5D;
+    padding-top: 113.2px;
+}

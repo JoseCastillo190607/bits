@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="17px" viewBox="0 0 14 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Admin-Bits" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5.2" transform="translate(-964.000000, -373.000000)" fill="#2186C6" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(276.000000, 240.000000)">
+                <g id="Group" transform="translate(453.000000, 122.000000)">
+                    <g id="Group-14" transform="translate(5.000000, 0.000000)">
+                        <g id="Group-15" transform="translate(217.000000, 0.000000)">
+                            <path d="M24.59,17 L23,17 L23,12 C23,11.45 22.55,11 22,11 L18,11 C17.45,11 17,11.45 17,12 L17,17 L15.41,17 C14.52,17 14.07,18.08 14.7,18.71 L19.29,23.3 C19.68,23.69 20.31,23.69 20.7,23.3 L25.29,18.71 C25.92,18.08 25.48,17 24.59,17 Z M13,27 C13,27.55 13.45,28 14,28 L26,28 C26.55,28 27,27.55 27,27 C27,26.45 26.55,26 26,26 L14,26 C13.45,26 13,26.45 13,27 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

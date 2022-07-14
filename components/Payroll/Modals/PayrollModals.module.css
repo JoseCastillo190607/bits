@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+.contenedorCerrarModal{
+  width: 499px;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 21.17px;
+  box-sizing: border-box;
+}
+
+.cerrarModal{
+  background-image: url('/src/assets/svg/icono_cerrar_modal.svg');
+  width: 13.18px;
+  height: 13.22px;
+  margin-right: 24.33px;
+  cursor: pointer;
+}
+
+.contenedorPrincipal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin-top: 16.75px;
+}
+
+.iconoEliminar{
+  background-image: url('/src/assets/svg/icono_modal_eliminar.svg');
+  width: 104.17px;
+  height: 104.17px;
+}
+
+.em_container{
+  width: 499px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.em_titulo{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #093c5d;
+  margin-top: 12.91px;
+  margin-bottom: 19.5px;
+}
+
+.em_mensajePrtincipal{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #222222;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 20px;
+}
+
+.input{
+  width: 187.52px;
+  height: 32.09px;
+  border: 0.8px solid #c7ccdc;
+  margin-top: 6.41px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 15px;
+  color: #222222;
+  opacity: 0.8;
+}
+
+.em_marginTop{
+  margin-top: 10px;
+}
+
+.em_contenedorBotones{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 34.5px;
+  margin-bottom: 34px;
+}
+
+.em_botonCancelar{
+  width: 130px;
+  height: 40px;
+  border: 0.8px solid #e1e1e1;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #093c5d;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.em_iconoConfirmarEliminar{
+  background-image: url('/src/assets/svg/icono_confirmar_eliminar.svg');
+  width: 13px;
+  height: 17px;
+  margin-right: 4.2px;
+}
+
+.em_botonConfirmarActivo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #FBE7E7;
+  cursor: pointer;
+}
+
+.em_botonConfirmarInactivo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #FBE7E7;
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+/*Fondos Insuficientes*/
+
+.fim_container{
+  width: 662px;
+  max-width: 662px;
+}
+
+.fim_contenedorCerrarModal{
+  display: flex;
+  justify-content: flex-end; 
+  width: 662px;
+  padding-top: 21.19px;
+}
+
+.fim_contenedorIconoPrincipal{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 11.39px;
+}
+
+.fim_iconoPrincipal{
+  background-image: url('/src/assets/svg/icono_modal_atencion.svg');
+  width: 93px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fim_iconoComplemento{
+  background-image: url('/src/assets/svg/complemento_atenncion.svg');
+  width: 11.07px;
+  height: 50.31px;
+}
+
+.tituloAtencion{
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  color: #093C5D;
+  margin-top: 20.2px;
+  margin-bottom: 19.5px;
+}
+
+.mensajeAtencion{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 19.5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  color: #222222;
+}
+
+.contenedorBotonesAtencion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40.46px;
+  margin-top: 35.07px;
+}
+
+.botonesAtencion{
+ border-radius: 8px !important;
+ width: 130px;
+ height: 40px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 16px;
+ border-radius: 4px;
+ color: #093C5D;
+ cursor: pointer;
+ -webkit-border-radius: 8px !important;
+ -moz-border-radius: 8px !important;
+ -ms-border-radius: 8px !important;
+ -o-border-radius: 8px !important;
+}
+
+.cerrarAtencion{
+  background-color: #ffffff;
+  border: 0.8px solid #e1e1e1;
+  margin-right: 32px;
+}
+
+.continuarAtencion{
+  background-color: #fabb00;
+  border:none;
+}
+
+.continuarAtencionInactivo{
+  background-color: #fabb00;
+  border:none;
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+/*Acepta Dispersar*/
+.ad_contenedor{
+  width: 662px;
+  max-width: 662px;
+}
+
+.ad_textoPrinipal{
+  width: 400px;
+  align-items: center;
+}

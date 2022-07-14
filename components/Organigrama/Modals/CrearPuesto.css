@@ -1,0 +1,172 @@
+.Crear-puesto {
+    width: 151px;
+    height: 30px;
+    margin: 0 335px 31px 304px;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #093c5d;
+  }
+
+
+  .Informacin-general {
+    width: 197px;
+    height: 16px;
+    margin: 10.5px 30.5px 0 29.5px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222;
+  }
+
+
+  .Deseas-agregar-un-c {
+    width: 273px;
+    height: 16px;
+    margin: 0 96px 18.5px 0;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222;
+  }
+
+
+  .Nombre-Puesto {
+    width: 197px;
+    height: 16px;
+    margin: 10.5px 30.5px 0 29.5px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 500;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222;
+  }
+
+  .reaProyecto {
+    width: 197px;
+    height: 16px;
+    margin: 10.5px 30.5px 0 29.5px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 500;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222;
+  }
+
+  .Puesto-superior {
+    width: 197px;
+    height: 16px;
+    margin: 10.5px 30.5px 0 29.5px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 500;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222;
+  }
+
+  .Descripcin {
+    width: 197px;
+    height: 16px;
+    margin: 10.5px 30.5px 0 29.5px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 500;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222;
+  }
+
+  /* .Rectangle {
+    width: 369px;
+    height: 32px;
+    margin: 20px 0 0;
+    padding: 4px 5px 4px 19px;
+    border-radius: 8px;
+    background-color: #f5f6f9;
+  } */
+
+  .Rectangle {
+    width: 900px;
+    height: 660px;
+    margin: 29.5px 202.5px 112.5px 2.5px;
+    padding: 11.5px 55px 102px 24.5px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+
+  .Colaborador-sin-pues {
+    width: 273px;
+    height: 16px;
+    margin: 0 96px 18.5px 0;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222;
+  }
+
+  .Busca-o-elije-un-pue {
+    width: 121px;
+    height: 13px;
+    margin: 2px 142px 1px 0;
+    opacity: 0.6;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222;
+  }
+
+  .Mask {
+    width: 300px;
+    height: 32px;
+    margin: 10.5px 30.5px 0 29.5px;
+    padding: 11px 259px 8px 13px;
+    border-radius: 4px;
+    border: solid 0.8px #c7ccdc;
+  }
+
+
+  .MaskDescripcion {
+    width: 300px;
+    height: 140px;
+    margin: 10.5px 30.5px 0 29.5px;
+    padding: 10px 70px 30.5px 13px;
+    border-radius: 4px;
+    border: solid 0.8px #c7ccdc;
+  }

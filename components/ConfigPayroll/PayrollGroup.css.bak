@@ -1,0 +1,127 @@
+li {
+	margin: 0px;
+	padding: 0px;
+	
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.contenedor2{
+  background-color: none;
+  margin-top: 13px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  min-height: 300px;
+}
+
+.contenedorPrincipal{
+  background-color: #fff;
+  border-radius: 12px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 300px;
+}
+
+.contenedorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tituloHeader {
+  color: #323232;
+  font-weight: bold;
+  font-size: 22px;
+}
+.tituloHeaderMonth {
+  color: #323232;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.botonHeader{
+  background-color: #fabb00;
+  padding: 8px 14px 9px 10px;
+  border-radius: 8px;
+  width: 200px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.textoBotonHeader{
+  font-weight: bold;
+  font-size: 13px;
+  color: #093c5d;
+  margin: 0 0 0 7px;
+}
+
+.contenedorBotonHeader{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorTabla{
+  margin-top: 25px;
+  width: auto;
+  height: auto;
+}
+
+.contenedorTituloTabla{
+  width: auto;
+  height: 32px;
+  margin-top: 25px;
+  padding: 9px 92px 8px 18px;
+  background-color: #e9ebf1;
+  display: flex;
+  align-items: center;
+}
+
+.tituloTabla{
+  align-items: left;
+}
+
+.textotituloTabla{
+  font-size: 13px;
+  font-weight: bold;
+  color: #303030;
+}
+
+.textoTabla {
+  color: #303030;
+  font-size: 13px;
+  letter-spacing: 0.36px;
+}
+
+.listaTabla{
+  width: auto;
+  height: 32px;
+  padding: 9px 92px 8px 18px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-bottom: solid 1px #c7ccdc ;
+}
+
+.tablaColumnaFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.menuTabla{
+  margin-left: 85%;
+  padding: 0 important!;
+}

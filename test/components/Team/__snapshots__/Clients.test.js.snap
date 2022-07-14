@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Clients /> should render Clients 1`] = `
+<input
+  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
+  data-testid="newCliente"
+  placeholder="Nombre de cliente"
+  type="text"
+  value="new cliente"
+/>
+`;
+
+exports[`Testing <SedeClientModal /> should render modal 1`] = `
+<input
+  aria-invalid="false"
+  class="MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+  data-testid="form-dialog-text-type"
+  placeholder="Cliente"
+  required=""
+  type="text"
+  value="testiando cliente"
+/>
+`;

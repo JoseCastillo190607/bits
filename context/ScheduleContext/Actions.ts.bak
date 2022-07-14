@@ -1,0 +1,78 @@
+import { Dispatch,ChangeEvent } from "react";
+import {Types} from "../../context/NewCalendarContext/CalendarsContext";
+
+export const createCalendarsModal = ({_id = "",createModal = true}:any, dispatch: Dispatch<any>):void =>{
+    dispatch({
+       type:Types.CREATE_CALENDARS,
+       payload:{
+           createModal
+       } 
+    })
+}
+
+export const createEventModal = ({_id = "",createEventModal = true}:any, dispatch: Dispatch<any>):void =>{
+    //console.log(createEventModal);
+    
+    dispatch({
+       type:Types.CREATE_EVENT,
+       payload:{
+        createEventModal
+       } 
+    })
+}
+export const createIncidentModal = (_id = "",createIncidentModal = true, dispatch: Dispatch<any>):void =>{
+    console.log("create indi"+_id)
+    dispatch({
+       type:Types.CREATE_INCIDENT,
+       payload:{
+        _id,   
+        createIncidentModal
+       } 
+    })
+}
+
+export const clearCalendarsModal = ({_id="", createModal = false, updateModal = false, Documento = {}, deleteModal = false, createEventModal = false, createIncidentModal = false}:any, dispatch: Dispatch<any>):void => {
+    dispatch({
+        type: Types.CLEAR_CALENDARS,
+        payload: {
+            _id,
+            createModal,
+            updateModal,
+            deleteModal,
+            createEventModal,
+            createIncidentModal
+        }
+    })
+}
+
+export const updateCalendarsModal = (_id = "", updateModal = true, dispatch: Dispatch<any>):void => {
+    console.log("edit id" + _id)
+    dispatch({
+        type:Types.UPDATE_CALENDARS,
+        payload:{
+            _id,
+            updateModal,
+        }
+    })
+}
+
+export const deleteCalendarsModal = (_id="", deleteModal=true, dispatch:Dispatch<any>):void =>{
+    dispatch({
+        type: Types.DELETE_CALENDARS,
+        payload:{
+            _id,
+            deleteModal
+        }
+    })
+}
+
+export const createNonWorkingDayModal = ({_id = "",createNonWorkingDayModal = true}:any, dispatch: Dispatch<any>):void =>{
+    console.log(createNonWorkingDayModal);
+    
+    dispatch({
+       type:Types.CREATE_NONWORKINGDAY,
+       payload:{
+        createNonWorkingDayModal
+       } 
+    })
+}

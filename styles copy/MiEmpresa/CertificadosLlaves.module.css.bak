@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.contenedorLlaves{
+  width: 420px;
+  height: auto;
+  background: #F1F2F5;
+  margin-top: 17px;
+  border-radius: 4px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  padding-bottom: 22px;
+}
+
+.tituloLlaves{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #303030;
+  margin-left: 26px;
+}
+
+.contenedorArchivos{
+  width: auto;
+  margin-top: 21px;
+  margin-left: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.textoArchivos{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.iconoSubirArchivos{
+  background-image: url('/src/assets/svg/icono_subir_archivo_empresa.svg');
+  width: 10.67px;
+  height: 13.33px;
+  margin-right: 8px;
+}
+
+.botonsubirArchivosLlaves{
+  background-color: #ffffff;
+  border: 0.8px solid #C7CCDC;
+  border-radius: 4px;
+  width: 150px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #093C5D;
+  cursor: pointer;
+}
+
+.iconoVerDocumento{
+  background-image: url('/src/assets/svg/icono_ver_documento_empresa.svg');
+  width: 10px;
+  height: 7px;
+  cursor: pointer;
+}
+
+.textoVerDocumento{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #2186c6;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.contenedorDocumento{
+  display: flex;
+  align-items: center;
+}
+
+.botonSeleccionarArchivo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 32px;
+  border: none;
+  background-color: #FABB00;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #093C5D
+}
+
+.contenedorArchivosDos{
+  margin-top: 27px;
+}
+
+.contenedorContrasena{
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+}
+
+.fieldsetContrasena{
+  width: 369px;
+  padding: 0px 0px;
+  height: 42px;
+  background-color: #ffffff;
+  border: 0.8px solid #C7CCDC;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.fieldsetContrasena > legend {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #303030;
+  opacity: 0.6;
+}
+
+.fieldsetContrasena > input{
+  height: 20px;
+  width: 330px;
+  border: none;
+  padding: 0px 0px;
+}
+
+.fieldsetContrasena > input:active{
+  outline: none !important;
+  border: solid 1px #fff;
+}
+
+.fieldsetContrasena > input:focus{
+  outline: none !important;
+  border: solid 1px #fff;
+}
+
+.iconoVerContrasena{
+  background-image: url('/src/assets/svg/icono_ver_contrasena.svg');
+  height: 10px;
+  width: 15px;
+  margin-left: 5px;
+}
+
+.contenedorRegistro{
+  width: 420px;
+  height: auto;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorInputsRegistro{
+  width: 373px;
+  height: 32px;
+  border: 1px solid #C7CCDC;
+  border-radius: 4px;
+  display: flex;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.inputRegistroPatronal{
+  height: 27px;
+  border: none;
+  width: 184px;
+}
+
+.inputPrimaRiesgo{
+  width: 115px;
+  height: 27px;
+  border: none;
+}
+
+.lineaInputs{
+  width: 2px;
+  height: 20px;
+  background-color: #C7CCDC;
+}
+
+.botonAgregarRegistroPatronal{
+  width: 60px;
+  height: 24px;
+  background-color: #FABB00;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.11px;
+  color: #093C5D;
+}
+
+.sinRegistros{
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #303030;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.contenedorBotonesllaves{
+  margin-top: 162px;
+  width: 420px;
+}
+
+.iconoSiguiente{
+  background-image: url('/src/assets/svg/icono_siguiente_empresa.svg');
+  width: 6.59px;
+  height: 11.17px;
+  margin-left: 12.50px;
+}
+
+.contenedorBotones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 43px;
+  margin-bottom: 31px;
+}
+
+.botonCancelar{
+  background-color: #fff;
+  border: 0.8px solid #C7CCDC;
+  border-radius: 8px !important;
+  width: 110px;
+  height: 40px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #093C5D;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.botonSiguiente{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 40px;
+  background-color: #FABB00;
+  border: none;
+  border-radius: 8px !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #093C5D;
+}
+
+.contenedorRegistros{
+  width:420px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+
+.lineaRegistro{
+  display: flex;
+  align-items: center;
+  width: 370px;
+  height: 32px;
+  background-color: #F1F2F5;
+  border: 1px solid #C7CDCC;
+  margin-bottom: 2px;
+}
+
+.lineaContenedorEliminar{
+  width: 24px;
+  height: 24px;
+}
+
+.iconoLineaPrimaRiesgo{
+  background-image: url('/src/assets/svg/icono_eliminar_RegistrosPatronales.svg');
+  width: 10px;
+  height: 12px;
+}
+
+.lineanombreRegistro{
+  width: 164px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.11px;
+  color: #303030;
+  padding-left: 20px;
+}
+
+.lineaDivisionRegistro{
+  width: 2px;
+  height: 20px;
+  background-color: #C7CCDC;
+  margin-right: 13.77px;
+}
+
+.lineaprimaRiesgo{
+  width: 140px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.11px;
+  color: #303030;
+}
+
+.lineaContenedorEliminar{
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

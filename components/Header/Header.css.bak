@@ -1,0 +1,23 @@
+header{
+    padding: 15px;
+    height: 30px;
+    background-color: #022338;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#IconNotification{
+    color: white !important;
+}
+
+.colum{
+    height: 30px;
+    margin: 10px;
+}
+
+.UserButton span{
+    color: white !important;
+    margin-left: 10px !important;
+    text-transform: capitalize;
+}

@@ -1,0 +1,607 @@
+  .body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.5976px;
+    color: #303030;
+  }
+
+  .dayBox {
+    position: relative;
+    width: calc(100% / 7);
+    height: 200px;
+    display: inline-block;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+    border-width: 0.912348px;
+    border-style: solid;
+    border-color: rgb(235, 235, 236);
+  }
+
+  .daySelected{
+    position: relative;
+    width: calc(100% / 7);
+    height: 200px;
+    display: inline-block;
+    background-color: rgb(199,225,241);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+    border-width: 0.912348px;
+    border-style: solid;
+    border-color: #7F7F81;
+  }
+
+  .weekbox{
+    line-height: 30px;
+    height: 200px;
+  }
+
+  .ContainerIncidentTitle{
+    text-align: center;
+  }
+
+  .incidentContainer {
+    display: inline-block;
+    text-align: center;
+    
+  }
+
+  .incidentName{
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+
+  }
+
+  .circleIncidentPink {
+    width: 14px;
+    height: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ED88C2;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .circleIncidentBlue {
+    width: 14px;
+    height: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #277DA1;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .circleIncidentCian {
+    width: 14px;
+    height: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #43AA9E;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .circleIncidentRed {
+    width: 14px;
+    height: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #FF6863;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .circleIncidentOrange {
+    width: 14px;
+    height: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #F48B52;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .circleIncidentPurple {
+    width: 14px;
+    height: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #C57CCB;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .circleIncidentGreen {
+    width: 14px;
+    height: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #90BE6D;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .circleIncidentYellow {
+    width: 14px;
+    height: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #F9C74F;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .incidentText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 0.005em;
+    color: #7F7F81;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .headerSchedule {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    
+  }
+
+  .previous{
+    margin-left: auto;
+    font-weight: 700;
+    cursor: pointer
+  }
+
+  .current{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.8964px;  
+    letter-spacing: 0.005em;
+    color: #093C5D;
+    text-transform: capitalize;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .next{
+    margin-right: auto;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .week {
+    position: relative;
+    width: calc(100% / 7);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+    background-color: rgb(241, 242 , 245);
+    color: #093C5D;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.5976px;
+    line-height: 17px;
+
+    border-width: 0.912348px;
+    border-style: solid;
+    border-color: rgb(235, 235, 236);
+  }
+
+  .notInMonth{
+    color: #7F7F81;
+    height: 30px;
+  }
+
+  .aDayOfMonth{
+    height: 30px;
+  }
+
+  .today{
+    background: #2186C6;
+    color: white;
+    width: 31.93px;
+    height: 31.93px;
+    border-radius: 50%;
+    margin: auto;
+    height: 30px;
+  }
+
+  .divBetweenDayIncident{
+    height: 140px;
+  }
+
+  .pruebasEvento{
+    background-color: #FABB00;
+    position: relative;
+    z-index: 1;
+    bottom: calc(65%);
+    height: 28px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 7.29878px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.8605px;
+    cursor: pointer;
+  }
+
+  .nonWorkingDay{
+    background-color: #49A9F6;
+    position: relative;
+    z-index: 1;
+    bottom: calc(65%);
+    height: 28px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 7.29878px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.8605px;
+    cursor: pointer;
+  }
+
+  .containerDivIncidents{
+    position: relative;
+    bottom: 0%;
+  }
+
+  .divIncidents{
+    display: inline-flex;
+  }
+
+  .dateRangeSchedule{
+    top:30%;
+    left:60%
+  }
+
+  .fieldModal{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .inputModalSchedule{
+    border-radius: 8px;
+    width: 100%;
+    height: 32px;
+    border: solid 1px #c7ccdc;
+    padding-left: 11px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+    font-size: 13px;
+    color: #303030;
+  }
+
+  .dateContainerSchedule{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    width: 100%;
+    /* border: solid 1px #c3c3c3; */
+    padding-left: 18px;
+    padding-right: 12px;
+    border-radius: 4px;
+  }
+
+  .titleIncident{
+    border-radius: 7.29878px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.005em;
+    text-align: center;
+    height: 21.5px;
+    
+
+    color: #FFFFFF;
+  }
+
+  .containerTitlesIncidentsMonth{
+    margin: 5px;
+    margin-left: 8.82px;
+  }
+
+  .collaboratorDayIncident{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+    color: #303030;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .containerCollaboratorDayIncident{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .dayMonth{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #174767;
+    text-transform:capitalize
+  }
+
+
+  .containerDayMonth{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 85%;
+  }
+
+  .inputSearcher {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255,255,255);
+    outline: none;
+    background-image: url('/src/assets/svg/icono_buscar_tres.svg');
+    background-repeat: no-repeat;
+    background-position: calc(90%);
+    height: 100%;
+  }
+
+  .inputSearcher:focus{
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255,255,255);
+    outline: none;
+    padding: 0px 10px
+  }
+
+  .inputFilter {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255,255,255);
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: calc(90%); 
+    background-image: url('/src/assets/svg/icono_filtro.svg');
+    height: 100%;
+  }
+
+  .inputFilter:focus{
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255,255,255);
+    outline: none;
+  }
+
+  .containderImputsSearcher{
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #C7CCDC;
+    width: 40%;
+    margin-right: auto;
+    margin-left: 8.82px;
+    height: 21px;
+  }
+
+  .containderImputsFilter{
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #C7CCDC;
+    width: 40%;
+    margin-left: auto;
+    margin-right: 15.28px;
+    height: 21px;
+  }
+
+  .containderImputs{
+    display: flex;
+    margin-top: 11.47px;
+  }
+
+  .divTitleIncident{
+    display: flex;
+  }
+
+  .botonHeaderIncident{
+    background-color: #fabb00;
+    padding: 4px 8px 4px 5px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  .contenedorBotonHeaderIncident{
+    display: flex;
+    justify-content: center;
+  }
+
+  .textoBotonHeaderIncident{
+    font-weight: bold;
+    font-size: 20px;
+    color: #093c5d;
+    margin: 0 0 0 5px; 
+    background-image: url('/src/assets/svg/iconplus.svg');
+    background-repeat: no-repeat;
+    background-position: 1px;
+    width: 15px;
+    height: 25px;
+  }
+
+  .divAddIncident{
+    margin-top: 5px;
+  }
+
+  .nameCalendar{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.666667px;
+
+    color: #323232;
+  }
+
+  .conteinerbotonDiaInhabil{
+    width: 100%;
+  }
+
+  .conteinerbotonAgregarDiaInhabil{
+    width: 161.5px;
+    
+    margin-left: auto;
+  }
+
+  .botonAgregarDiaInhabil{
+    background-color: #fabb00;
+    border: none;
+    border-radius: 8px;
+    background-image: url('/src/assets/svg/iconplus.svg');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    cursor: pointer;
+    height: 32px;
+  }
+
+  .textoBotonDiaInhabil{
+    font-family: 'Roboto', sans-serif !important;
+    color: #093c5d;
+    font-weight: bold !important;
+    font-size: 13px;
+    margin-top: 7px;
+    margin-right: 11.79px;
+    margin-left: 20px;
+
+  }
+
+  .contenedorModalNonWorkingDay{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+
+  }
+
+  .conteinerLeyend{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .legendNonWorkingDay{
+    background-color: #49A9F6;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 7.29878px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.8605px;
+    line-height: 30px;
+    height: 28px;
+    width: 120px;
+    margin-right: auto;
+  }
+
+  .legendEvent{
+    background-color: #FABB00;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 7.29878px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.8605px;
+    line-height: 30px;
+    height: 28px;
+    width: 120px;
+    margin-left: auto;
+  }
+
+  .conteinerIncident{
+    overflow-y: auto;
+  }
+
+  .selectOrderCalendar{
+    width: 90%;
+    margin-left: 11.29px;
+    border-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.005em;
+    color: #222222;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  .selectOrderCalendar:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+}

@@ -1,0 +1,113 @@
+import { ChangeEvent, useState, useEffect, useContext, useReducer } from 'react'
+import { AdminContext } from '../context/AdminContext/AdminContext'
+import { Box } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
+import ScheduleTabs from '../components/Schedule/Tab/ScheduleTabs'
+import ScheduleTab from '../components/Schedule/Tab/ScheduleTabMain'
+import Schedule from '../components/Schedule/Schedule'
+import Schedule2 from '../components/Schedule/Schedule2'
+import ModalState from '../context/ModalContext/ModalState'
+import IncidentNameText from "../components/Schedule/IncidentNameText"
+import {
+    GET_CALENDAR,
+    GET_ALL_PERCEPTIONS_CALENDAR,
+    GET_DEDUCTIONS_CALENDAR
+} from "..//Querys/querys"
+import { useQuery } from "@apollo/client"
+import { useHistory, useParams } from "react-router-dom"
+import NonWorkingDayTab from "../components/Schedule/Tab/nonWorkingDayTab2"
+
+
+
+
+
+
+const ScheduleScreenScreenBase = () => {
+
+    const [tab, setTab] = useState(0)
+    const {adminState} = useContext(AdminContext)
+    const { id } = useParams<any>()
+    const [filtrado, setFiltrado] = useState([])
+    const resultSchedule = useQuery(GET_CALENDAR, {
+        variables: { id: id },
+    });
+    const allSchedule = resultSchedule.data?.GET_CALENDAR;
+    //console.log(allSchedule);
+
+    const resultPerceptions = useQuery(GET_ALL_PERCEPTIONS_CALENDAR);
+    const allPerceptions = resultPerceptions.data?.GET_ALL_PERCEPTIONS_CALENDAR;
+    
+    const resultDeductions = useQuery(GET_DEDUCTIONS_CALENDAR);
+    const allDeductions = resultDeductions.data?.GET_DEDUCTIONS_CALENDAR;
+    
+    let DeductionPerception: any[] = []
+
+    allPerceptions?.forEach((Perception: any) => {
+        const NewPerception = {
+            Name: Perception.ConceptName,
+            Description:Perception.descriptionPerception
+        }
+        //console.log(Perception.ConceptName)
+        //console.log(Perception.descriptionPerception)
+        //console.log(NewPerception);
+        DeductionPerception.push(NewPerception)
+    });
+
+    allDeductions?.forEach((Deductions: any) => {
+        const NewDeductions = {
+            Name: Deductions.concept_type,
+            Description:Deductions.descriptiondeductions
+        }
+        //console.log(Perception.ConceptName)
+        //console.log(Perception.descriptionPerception)
+        //console.log(NewPerception);
+        DeductionPerception.push(NewDeductions)
+    });
+    
+
+    useEffect(() => {
+        obtenerDatos();
+    }, [allSchedule]);
+
+    const obtenerDatos = async () => {
+        await setFiltrado(allSchedule)
+        //console.log('Filtrado',filtrado)
+    };
+
+    return (
+        <div>
+            <Box mt={3} ml={5} className="Title">
+                <Grid container direction="row">
+                    <Grid xs={8}>Calendarios</Grid>
+                    <Grid xs={3}>
+                        <NonWorkingDayTab idCalendar={id} />
+                    </Grid>
+                </Grid>
+                
+            </Box>
+            <Box mt={3} ml={5} className="ScheduleText">
+                Nombre del calendario
+            </Box>
+            <Box mt={3} ml={5}>
+                <Grid container direction="row">
+                    <Grid xs={8}>
+                        <ModalState>
+                            <IncidentNameText incidentName={DeductionPerception} />
+                        </ModalState>
+                    </Grid>
+                </Grid>
+            </Box>
+
+            <div>
+                {filtrado?.map((Schedule:any, index:any) =>(
+                    <Schedule2 idCalendar={id} incidentName={DeductionPerception} />
+                ))}
+            </div>
+
+        </div>
+
+    )
+
+}
+
+export default ScheduleScreenScreenBase

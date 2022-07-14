@@ -1,0 +1,50 @@
+import { useEffect, useState, ChangeEvent } from "react";
+import { useParams } from "react-router-dom";
+import TabsUnstyled from "@mui/base/TabsUnstyled";
+import TabsListUnstyled from "@mui/base/TabsListUnstyled";
+import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
+import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
+
+import '../ConfigPayroll/Concepts.css'
+import HistoricPayrollTable from "./HistoricPayrollTable";
+
+import PayrollState from "../../context/PayrollContext/PayrollState";
+
+
+interface TabPanelProps {
+    children?: React.ReactNode;
+    index: any;
+    value: any;
+};
+
+const ConceptTab = (props: TabPanelProps) => {
+    const [tvalue, setValue] = useState<string>('1');
+    const [activo, setActivo] = useState('1')
+    const { children, value, index, ...other } = props;
+    const params = useParams<any>();
+
+    return (
+      <>
+          <TabsUnstyled defaultValue={0} className="mainConceptsHeader">
+          <div className="conceptsHeaders">
+            <TabsListUnstyled>
+              <TabUnstyled id="botonHeader" className={`configBotonHeader ${activo === '1' ? "activo" : "desactivo"}`} onClick={(e)=> setActivo('1')}>
+                  <span className="conceptstextoBotonHeader">2021</span>
+              </TabUnstyled>
+              <TabUnstyled id="botonHeader" className={`configBotonHeader ${ activo === '2' ? "activo" : "desactivo"}`} onClick={(e)=> setActivo('2')}>
+                  <span className="conceptstextoBotonHeader" >2022</span>
+              </TabUnstyled>
+            </TabsListUnstyled>
+            </div>
+            <div className="contenedorPrincipal">
+            <PayrollState>  
+              <TabPanelUnstyled value={0}><HistoricPayrollTable {...props}  /></TabPanelUnstyled>
+              <TabPanelUnstyled value={1}><HistoricPayrollTable {...props} /></TabPanelUnstyled>
+            </PayrollState>
+            </div>
+          </TabsUnstyled>
+      </>
+    )
+}
+
+export default ConceptTab;

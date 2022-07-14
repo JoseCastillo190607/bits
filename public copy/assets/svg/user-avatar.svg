@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="33px" viewBox="0 0 34 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img-avatar</title>
+    <g id="Admin-Bits" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4-colaboradores" transform="translate(-112.000000, -380.000000)">
+            <g id="colaboradores" transform="translate(77.000000, 229.000000)">
+                <g id="colaborador-list" transform="translate(16.000000, 143.000000)">
+                    <g id="img-avatar" transform="translate(19.055814, 8.000000)">
+                        <circle id="Oval" fill="#E9EBF1" cx="16.5" cy="16.5" r="16.5"></circle>
+                        <circle id="Oval" stroke="#093C5D" stroke-width="2" opacity="0.798223586" cx="16.944186" cy="14" r="6"></circle>
+                        <rect id="Rectangle" fill="#355F7A" x="9.94418605" y="24" width="14" height="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+.flex{
+  display: flex;
+}
+
+.flexAI{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contenedorPrincipal{
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.contenedorCompania{
+  height: 97.04px;
+  width: 100%;
+  padding-left: 28px;
+  padding-top: 17px;
+  box-sizing: border-box;
+}
+
+.columnaCompania{
+  width: calc(100%/3);
+  height: 100%;
+}
+
+.contenedorLogoCompania{
+  width: 70px;
+  height: 60px;
+  border-radius: 12px;
+  border: 1px solid #C7CCDC;
+}
+.contenedorInternoCompania{
+  width: 100%;
+  height: 100%;
+  margin-right: 28px;
+  display: flex;
+  border-bottom: 1px solid #c7ccdc;
+}
+
+.titulonombreCompania{
+  margin-left: 28px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.44px;
+  color: #323232;
+  margin-bottom: 10px;
+}
+
+.nombreCompania{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.611px;
+  color: #323232;
+  opacity: 0.8;
+  margin-left: 28px;
+}
+
+.botonEditarCompania{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #E9EBF1;
+  background-color: #FABB00;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.36px;
+  color: #093C5D;
+  cursor: pointer;
+}
+
+.botonEditarCompania:active{
+  background-color: #fddb73 ;
+}
+
+.iconoBotonEditar{
+  background-image: url('/src/assets/svg/icono_boton_editar_compania.svg');
+  width: 13px;
+  height: 14px;
+  border-radius: 8px !important;
+  margin-right: 9.5px;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+}
+
+.contenedorNombreCompania{
+  width: 100%;
+  height: auto;
+}
+
+.inputCompania{
+  height: 31px;
+  width: 90%;
+  padding: 0 0;
+  margin-left: 28px;
+  border: 1px solid #C7CCDC;
+  border-radius: 8px;
+}
+
+.inputFechaCompania{
+  height: 31px;
+  width: 30%;
+  padding: 0 0;
+  border-radius: 8px;
+  border: 1px solid #C7CCDC;
+  margin-left: 28px;
+}
+
+.iconoAgegarEmpresa{
+  background-image: url('/src/assets/svg/icono_agregar_empresa.svg');
+  width: 10px;
+  height: 10px;
+  margin-right: 6.5px;
+  filter: opacity(0.4) drop-shadow(0,0,0 red);
+}
+
+.botonAgregarEmpresa{
+  width: 145px;
+  height: 40px;
+  background-color: #FABB00;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px !important;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+}
+
+.botonAgregarEmpresa:active{
+  background-color: #fddb73;
+}
+
+.textoBotonAgregarEmpresa{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.36px;
+  color: #093C5D;
+}
+
+.contenedorHeaderMisEmpresas{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding-left: 29px;
+  padding-right: 28px;
+  padding-top: 36.96px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22.04px;
+}
+
+.tituloMisEmpresas{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.611px;
+  color: #323232;
+  font-size: 22px;
+}
+
+.empresa{
+  width: 240px;
+  height: 125px;
+  border: none;
+  box-shadow: 0px 2px 8px rgba(9, 60, 93, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.lineaIzquierda{
+  width: 3px;
+  height: 98px;
+  background-color: #093C5D;
+}
+
+.tituloEmpresa{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.44px;
+  color: #303030;
+  margin-bottom: 2px;
+}
+
+.subtituloEmpresa{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.25px;
+  color: #303030;
+  opacity: 0.6;
+}
+
+.datoEmpresa{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.30px;
+  color: #303030;
+  margin-bottom: 5px;
+}
+
+.datosEmpresa{
+  margin-left: 13px;
+}
+
+.contenedorEmpresas{
+  padding-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow: scroll;
+  padding-left: 29px;
+  padding-right: 28px;
+  height: 200px;
+}
+
+.contenedorSedes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 30.96px; 
+  width: 193px;
+  height: 32px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.botonSedesProyectos{
+  border:none;
+  border-radius: 8px !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 15px;
+  letter-spacing: 0.36px;
+  color: #093C5D;
+  width: auto;
+  height: 24px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+}
+
+.botonSedesProyectos:active{
+  background-color: #fddb73;
+}
+
+.botonSedesProyectos:first-child{
+  margin-right: 5px;
+}
+
+.botonActivo{
+  background-color: #FABB00;
+}
+
+.botonInactivo{
+  background-color: #fff;
+}
+
+.tituloSedesProyectos{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  color: #222222;
+  margin-left: 28px;
+}
+
+.contenedorTitulosSedes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedorBotonAgregarSede{
+  display: flex;
+}
+
+.iconoAgregarSede{
+  background-image: url('/src/assets/svg/icono_agregar_sede.svg');
+  width: 14.67px;
+  height: 13.33px;
+  margin-right: 3.8px;
+}
+
+.botonAgregarSede{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 40px;
+  border: none;
+  border-radius: 8px !important;
+  background-color: #FABB00;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold; 
+  line-height: 9px;
+  color: #093C5D;
+  cursor: pointer;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+}
+
+.botonAgregarSede:active{
+  background-color: #fddb73;
+}
+
+.botonAgregarProyecto{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 28px;
+  border: none;
+  background-color: #FABB00;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  height: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px !important;
+  line-height: 9px;
+  color: #093C5D;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+}
+
+.botonAgregarProyecto:active{
+  background-color: #fddb73;
+}
+
+.contenedorTabla{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.primerColumnaSedes{
+  width: 90%;
+  padding-left: 27px;
+}
+
+.segundaColumnaSedes{
+  width: 10%;
+}
+
+.primerColumnaAreas{
+  width: 70%;
+  padding-left: 27px;
+
+}
+
+.segundaColumnaAreas{
+  width: 20%;
+}
+
+.terceraColumnaAreas{
+  width: 10%;
+}
+
+.tablaSedes{
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  border-collapse:collapse;
+}
+
+.tituloTabla{
+  height: 32px;
+  background-color: #E9EBF1;
+}
+
+.tituloTabla > td{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15.23px;
+  letter-spacing: 0.36px;
+}
+
+.datosTabla{
+  background-color: #fff;
+  height: 49px;
+  border-bottom: 1px solid #E9EBF1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 0.44px;
+}

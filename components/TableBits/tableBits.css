@@ -1,0 +1,80 @@
+.tableHeader__BITS {
+    background-color: #f5f6f9;
+}
+
+.tableRow__BITS {
+    border: 1px solid #f3f3f3;
+    /* background-color: tomato; */
+    margin: 3px 24px 13px 27px;
+}
+
+.imgCollaborator__BITS {
+    width: 33px;
+    border-radius: 50%;
+    /* padding: 9px */
+}
+
+.boxData__userField {
+    margin: 0 0 0 12px;
+}
+
+.name__userField {
+    margin: 0 0 4px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+}
+
+.email__userField {
+    margin: 0px 0px 0px 0px;
+    opacity: 0.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+}
+
+.text-red {
+    color: red;
+    margin-top: 4px;
+}
+
+.dateInactive__userField {
+    color: #222222;
+}
+
+.dot-red{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot-green{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #198754;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.dot-wait{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: inline-block;
+    margin-right: 5px;
+}

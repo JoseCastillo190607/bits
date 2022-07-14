@@ -1,0 +1,108 @@
+.listProjectsSelected li{
+    display: inline-block;
+    background-color:#fabb00;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-top: 5px;
+    border-radius: 10%;
+    cursor: pointer;
+    width: auto;
+}
+
+.listProjectsSelected li div{
+    background-color: rgb(243, 96, 96);
+    display: inline-flex;
+    justify-content: center;
+    justify-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+
+.imageNotice{
+    text-align: center;
+    justify-content: center;
+}
+
+.imageNotice img{
+    border-radius: 5%;
+}
+
+.AutorNotice{
+    /* text-align: right; */
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload-image{
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-cancel-file{
+    position: absolute;
+    background-color: rgb(243, 96, 96);
+    width: 20px;
+    height: 20px;
+    margin-top: -88px;
+    margin-left: 67px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.ql-editor{
+    height: 100px !important;
+}
+
+.Nombre-de-la-Noticia {
+    /* width: 132px; */
+    height: 16px;
+    /* margin: 0 158px 9px 327px; */
+    opacity: 0.6;
+    /* font-family: Roboto; */
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #323232;
+    margin: 17px;
+  }
+
+  .header  {
+      height: 500px;
+      min-height: 500px;
+  }
+.contenido {
+    max-height: 190px;
+    height: 190px;
+}
+.chip-proyecto{
+    margin:2px !important; 
+    background-color:#fabb00 !important;
+    color:#222222 !important;
+}

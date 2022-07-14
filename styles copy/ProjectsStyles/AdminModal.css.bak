@@ -1,0 +1,54 @@
+.titulo{
+    text-align: center;
+    color: #093c5d;
+    font-size: 30px;
+    font-weight: 700;
+}
+.tituloAdminProyecto{
+    text-align: center;
+    color: #093c5d;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.listaAdministradores{
+    display: flex;
+    align-items: center;
+}
+.Update{
+    width: 100%;
+}
+.Ver{
+    width: 50%;
+}
+
+.contenedorLista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textoLista{
+    margin-left: 10px;
+}
+
+.botonAgregar{
+    fill: #fabb00 !important;
+    height: 30px !important;
+    width: 30Px !important;
+    cursor: pointer;
+}
+
+.botonEliminar{
+    height: 25px !important;
+    width: 25px !important;
+    cursor: pointer;
+}
+
+.BotonCerrar{
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}

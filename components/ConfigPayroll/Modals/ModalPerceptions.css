@@ -1,0 +1,55 @@
+.flexModalPerceptions{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+.mb24ModalPerceptions{
+  margin-bottom: 24px;
+}
+
+.mb26ModalPerceptions{
+  margin-bottom: 26px;
+}
+
+.ml32ModalPerceptions{
+  margin-left: 32px;
+}
+.mr32ModalPerceptions{
+  margin-right: 32px;
+}
+
+
+.mr10ModalPerceptions{
+  margin-right: 10px;
+}
+.contenedorModalPerceptions{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.tituloModalPerceptions{
+  font-size: 24px;
+  color: #093c5d;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.inputModalPerceptions{
+  border-radius: 8px;
+  width: 210px;
+  height: 32px;
+  border: solid 1px #c7ccdc;
+  padding-left: 11px;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+  font-size: 13px;
+  color: #303030;
+}
+
+.textoModal{
+  font-family: 'Roboto', sans-serif; 
+  font-size: 13px;
+  color: #303030;
+}

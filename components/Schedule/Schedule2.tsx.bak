@@ -1,0 +1,28 @@
+import "./styles.css"
+import Calendar from "./ShowSchedule3";
+import CalendarsContext from "../../context/NewCalendarContext/CalendarsState";
+
+
+
+interface TabCalendar {
+  children?: React.ReactNode;
+  idCalendar: any;
+  incidentName: any;
+};
+
+function App(props: TabCalendar) {
+  const { children, idCalendar, incidentName } = props;
+  //console.log(incidentName)
+  //console.log(incidentName)
+  //console.log(Array.isArray(incidentName));
+  return (
+    <CalendarsContext>
+      <Calendar idCalendar ={idCalendar} incidentName={incidentName}/>
+    </CalendarsContext>
+    
+
+  )
+  
+}
+
+export default App;

@@ -1,0 +1,136 @@
+import { useContext, useEffect, useState } from "react";
+import styles from "../../../../styles/MiEmpresa/informacionBancaria.module.css"
+import InputEmpresa from "./InputLegal"
+import EmpresaContext from "../../../../context/Empresa/EmpresaContext";
+import { updateState } from "../../../../context/Empresa/Actions";
+import { useFormik } from "formik"
+import * as Yup from "yup"
+import { Form, Button } from "semantic-ui-react";
+import { TextField } from "@material-ui/core";
+
+
+const InformacionBancaria = () => {
+  const {state, dispatch} = useContext(EmpresaContext)
+  const [registroPatronal, setRegistroPatronal] = useState([])
+
+  const cambioEstado = async(event:any, value:{}) =>{
+    console.log('valor que entra', value)
+    await updateState(event, state, dispatch, 'informacionBancaria', value,'tabDos')
+  }
+  
+  const formik = useFormik({
+    initialValues: initialValues(),
+    validationSchema: Yup.object(validationSchema()),
+    onSubmit:(formData) => {
+      cambioEstado('', FormData)
+    }
+  })
+
+  return(
+    <>
+    <Form onSubmit={formik.handleSubmit}>
+      <div className={styles.contenedorInformacionBancaria}>
+        <div className={styles.contenedorInput}>
+          <TextField
+            type="text"
+            name="cuentaBancaria"
+            defaultValue={state.informacionBancaria.cuentaBancaria}
+            label="Cuenta Bancaria*"
+            variant="outlined"
+            size="small"
+            fullWidth={true}
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+            error={
+              formik.touched.cuentaBancaria && Boolean(formik.errors.cuentaBancaria)
+              }
+            InputProps={{
+                readOnly: false,
+              }}
+          />
+        </div>
+          <div className={styles.contenedorError}>
+            <span>{formik.touched.cuentaBancaria && Boolean(formik.errors.cuentaBancaria) && formik.errors.cuentaBancaria}</span>
+          </div>
+        <div className={styles.contenedorInput}>
+          <TextField
+            type="text"
+            name="cuentaSTP"
+            defaultValue={state.informacionBancaria.cuentaSTP}
+            label="Cuenta STP"
+            variant="outlined"
+            size="small"
+            fullWidth={true}
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+            error={
+              formik.touched.cuentaSTP && Boolean(formik.errors.cuentaSTP)
+            }
+            InputProps={{
+              readOnly: false,
+            }}
+          />
+        </div>
+        <div className={styles.contenedorError}>
+          <span>{formik.touched.cuentaSTP && Boolean(formik.errors.cuentaSTP) && formik.errors.cuentaSTP}</span>
+        </div>
+        <div className={styles.contenedorInput}>
+          <TextField
+            type="text"
+            name="cuentaClabeSTP"
+            defaultValue={state.informacionBancaria.cuentaClabeSTP}
+            label="Cuenta CLAVE STP*"
+            variant="outlined"
+            size="small"
+            fullWidth={true}
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+            error={
+              formik.touched.cuentaClabeSTP && Boolean(formik.errors.cuentaClabeSTP)
+            }
+            InputProps={{
+              readOnly: false,
+            }}
+          />
+        </div>
+        <div className={styles.contenedorError}>
+          <span>{formik.touched.cuentaClabeSTP && Boolean(formik.errors.cuentaClabeSTP) && formik.errors.cuentaClabeSTP}</span>
+        </div>
+      </div>
+      <div className={styles.contenedorBotones}>
+        <div>
+          <button className={styles.botonCancelarModal}>
+            Cancelar
+          </button>
+        </div>
+        <div>
+          <button className={styles.botonCrearEmpresaModal}>
+            <div className={styles.iconoCrearEmpresaModal}></div>
+            <div>
+              Crear
+            </div>
+          </button>
+        </div>
+      </div>
+    </Form>    
+    </>
+  )
+}
+
+const initialValues = () => {
+  return{
+    cuentaBancaria: '',
+    cuentaSTP: '',
+    cuentaClabeSTP:''
+  }
+}
+const validationSchema = () => {
+  return{
+    cuentaBancaria: Yup.string().required("Obligatorio"),
+    cuentaSTP: Yup.string().required("Obligatorio"),
+    cuentaClabeSTP: Yup.string().required("Obligatorio"),
+  }
+}
+
+
+export default InformacionBancaria

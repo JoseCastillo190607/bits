@@ -1,0 +1,55 @@
+import { Dispatch,ChangeEvent } from "react";
+import {Types} from "./CalendarsContext";
+
+export const createCalendarsModal = ({_id = "",createModal = true}:any, dispatch: Dispatch<any>):void =>{
+    dispatch({
+       type:Types.CREATE_CALENDARS,
+       payload:{
+           createModal
+       } 
+    })
+}
+
+export const createEventModal = ({_id = "",createEventModal = true}:any, dispatch: Dispatch<any>):void =>{
+    dispatch({
+       type:Types.CREATE_EVENT,
+       payload:{
+        createEventModal
+       } 
+    })
+}
+
+export const clearCalendarsModal = ({_id="", createModal = false, updateModal = false, Documento = {}, deleteModal = false, createEventModal = false}:any, dispatch: Dispatch<any>):void => {
+    dispatch({
+        type: Types.CLEAR_CALENDARS,
+        payload: {
+            _id,
+            createModal,
+            updateModal,
+            deleteModal,
+            createEventModal
+        }
+    })
+}
+
+export const updateCalendarsModal = (_id = "", updateModal = true, dispatch: Dispatch<any>):void => {
+    console.log("edit id" + _id)
+    dispatch({
+        type:Types.UPDATE_CALENDARS,
+        payload:{
+            _id,
+            updateModal,
+        }
+    })
+}
+
+export const deleteCalendarsModal = (_id="", deleteModal=true, dispatch:Dispatch<any>):void =>{
+    dispatch({
+        type: Types.DELETE_CALENDARS,
+        payload:{
+            _id,
+            deleteModal
+        }
+    })
+}
+

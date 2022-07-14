@@ -1,0 +1,858 @@
+.Lista{
+    width: 100%;
+    margin-right: 50px;
+    margin: 20x;
+	padding: 20px;
+}
+
+.Mask {
+    display: flex;
+    width: 100%;
+    height: auto!Important;
+    border-radius: 5px;
+    border: solid 1px #f3f3f3;
+    background-color: #fff;
+    list-style: none;
+    margin: 0px;
+	padding: 10px;
+  }
+
+.contenedor_Principal{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    height: auto;
+    border-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.alineacionPuesto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px!Important;
+    padding-right: 5px!Important;
+    height: 100%;
+}
+
+.alineacionBoton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;  
+}
+
+.Puesto{
+    font-size: 16px;
+    font-weight: 700;
+    color:#323232;
+}
+
+.circulo {
+    width: 33px;
+    height: 33px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.colorYellow{
+    background-color: #fabb00;
+    font-size: 28px;
+}
+
+.nombrePuesto{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.nombre{
+    color: #000000;
+    font-weight: bold;
+}
+
+.nombreCorreo{
+    color: rgb(177, 168, 168);
+    font-size: 11px;
+}
+
+.textoAreaJefe{
+    color: #323232;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.imgCollaborator__BITSss {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+
+    /* padding: 9px */
+}
+
+.tituloBoton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonAgregaPuesto{
+    background-color: #fabb00;
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px !important;
+    font-size: 14px;
+    color: rgb(9, 60, 93);
+}
+
+.botonAgregarColaborador{
+    background-color: #fabb00;
+    cursor: pointer;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: rgb(9, 60, 93);
+  }
+
+.contenedorBoton{
+    margin-left: 20px;
+}
+
+.sinPersona{
+    color: #323232;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.textoCirculo{
+    color:#093c5d;
+    width: 21px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.contenedorCentrado{
+    display: flex;
+    justify-content:center;
+}
+
+.nombreEliminar{
+    font-size: 38px;
+    color: #323232;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 73px 21px 72px;
+}
+
+.textoEliminar{
+    font-size: 16px;
+    font-weight: bold;
+    color: #323232;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 14px;
+}
+
+.inputEliminar{
+    width: 269px;
+    height: 42px;
+    margin: 20px 59px 24px;
+    border-radius: 8px;
+    border: solid 1px #c7ccdc;
+
+}
+
+.botonEliminarPuesto{
+    background-color: #d31313;
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 0 rgba(211, 19, 19, 0.4);
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.botonEliminarPuestoFalse{
+    background-color: rgba(211, 19, 19, 0.4);
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 0 rgba(211, 19, 19, 0.4);
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.inputInfoPuesto{
+    background-color: #f5f6f9;
+    width: 271px;
+}
+
+.espacioTextAreaInfoPuesto{
+    background-color: #f5f6f9;
+    border-color: red !important;
+    width: 271px;
+}
+
+.botonCerrarInfo{
+    height: 34px;
+    background-color: #fabb00;
+    width: 100px;
+    border-radius: 4px;
+    border: solid 0.8px #e1e1e1;
+    padding: 11px 32px 8px 31px;
+    margin: 50px 0 21px 50px;
+    cursor: pointer;
+}
+
+.contenedorBotonCerrarInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.textoBotonCerrar{
+    color: #093c5d;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.alignContenedorBoton{
+    display: flex;
+    align-items: center;
+}
+
+
+.contenedorBotones{
+    display: flex;
+    justify-content: flex-end;
+    margin: 32px;
+}
+
+.botonCancelarUsuarios{
+    width: 100px;
+    height: 40px;
+    padding: 12px 22px;
+    border-radius: 4px;
+    border: solid 0.8px #e1e1e1;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.BotonCancelarUsuariosAmarillo{
+    width: 100px;
+    height: 40px;
+    padding: 16px 40px;
+    border-radius: 4px;
+    border: solid 0.8px #e1e1e1;
+    margin-right: 10px;
+    background-color: #fabb00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoBotonCancelarUsuariosAmarillo{
+    color: #093c5d;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+
+
+.ContenedorHistorial{
+    border: solid 1px #c7ccdc;
+    border-radius: 4px;
+    width: 68%;
+    margin-top: 15px;
+}
+
+.ContenedorTituloHistorial{
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #323232;
+    font-weight: 700;
+}
+
+.ContenedorSubtituloHistorial{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f6f9;
+    height: 24px;
+    align-items: center;
+}
+
+.ContenedorSubtituloHistorialFecha{
+    width: 20%;
+    color: #323232;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 11px;
+}
+.ContenedorSubtituloHistorialDescripcion{
+    width: 80%;
+    color: #323232;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+
+.ContenedorSubtituloHistorialLista{
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    align-items: center;
+}
+
+.listaHistorial{
+    list-style: none;
+    margin: 0px;
+	padding: 0px;
+}
+
+
+.ContenedorPrincipalHistorial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ContenedorSubtituloHistorialFechaLista{
+    height: 24px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #c7ccdc;
+    font-size: 11px;
+    color: #222;
+    opacity: 0.6;
+}
+.ContenedorSubtituloHistorialDescripcionLista{
+    height: 24px;
+    width: 80%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    border: solid 1px #c7ccdc;
+    font-size: 11px;
+    color: #222;
+    opacity: 0.6;
+    padding-left: 10px;
+}
+.UlListaHistorial{
+    margin: 0px;
+	padding: 0px;
+}
+
+.ContenedorListaOrganigrama{
+    width: 70%;
+}
+
+.contenedorLista{
+    border: solid 1px red;
+    background-color: red
+}
+
+.MuiTab-fullWidth{
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+a:visited 
+{
+    color: rgb(9, 60, 93)!important;
+    font-weight: bold!important;
+
+}
+.MsjNuevaPrenominaLink
+{
+    color:rgb(9, 60, 93);
+    font-weight: bold;
+}
+
+
+.MsjNuevaPrenomina > .Title
+{
+   
+    font-weight:bold;
+}
+.MsjNuevaPrenomina 
+{
+   padding: 10%;
+   text-align: center;
+
+}
+
+.botonNuevaPrenomina{
+    background-color: #fabb00;
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px !important;
+    height: 40px;
+    width: auto;
+    font-size: 14px;
+    color: rgb(9, 60, 93);
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    -ms-border-radius: 8px !important;
+    -o-border-radius: 8px !important;
+}
+
+/* .botonNuevaPrenomina:hover{
+    background-color: #fddb73;
+} */
+
+
+.botonComenzar{
+    background-color: #fabb00;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px !important;
+    font-size: 14px;
+    width: 150px;
+    color: rgb(9, 60, 93);
+    margin-top: 20px;
+}
+.botonPeriodoPago{
+    background-color: #fabb00;
+    padding: 15px 15px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px !important;
+    color: rgb(9, 60, 93);
+}
+
+.btnNuevoGrupoNomina
+{
+    background-color: #fabb00;
+    padding: 15px 15px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px !important;
+    color: rgb(9, 60, 93);
+    
+}
+
+.ContenedorNuevoGrupoNomina
+{
+    position:absolute;
+    left:85%;
+    right:0px; 
+    bottom:40px;
+    z-index:0;
+}
+
+
+.continueparagraph
+{
+    margin: 2px;
+}
+
+.DivGray
+{
+    background-color: #f1f2f5;
+    width: 400px;
+    height: 400px;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-right: -5px;
+    border-radius: 10px;
+}
+
+.espacioTitulos
+{
+    margin: 0!important;
+    margin-bottom: 10px!important;
+    width: 400px!important;
+
+}
+
+.DivCenter
+{
+    position: relative;
+    width: 0px;
+}
+
+.vertical-center 
+{
+ 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    inline-size: min-content;
+}
+
+
+.btnMover
+{
+    width: 60px;
+    height: 30px;
+    margin: 2px!important;
+    padding: 5px 20px 5px 20px;
+}
+
+.rdrCalendarWrapper {
+    z-index: 1!important;
+    position: fixed!important;
+    display: flex!important;
+    flex-wrap: wrap;
+    left: 55.5%!important;
+
+
+  }
+
+  .EliminarNomina
+  {
+      color:red;
+      font-size: 12px;  
+      margin-top: 5px;
+  }
+
+
+  .alineacionGray{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    padding-left: 0px!Important;
+    height: 100%;
+  }
+
+  .boxgray
+  {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f1f2f5;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    white-space:nowrap;
+
+  }
+  
+  .GroupInfo{
+    margin: 20px 0px 0px 0px;
+  }
+
+  .GroupInfo >span {
+    display: block; 
+  }
+
+  .Gray{
+   font-size: 10px;
+   color:#c7ccdc;
+  }
+
+  .ProcesoNomina
+  {
+    display: inline-block;
+    background-color: #c7ccdc;
+    width: 20px;
+    height: 5px;
+    border-radius: 10px;
+    margin-left: 5px;
+  }
+
+  .ProcesoNominaActivo
+  {
+    background-color: #fabb00;
+
+  }
+
+
+    .PasoActivo {
+        fill: #fabb00;
+    }
+    .PasoActivoCentro
+    {
+        fill: white;
+    }
+    .PasoActivoLinea {
+        fill: #fabb00;
+        stroke: #fabb00;
+    }
+
+    .Paso {
+        fill: lightgray;
+    }
+    .PasoLinea {
+        stroke: lightgray;
+    }
+  .EncabezadoInitPayroll
+  {
+    background-color: lightgray;
+    margin: 0;
+    font-weight: bold;
+    
+    height: 40px;
+  }
+
+  .DivSuperiorInitPayRoll
+  {
+    margin: 2% 2% 0px 2%;
+  
+  }
+
+  .Botones 
+  {
+    float: right;
+    
+  }
+
+  
+.Pasos
+{
+    display: inline-block;
+    font-size: 12px;
+}
+
+.btnCalcular
+{
+    background-color: #fabb00;
+    padding: 15px 15px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    color: rgb(9, 60, 93);
+    margin-left: 10px;
+}
+
+
+.btnDescargaReporte
+{
+    background-color: #fff;
+    padding: 15px 15px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    color: rgb(9, 60, 93);
+    margin-left: 10px;
+}
+
+.ContenedorInitPayroll{
+
+    margin-left: 2%; 
+    margin-right: 2%;
+
+  }
+  
+
+.contenedorTituloTabla{
+    padding: 8px 20px 8px 20px!Important;
+  }
+
+  .listaTabla {
+    padding: 8px 20px 8px 20px!Important;
+  }
+
+  
+  .PasosTexto
+  {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
+.listaGruposDisponibles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #fff;
+    width:387px;
+    height: 32px;
+    margin-bottom: 3px !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(9, 60, 93, 0.12);
+    margin: 0px;
+    padding: 0px;
+}
+
+.listaGruposSeleccionadas{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #fff;
+    width: 387px;
+    height: 32px;
+    margin-bottom: 3px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(9, 60, 93, 0.12);
+}
+
+.textoGrupoDisponibles{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: #222;
+    font-weight: normal;
+    margin-left: 11px;
+}
+
+.botonListaDisponibles{
+    height: 28px;
+    margin-right: 2px;
+}
+
+.botonListaSeleccionadas{
+    height: 28px;
+    margin-left: 2px;
+}
+
+.textoGrupoSeleccionadas{
+    font-family: 'Ronoto', sans-serif;
+    font-size: 11px;
+    color: #222;
+    font-weight: normal;
+    margin-left: 16px;
+}
+
+.btnEliminarNomina
+{
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #e0544b;
+    background: none;
+}
+
+.boxgray_round
+{
+  margin-top: 10px;
+  background-color: #f1f2f5;
+  padding: 5px;
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+}
+
+.cuentabancaria
+{
+    margin-right:20px;
+    margin-top:10px;
+}
+
+.divactiondispersar
+{
+    min-width: 120px;
+    border-radius: 10px;
+    padding: 4px 8px;
+    white-space: nowrap;
+    font-size: 13px;
+    align-content: center;
+    text-align: center;
+}
+
+.dispersar
+{
+  border-radius: 8px;
+  border: solid 1px #c7ccdc;
+  color: #093c5d;
+  font-weight: bold;
+}
+
+.dispersando
+{
+  background-color: rgba(248, 234, 100, 0.6);
+}
+.errordispersar
+{
+    display: flex;
+}
+
+.LabelError
+{
+    margin-right: 4px;
+}
+
+.finalizado
+{
+  background: #11ca73; 
+  color: white;
+}
+
+.texterrordispersar p
+{
+    margin: 1px!Important;
+}
+.parrafo_err
+{
+ color: #d31313;   
+ font-weight: bold;
+}
+
+.actiondispersar
+{
+    background-color: #fabb00;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(9, 60, 93);
+    margin-left: 10px;
+}

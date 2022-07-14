@@ -1,0 +1,179 @@
+import {useState, useEffect} from "react";
+import { Grid } from "@material-ui/core";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import { useHistory } from "react-router-dom";
+import '../ConfigPayroll/tableISR.css'
+import '../ConfigPayroll/PayrollGroup.css'
+
+import { useQuery } from "@apollo/client";
+import {  GET_ALL_FINISH_PAYROLL, GET_ALL_PAYROLLCOLLABORATOR_EXCELL } from "../../Querys/querys";
+
+import {formatter} from "../../helpers/formatoMoneda"
+import { getDateMonthYear, getDateMonth, getMonth } from "../../helpers/Payroll/Payroll";
+
+import styles from "../../../src/components/Payroll/PayrollStyles.module.css";
+import { utils, writeFile } from "xlsx"
+
+
+
+interface TabPanelProps {
+    children?: React.ReactNode;
+    index: any;
+    value: any;
+};
+
+const HistoricPayrollTable = (props: TabPanelProps) =>{
+
+  const resultHistoric= useQuery(GET_ALL_FINISH_PAYROLL);
+  const allHistoric = resultHistoric.data?.GET_ALL_FINISH_PAYROLL;
+  const history = useHistory();
+
+    const [iconoSemanal, setIconoSemanal] = useState(false)
+
+  
+
+    useEffect(()=>{
+        obtenerDatos();
+    },[])
+
+    const obtenerDatos = async () =>{
+    }
+
+    const handleOnExport = () => {
+
+        var woorkBook = utils.book_new(),
+        woorkSheet = utils.json_to_sheet(allHistoric);
+
+        utils.book_append_sheet(woorkBook,woorkSheet,"Reporte_Nomina")
+
+        writeFile(woorkBook, "ReporteNomina.xlsx")
+    }
+
+    return(
+      <>
+        <div className="contenedorHeader">
+          <div>
+            <span className="tituloHeader">Mayo 2022</span>
+          </div>
+        </div>
+        <div>
+        {allHistoric?.map((lis:any)=>
+         getMonth(lis.init_date) === "Mayo" &&(
+          <Accordion className="prueba"> 
+            <div className="contenedorTabla">
+              <div className="contenedorTituloTablaValores">
+                <Grid container spacing={1}>
+                  <Grid item xs={4} className="tituloTablasValores centrado ">
+                    <div className="primerElementoTablaValores">
+                      <AccordionSummary
+                      aria-controls="panel2a-content"
+                      id="panel2a-header" 
+                      onClick={(e) => setIconoSemanal(!iconoSemanal)}>
+                        <div className={`iconoLista  ${iconoSemanal === true ? "iconoListaActivo": "iconoListaActivo"} `}>
+                          <span className={`${iconoSemanal === true ? "iconoActivo": "iconoActivo"}`}>^</span>
+                        </div>
+                      </AccordionSummary>
+                    </div>
+                    <div className="tableValuesPrimerElemento">
+                      <span className="textotituloTabla">{lis.group_name}</span>
+                    </div>
+                  </Grid>
+                  <Grid item xs={2} className="tituloTablasValores centrado ">
+                    <div className="tableValuesPrimerElemento">
+                      <span className="textotituloTabla">Periódo {getDateMonthYear(lis.init_date)} {getDateMonth(lis.init_date)} - {getDateMonth(lis.end_date)}</span>
+                    </div>
+                  </Grid>
+                  <Grid item xs={2} className="tituloTablasValores centrado">
+                    <div className="tableValuesPrimerElemento">
+                      <span className="textotituloTabla">Empleados: {lis.employees}</span>
+                    </div>
+                  </Grid>
+                  <Grid item xs={2} className="tituloTablasValores centrado">
+                    <div className="tableValuesPrimerElemento">
+                      <span className="textotituloTabla">Total: {formatter(lis.total)}</span>
+                    </div>
+                  </Grid>
+                </Grid>
+              </div>
+            </div>
+            <AccordionDetails>
+              <div className="filaTablaValoresTop">
+              <Grid container spacing={3} className="contenedorTablaValores">
+                  <Grid item xs={6} className="tituloTablasValores centrado ">
+                    <Grid item xs={4}>
+                        <div>
+                            <span className="textotituloTabla">Detalle de Nómina</span>
+                        </div>
+                    </Grid>   
+                    <Grid item xs={4}>
+                        <div>
+                        <img 
+                        className={styles.pc_iconoFlechaAmarilla} src='/assets/svg/icono-FlechaAmarilla.png' 
+                        onClick={handleOnExport}> 
+                        </img>
+                            <span className="">Reporte de Nómina</span>
+                        </div>
+                    </Grid>   
+                    <Grid item xs={4}>
+                        <div>
+                        <img className={styles.pc_iconoFlechaAmarilla} src='/assets/svg/icono-FlechaAmarilla.png' onClick={() => history.push(`/InitPayroll/${lis.id}/${lis.group_name}`)}> 
+                        </img>
+                            <span className=""> Recibos de nómina ZIP</span>
+                        </div>
+                    </Grid>   
+                  </Grid>
+                </Grid>
+                <Grid container spacing={3} className="contenedorTablaValores">
+                  <Grid item xs={6} className="tituloTablasValores centrado ">
+                    <Grid item xs={4}>
+                        <div>
+                        <img className={styles.pc_iconoFlechaAmarilla} src='/assets/svg/icono-FlechaAmarilla.png' onClick={() => history.push(`/InitPayroll/${lis.id}/${lis.group_name}`)}> 
+                        </img>
+                                <span className="">Nómina</span>
+                        </div>
+                    </Grid>   
+                    <Grid item xs={4}>
+                        <div>
+                        <img className={styles.pc_iconoFlechaAmarilla} src='/assets/svg/icono-FlechaAmarilla.png' onClick={() => history.push(`/InitPayroll/${lis.id}/${lis.group_name}`)}> 
+                        </img>
+                            <span className=""> Reporte de Poliza Contable</span>
+                        </div>
+                    </Grid>   
+
+                    <Grid item xs={4}>
+                        <div>
+                        <img className={styles.pc_iconoFlechaAmarilla} src='/assets/svg/icono-FlechaAmarilla.png' onClick={() => history.push(`/InitPayroll/${lis.id}/${lis.group_name}`)}> 
+                        </img>
+                            <span className=""> Reporte CEP</span>
+                        </div>
+                    </Grid>   
+                  </Grid>
+                </Grid>
+                <Grid container spacing={3} className="contenedorTablaValores">
+                  <Grid item xs={6} className="tituloTablasValores centrado ">
+                    <Grid item xs={4}>
+                        <div>
+                            <span className=""></span>
+                        </div>
+                    </Grid>   
+                    <Grid item xs={4}>
+                        <div>
+                        <img className={styles.pc_iconoFlechaAmarilla} src='/assets/svg/icono-FlechaAmarilla.png' onClick={() => history.push(`/InitPayroll/${lis.id}/${lis.group_name}`)}> 
+                        </img>
+                            <span className=""> Reporte de STP</span>
+                        </div>
+                    </Grid>   
+                  </Grid>
+                </Grid>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+        ))}
+        </div>
+      </>
+    )
+}
+
+export default HistoricPayrollTable

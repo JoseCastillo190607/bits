@@ -1,0 +1,145 @@
+import { ChangeEvent, useContext } from "react";
+import { Box, FormControl, Grid, InputLabel, Select, TextField } from "@material-ui/core";
+import CollaboratorContext from "../../../context/CollaboratorContext/CollaboratorContext";
+import { updateData } from "../../../helpers/Collaborator/Collaborator";
+import { paisesEstados } from "../../../helpers/Json/paises-estados";
+import moment from "moment";
+import { WarningAlert } from "../../../alerts/WarningAlert";
+
+const InformationData = () => {
+    const { state, dispatch } = useContext(CollaboratorContext);
+
+    const currentDate = moment();
+    const validYears = 18;
+    const isAdult = (birthday: string) => currentDate.year() - moment(birthday).year() >= validYears;
+
+    const reCheck = localStorage.getItem('reCheck');
+
+    const handleChange = async (e: ChangeEvent<{ name: string, value: unknown }>) => {
+        await updateData(e, state, dispatch, 1);
+    }
+
+    const handleChangeDate = async (e: ChangeEvent<{ name: string, value: string }>) => {
+        if (!isAdult( e.target.value)) {
+            return WarningAlert({ title: "¡Error!", text: `¡El colaborador debe ser mayor a ${validYears} años!` }).then(() => false);}
+            else {
+                await updateData(e, state, dispatch, 1);
+            }
+    }
+
+
+    return (
+        <div className={Math.round(state.sections[1]) >= 100 ? `validate__border` : `novalidate__border`}>
+            <Box mb={2}>
+                        <FormControl variant="outlined" fullWidth={true} size="small">
+                        <InputLabel htmlFor="outlined-age-native-simple">Nivel de estudios</InputLabel>
+                        <Select
+                            native
+                            onBlur={(e) => handleChange(e)}
+                            label={'NivelEstudios'}
+                            name="NivelEstudios"
+                            defaultValue={state.collaborator?.DatosPersonales?.NivelEstudios || ''}
+                            autoFocus={true}
+                        >
+                            <option value={state.collaborator?.DatosPersonales?.NivelEstudios || ''} disabled={true}>{state.collaborator?.DatosPersonales?.NivelEstudios || ''}</option>
+                            <option value={'SECUNDARIA'}>SECUNDARIA</option>
+                            <option value={'PREPARATORIA'}>PREPARATORIA</option>
+                            <option value={'LICENCIATURA'}>LICENCIATURA</option>
+                            <option value={'POSGRADO'}>POSGRADO</option>
+                        </Select>
+                    </FormControl>
+            </Box>
+            <Grid direction="row" container spacing={2}>
+                <Grid xs item container justify="flex-start" alignItems="center">
+                    <span className="Fecha-de-nacimiento">Fecha de nacimiento</span>
+                </Grid>
+                <Grid xs item direction="row" container justify="flex-end" alignItems="center">
+                        <TextField
+                            type="date" name="FechaNacimiento" defaultValue={state.collaborator?.FechaNacimiento || ''}
+                            variant="outlined" size="small"
+                            onBlur={(e) => handleChangeDate(e)}
+                            //onChange={(e) => validDate(e)}
+                            InputProps={{
+                                readOnly: false,
+                            }}
+                            autoFocus={true}
+                        />
+                </Grid>
+            </Grid>
+
+            <Box mt={2} mb={2}>
+                        <FormControl variant="outlined" fullWidth={true} size="small">
+                        <InputLabel htmlFor="outlined-age-native-simple">Lugar de nacimiento</InputLabel>
+                        <Select
+                            native
+                            onBlur={(e) => handleChange(e)}
+                            label={'LugarNacimiento'}
+                            name="LugarNacimiento"
+                            defaultValue={state.collaborator?.DatosPersonales?.LugarNacimiento || ''}
+                        >
+                            <option value={state.collaborator.DatosPersonales?.LugarNacimiento || ''} disabled={true}>{state.collaborator.DatosPersonales?.LugarNacimiento || ''}</option>
+                            {
+                                paisesEstados.map((country: any, index: number) => (
+                                    <option key={index} value={country.country}>{country.country}</option>
+                                ))
+                            }
+                        </Select>
+                    </FormControl>
+            </Box>
+
+            <Grid direction="row" container spacing={2}>
+                <Grid xs item>
+                        <FormControl variant="outlined" fullWidth={true} size="small">
+                        <InputLabel htmlFor="outlined-age-native-simple">Género</InputLabel>
+                        <Select
+                            native
+                            onBlur={(e) => handleChange(e)}
+                            label={'Género'}
+                            name="Genero"
+                            defaultValue={state.collaborator?.DatosPersonales?.Genero || ''}
+                            autoFocus={true}
+                        >
+                            <option value={state.collaborator.DatosPersonales?.Genero || ''} disabled={true}>{state.collaborator.DatosPersonales?.Genero || ''}</option>
+                            <option value={'Masculino'}>Masculino</option>
+                            <option value={'Femenino'}>Femenino</option>
+                        </Select>
+                    </FormControl>
+                </Grid>
+                <Grid xs item>
+                        <FormControl variant="outlined" fullWidth={true} size="small">
+                        <InputLabel htmlFor="outlined-age-native-simple">Estado civil</InputLabel>
+                        <Select
+                            native
+                            onBlur={(e) => handleChange(e)}
+                            label={'EstadoCivil'}
+                            name="EstadoCivil"
+                            defaultValue={state.collaborator?.DatosPersonales?.EstadoCivil || ''}
+                            autoFocus={true}
+                        >
+                            <option value={state.collaborator.DatosPersonales?.EstadoCivil || ''} disabled={true}>{state.collaborator.DatosPersonales?.EstadoCivil || ''}</option>
+                            <option value={'Soltero(a)'}>Soltero(a)</option>
+                            <option value={'Casado(a)'}>Casado(a)</option>
+                            <option value={'Unión Libre'}>Unión Libre</option>
+                        </Select>
+                    </FormControl>
+                </Grid>
+                <Grid xs item>
+                    <FormControl variant="outlined" fullWidth={true} size="small">
+                        <TextField
+                            type='number' name="Hijos"
+                            defaultValue={state.collaborator.DatosPersonales?.Hijos ? state.collaborator.DatosPersonales?.Hijos : 0}
+                            autoFocus={true} label="Hijos" variant="outlined" size="small"
+                            fullWidth={true} onBlur={(e) => handleChange(e)}
+                            InputProps={{
+                                readOnly: false,
+                            }}
+                        /> 
+                    </FormControl>
+                </Grid>
+            </Grid>
+            {Math.round(state.sections[1]) < 100 && (<span className="spanRequerido">Todos los campos son obligatorios</span>) }
+        </div>
+    )
+}
+
+export default InformationData;

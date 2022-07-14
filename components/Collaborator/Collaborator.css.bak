@@ -1,0 +1,356 @@
+:root {
+  --borderPillsLeft: 18px;
+  --borderPillsRight: 18px;
+  --background: #f5f6f9;
+}
+
+.validate__border {
+  padding: 20px 20px 20px 20px;
+  border-radius: 12px;
+  border: solid 1px #11ca73;
+  width: 90vh;
+  max-width: 90vh;
+}
+
+.novalidate__border {
+  padding: 20px 20px 20px 20px;
+  border-radius: 12px;
+  border: solid 1px #11ca73;
+  width: 80vh;
+  max-width: 90vh;
+  margin-top: 15px;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 1.5px solid #093c5d !important;
+}
+
+.MuiInputLabel-outlined {
+  color: #093c5d !important;
+}
+
+.Fecha-de-nacimiento {
+  margin: 12px 31px 13px 0;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+}
+
+.Return {
+  margin: 50px 0 3px 18px;
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+  cursor: pointer;
+}
+
+.MuiTabs-root.collaborator {
+  background: var(--background) !important;
+  border-top-left-radius: var(--borderPillsLeft) !important;
+  border-top-right-radius: var(--borderPillsRight) !important;
+}
+
+.Tab__SelectedFirst {
+  border-top-left-radius: 18px !important;
+}
+
+.Tab__Selectedlast {
+  border-top-right-radius: 18px !important;
+}
+
+.Tab__NoSelectedFirst {
+  border-top-left-radius: 18px !important;
+  background: #e5e9eb !important;
+}
+
+.Tab__NoSelectedLast {
+  border-top-right-radius: 18px !important;
+  background: #e5e9eb !important;
+}
+
+.Tab__Selected {
+  font-weight: bold !important;
+  color: #fff !important;
+  background-color: #022338 !important;
+  width: 20% !important;
+}
+
+.Tab__NoSelected {
+  font-weight: bold !important;
+  color: #093c5d !important;
+  background-color: #e5e9eb !important;
+  width: 20% !important;
+}
+
+.Tab__background {
+  background-color: #023832 !important;
+  border-bottom: 5px solid #11ca73 !important;
+}
+
+.filledAll .PrivateTabIndicator-colorSecondary-12,
+.filledAll .PrivateTabIndicator-root-471,
+.filledAll .PrivateTabIndicator-colorSecondary-473,
+.filledAll .MuiTabs-indicator {
+  background-color: #11ca73 !important;
+}
+
+.PrivateTabIndicator-colorSecondary-12,
+.PrivateTabIndicator-root-471,
+.PrivateTabIndicator-colorSecondary-473,
+.MuiTabs-indicator {
+  background-color: gray !important;
+  height: 5px !important;
+  width: 20% !important;
+}
+
+.Tab__Selected .MuiTab-wrapper,
+.Tab__NoSelected .MuiTab-wrapper {
+  flex-direction: row-reverse !important;
+  margin-right: 10px !important;
+}
+
+.filledAll .MuiSvgIcon-root {
+  margin-left: 20px !important;
+  color: #11ca73 !important;
+}
+
+.MuiTab-labelIcon {
+  min-height: 0px !important;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.custom-file-upload span {
+  background-color: red;
+  position: absolute;
+  margin-top: -10px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.custom-file-upload-text {
+  font-size: 10px;
+  text-align: right;
+}
+
+.custom-file-upload-text label {
+  font-size: 15px;
+}
+
+.collaborator__candidate__container {
+  background-color: white;
+}
+
+.Expediente {
+  border-right: 1px solid #c7ccdc;
+  height: 100%;
+}
+
+.Expediente > * {
+  padding-right: 5px;
+}
+
+.file__tags {
+  position: relative;
+}
+
+.custom-file-upload-expediente {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.text-cancel-file-expediente {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(243, 96, 96);
+  width: 15px;
+  height: 15px;
+  margin-top: -35px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.labels__files > * {
+  display: block !important;
+}
+
+.labels__files label {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+}
+
+.labels__files a {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2186c6;
+}
+
+.labels__files span {
+  font-size: 12px !important;
+  color: #222222;
+}
+
+.border__green {
+  border: 2px solid #11ca73 !important;
+}
+
+.icons__container > * {
+  display: flex !important;
+}
+
+.Header__Candidate {
+  background-color: #022338 !important;
+  width: 100% !important;
+  border-radius: 20px;
+}
+
+.Header__Candidate img {
+  position: absolute;
+  margin: 15px;
+  margin-left: 50px;
+}
+
+.Header__Candidate h1 {
+  color: white !important;
+}
+
+.AGREE_INFORMATION {
+  padding-top: 0px !important;
+}
+
+.AGREE_INFORMATION h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #093c5d;
+}
+
+.AGREE_INFORMATION button {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: left !important;
+}
+
+.AGREE_INFORMATION button.buttonSave {
+  background-color: #11ca73 !important;
+}
+
+.AGREE_INFORMATION button.buttonSave span {
+  color: white !important;
+}
+
+.AGREE_INFORMATION button > span > span {
+  width: 100%;
+  text-align: left !important;
+}
+
+.buttonSaveCompletes {
+  background-color: #11ca73 !important;
+  color: white !important;
+}
+
+.c-red {
+  color: red !important;
+}
+.button-arrow-tabs{
+color: #093C5D !important;
+font-weight: bold !important;
+}
+
+
+#benefitiary {
+  padding-top: 17.5px !important;
+}
+.view-document {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  color: #2186C6;
+}
+.cursor{
+  cursor: pointer;
+}
+.image-file{
+  cursor: pointer;
+  
+}
+.span-file{
+  display: block;
+  font-size: 12px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-child {
+  flex: 2;
+}  
+.flex-child-2 {
+  flex: 1;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+.display-flex-important{
+  display: flex !important;
+}
+.aviso-retencion{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

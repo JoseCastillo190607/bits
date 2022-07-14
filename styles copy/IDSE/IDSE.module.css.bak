@@ -1,0 +1,217 @@
+
+.contenedor{
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.contenedorTitulo{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.61px;
+  color: #323232;
+  padding-top: 29px;
+  padding-left: 22px;
+}
+
+.contenedorInput{
+  border: solid 1px #c7ccdc;
+  width: 454.5px;
+  height: 47px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.input{
+  width: 410px;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 15px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.36px;
+  color: #303030;
+}
+
+.input:focus{
+  border: none !important;
+  outline: none;
+}
+
+.input::placeholder{
+  font-family: 'Roboto',sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0.36px;
+  color: #303030;
+  opacity: 0.6;
+}
+
+.iconoBuscar{
+  background-image: url('/src/assets/svg/icono_buscar_dos.svg');
+  width: 18.12px;
+  height: 18.12px;
+  margin-right: 14.44px;
+}
+
+.contenedorTabla{
+  width: 97%;
+  margin-left: 22px;
+  margin-top: 35px;
+}
+
+.tabla{
+  width: 100%;
+  border-collapse: collapse;
+}
+.thead{
+  background-color: #e9ebf1;
+  height: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.36px;
+  color: #303030
+  
+}
+.tituloTabla{
+  width: auto
+}
+
+.primeraColumna{
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.datoTabla{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.36px;
+  color: #303030;
+  height: 40.81px;
+  border-bottom: 1px solid #C7CCDC;
+}
+
+.botonExterno{
+  background-color: #fabb00;
+  width: auto;
+  height: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.36px;
+  color: #093c5d;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  box-shadow: 0px 2px 8px rgba(250, 187, 0, 0.4);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkboxitem {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.checkboxitem input[type="checkbox"]:checked + label:after {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: " ";
+  display: block;
+  background: #fabb00;
+}
+
+.checkboxitem label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  margin: 0 5px 0 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #c7ccdc;
+  background-color: transparent;
+}
+
+.checkboxitem input[type="checkbox"] {
+  display: none;
+}
+
+
+.iconoDescargar{
+  background-image: url('/src/assets/svg/icono_descargar_reporte.svg');
+  width: 9.33px;
+  height: 11.33px;
+  margin-right: 10.83px;
+}
+
+.botonDescargar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 16.43px 9px 12.4px;
+  cursor:pointer ;
+  border: none;
+  width: 160px;
+  height: 32px;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #093c5d;
+  border: solid 1px #e9ebf1;
+}
+
+.contenedorAccionesTitulo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  height: auto;
+  margin-left: 22px;
+  margin-top: 21px;
+}
+
+.pc_botonDispersarInactivo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 32px;
+  background-color: #fabb00;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #093c5d;
+  box-shadow: 0px 2px 8px rgba(250, 187, 0, 0.4);
+}
+
+.pc_iconoDispersar{
+  background-image: url('/src/assets/svg/icono_derecha_sin.svg');
+  width: 4.71px;
+  height: 8px;
+  margin-left: 10.5px;
+}

@@ -1,0 +1,229 @@
+.divGeneralModalAdd {
+  width: 520px;
+  height: 820px;
+  background-color: white;
+}
+.divTitleAddCompany {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  margin-bottom: 20px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #093c5d;
+}
+
+Form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-left: 76px;
+  margin-right: 76px;
+}
+
+/* Input {
+  width: 369px;
+  height: 32px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: solid 0.8px #c7ccdc;
+  background-color: #fff;
+} */
+.boxSubmitLogoP {
+  width: 369px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.boxSubmitLogo {
+  width: 150px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.text {
+  width: auto;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222;
+}
+
+.boxForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  width: 140px;
+  height: 32px;
+  background-color: #093c5d;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: none;
+}
+
+.TextField {
+  width: 369px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.boxLogo {
+  border: 1px solid #c7ccdc;
+  border-radius: 4px;
+  width: 370px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bottonLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+  height: 30px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #303030;
+}
+
+.buttonsAddEnterprise {
+  width: 110px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #093c5d;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxRegPrim {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 420px;
+  align-items: center;
+  justify-content: center;
+}
+
+.addReg {
+  width: 100px;
+  height: 24px;
+  /* margin: 0 0 0 85px; */
+  /* padding: 5px 5px 6px 11px; */
+  border-radius: 2px;
+  background-color: #fabb00;
+  border: none;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  color: #093c5d;
+}
+
+.boxPrimasAgregadas {
+  margin-top: 10px;
+  width: 420px;
+  height: 400px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.boxDatos {
+  /* border: 1px solid red; */
+  width: 400px !important;
+  background-color: #f1f2f5;
+  height: 32px;
+  margin-top: 10px;
+  display: flex;
+  border: solid 1px #c7ccdc;
+  border-radius: 4px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itemAdd {
+  margin-left: 10px;
+}
+
+.tilteBox {
+  width: 100%;
+  margin-left: 50px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #303030;
+}
+
+.sinRegistros {
+  margin-top: 35px;
+  opacity: 0.6;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  color: #303030;
+}

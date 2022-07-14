@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="27px" viewBox="0 0 60 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icono-flecha-derecha</title>
+    <g id="Admin-Bits" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nomina-1" transform="translate(-785.000000, -504.000000)">
+            <g id="Group-22" transform="translate(785.000000, 469.000000)">
+                <g id="icono-flecha-derecha" transform="translate(0.000000, 35.000000)">
+                    <rect id="Rectangle" stroke="#C7CCDC" fill="#F1F2F5" x="0.5" y="0.5" width="59" height="26" rx="8"></rect>
+                    <g id="arrow_forward_black_24dp-(2)" transform="translate(21.000000, 5.000000)">
+                        <polygon id="Path" points="0 0 17 0 17 17 0 17"></polygon>
+                        <path d="M3.54166667,9.20833333 L11.45375,9.20833333 L7.99708333,12.665 C7.72083333,12.94125 7.72083333,13.3945833 7.99708333,13.6708333 C8.27333333,13.9470833 8.71958333,13.9470833 8.99583333,13.6708333 L13.66375,9.00291667 C13.94,8.72666667 13.94,8.28041667 13.66375,8.00416667 L9.00291667,3.32916667 C8.72666667,3.05291667 8.28041667,3.05291667 8.00416667,3.32916667 C7.72791667,3.60541667 7.72791667,4.05166667 8.00416667,4.32791667 L11.45375,7.79166667 L3.54166667,7.79166667 C3.15208333,7.79166667 2.83333333,8.11041667 2.83333333,8.5 C2.83333333,8.88958333 3.15208333,9.20833333 3.54166667,9.20833333 Z" id="Path" fill="#093C5D" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

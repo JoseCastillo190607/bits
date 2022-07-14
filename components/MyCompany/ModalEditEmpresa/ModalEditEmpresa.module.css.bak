@@ -1,0 +1,212 @@
+.modalEditBox {
+  width: 854px;
+  height: 780px;
+}
+
+.titleEdit {
+  margin-top: 24px;
+  width: 100%;
+  height: 28px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #093c5d;
+  margin-bottom: 20px;
+}
+
+.boxForm {
+  /* border: 1px solid red; */
+  margin-top: 30;
+  width: 854px;
+  height: 674px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.boxLeft {
+  display: flex;
+  flex-direction: column;
+}
+.boxRigth {
+  height: 555px;
+  width: 399px;
+  background-color: #f1f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.boxTitleRight {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #303030;
+  margin-top: 19px;
+}
+.boxLogo {
+  border: 1px solid #c7ccdc;
+  border-radius: 4px;
+  width: 370px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.boxArchivoSubmit {
+  position: relative;
+  top: -9px;
+  width: 369px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #303030;
+}
+.boxSwitch {
+  position: relative;
+  top: -12px;
+  width: 369px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.formInput {
+  margin-bottom: 10px;
+}
+
+.bottonLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+  height: 30px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #303030;
+}
+
+.boxSubmitArchivo {
+  border: solid 0.8px #c7ccdc;
+  width: 150px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.buttonArchivo {
+  width: 150px;
+  height: 32px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #093c5d;
+  border: none;
+  background-color: transparent;
+}
+.formInputContraseña {
+  margin-bottom: 10px;
+  border: solid 0.8px #c7ccdc;
+  width: 369px;
+  height: 32px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.bottonSave {
+  background-color: #fabb00;
+  width: 129px;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #093c5d;
+}
+
+.texFieldEdit {
+  width: 369px;
+}
+
+.boxPrimasAgregadas {
+  margin-top: 10px;
+  width: 399px;
+  height: 400px;
+  background-color: #f1f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.boxDatos {
+  /* border: 1px solid red; */
+  width: 380px !important;
+  background-color: #fff;
+  height: 32px;
+  margin-top: 10px;
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itemAdd {
+  margin-left: 10px;
+}
+
+.buttonCancelar {
+  width: 129px;
+  height: 42px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: solid 0.8px #e1e1e1;
+}

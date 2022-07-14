@@ -1,0 +1,19 @@
+.container-miEmpresa{
+    width:1440px;
+    height:876px;
+    background-color: #f5f6f9
+}
+
+.Mi-Empresa{
+    width: 144px;
+    height: 30px;
+    margin: 33px 934px 18px 27px;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #093c5d;
+}

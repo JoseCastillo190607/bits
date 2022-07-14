@@ -1,0 +1,193 @@
+:root {
+    --color: #fff;
+    --backGroundRectangle: #154565;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px !important;
+    background-color: #04314d !important;
+    overflow-y: hidden !important;
+}
+
+/* Global rectangle */
+.Rectangle {
+    margin: 5px !important;
+    border-radius: 4px;
+    background-color: var(--backGroundRectangle);
+}
+
+.Graph {
+    min-height: 30vh;
+    height: 30vh;
+}
+
+.BodyContainer {
+    height: 100vh;
+    overflow-y: auto !important;
+    padding-bottom: 20vh !important;
+}
+
+.BodyContainerWhite {
+    background: #f5f6f9 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+    /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+/* Whitout Style */
+a {
+    text-decoration: none;
+}
+
+/* color Text */
+.color {
+    color: var(--color);
+}
+
+/* global title */
+.Title {
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #093c5d;
+}
+
+.IconButton {
+    border-radius: 4px;
+    border: solid 1px #c7ccdc;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.buttonModalSave {
+    background: #1976d2 !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+}
+
+.buttonModalCancel {
+    background: #eee !important;
+    border-radius: 8px !important;
+}
+
+.loading {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.buttonSave {
+    border-radius: 4px;
+    background-color: #fabb00 !important;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+}
+
+.buttonCancel {
+    font-size: 14px !important;
+    background: transparent !important;
+    color: black !important;
+    border-radius: 8px !important;
+    border: 1px solid #c5c3c3 !important;
+    border-radius: 8px !important;
+}
+
+
+.buttonFinishRegister{
+    background-color: #11ca73 !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+.buttonSave,
+.buttonSave span {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    color: #093c5d !important;
+    border-radius: 8px !important;
+}
+
+.swal2-container.swal2-backdrop-show,
+.swal2-container.swal2-noanimation {
+    z-index: 9999;
+}
+
+.MuiInput-underline:after,
+select {
+    border-bottom: none !important;
+}
+
+.MuiInput-underline:after{
+    border-bottom: 2px solid #fabb00 !important;
+}
+
+@media (max-width: 1000px) { 
+    body {
+        overflow-y:scroll !important;
+    }
+}
+
+footer span{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: #fff;
+    opacity: 0.3;
+    font-size: 14px;
+}
+
+.spanRequerido {
+    display: flex;
+    /* padding-top: inherit; */
+    padding: 10px;
+    color: tomato;
+    opacity: .5;
+}
+.swal2-confirm{
+    display: inline-block !important;
+    background-color: #FABB00 !important;
+    box-shadow: none !important;
+    color: #093C5D !important;
+    font-family: roboto !important;
+    font-weight: 500 !important;
+    border-radius: 8px !important;
+}
+
+
+.text-color-sweetalert{
+    color: #222222 !important;
+}

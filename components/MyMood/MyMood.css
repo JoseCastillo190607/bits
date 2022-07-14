@@ -1,0 +1,35 @@
+.badge-success {
+    color: #212529;
+    background-color: #4CCEAC;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.badge-secondary {
+    color: #212529;
+    background-color: #dfe8fb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.badge-info {
+    color: #212529;
+    background-color: #dfe8fb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.badge-warning {
+    color: #212529;
+    background-color: #dfe8fb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.badge-danger {
+    color: #212529;
+    background-color: #dfe8fb;
+    border-radius: 5px;
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+.Welcome__Screen{
+    background-image: url('../assets/pantalla-bienvenida.jpg');
+    background-size: cover;                     
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+    object-fit: fill !important;
+}
+
+.Welcome__User{
+    font-size: 52px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 6.5px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Welcome__Seeker{
+    opacity: 0.8;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Welcome__Text{
+    width: 800px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Welcome__App{
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.App-Store {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.WelcomeScreen__Images div{
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+}
+
+.WelcomeScreen__Images div img{
+    border-radius: 10px;
+}
+
+
+[type='password'] {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-width: calc(var(--border-width) * 1px);
+  border-style: solid;
+  border-color: var(--accent);
+  border-radius: 10px;
+  text-align: center;
+  outline: transparent;
+  width: 20%;
+  transition: border-color calc(var(--transition, 0.2) * 1s) ease;
+}
+
+[type='password']:invalid {
+    --accent: #fff;
+}
+
+[type='password']:-moz-placeholder-shown {
+  --accent: #fff;
+}
+
+[type='password']:-ms-input-placeholder {
+  --accent: #fff;
+}
+
+[type='password']:placeholder-shown {
+  --accent: #fff;
+}

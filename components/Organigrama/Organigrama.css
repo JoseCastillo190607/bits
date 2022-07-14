@@ -1,0 +1,459 @@
+.Lista {
+  width: 100%;
+  margin-right: 50px;
+  margin: 0px;
+  padding: 0px !important;
+}
+
+.Mask {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: solid 1px #f3f3f3;
+  background-color: #fff;
+  list-style: none;
+  margin-bottom: 4px !important;
+  padding: 10px 0px 10px 0px !important;
+}
+
+.contenedor2{
+  background-color: none;
+  margin-top: 13px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  min-height: 300px;
+}
+
+
+.pc_inputBuscador{
+  display: flex;
+  align-items: center;
+  width: 420px;
+  min-width: 420px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 15px;
+  height: 47px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #303030;
+}
+
+.pc_inputBuscador::placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #303030;
+  opacity: 0.6;
+}
+
+
+.contenedor_Principal {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  height: auto;
+  border-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: none !important;
+}
+
+.alineacionPuesto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+  height: 100%;
+}
+
+.opciones {
+  text-align: right !important;
+  display: block !important;
+}
+
+.alineacionBoton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.Puesto {
+  font-size: 16px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.circulo {
+  width: 33px;
+  height: 33px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.colorYellow {
+  background-color: #fabb00;
+  font-size: 28px;
+}
+
+.nombrePuesto {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+.nombre {
+  color: #000000;
+  font-weight: bold;
+}
+
+.nombreCorreo {
+  margin-left: 5px;
+  color: rgb(177, 168, 168)!Important;
+  font-size: 13px!Important;
+}
+
+.textoAreaJefe {
+  color: #323232;
+  font-size: 14px!Important;
+  font-weight: bold;
+}
+
+.imgCollaborator__BITSss {
+  width: 33px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+
+  /* padding: 9px */
+}
+
+.tituloBoton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botonAgregaPuesto {
+  background-color: #fabb00;
+  padding: 15px 15px;
+
+  height: 40px;
+  margin-right: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold !important;
+  border-radius: 8px !important;
+  font-size: 14px;
+  color: rgb(9, 60, 93);
+}
+
+.botonAgregarColaborador {
+  background-color: #fabb00;
+  cursor: pointer;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: rgb(9, 60, 93);
+}
+
+.contenedorBoton {
+  margin-left: 20px;
+}
+
+.sinPersona {
+  color: #323232;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.textoCirculo {
+  color: #093c5d;
+  width: 21px;
+  height: 15px;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.contenedorCentrado {
+  display: flex;
+  justify-content: center;
+}
+
+.nombreEliminar {
+  font-size: 38px;
+  color: #323232;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 73px 21px 72px;
+}
+
+.textoEliminar {
+  font-size: 16px;
+  font-weight: bold;
+  color: #323232;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 14px;
+}
+
+.inputEliminar {
+  width: 269px;
+  height: 42px;
+  margin: 20px 59px 24px;
+  border-radius: 8px;
+  border: solid 1px #c7ccdc;
+}
+
+.botonEliminarPuesto {
+  background-color: #d31313;
+  padding: 15px 15px;
+  margin-top: 20px;
+  margin-right: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 3px 4px 0 rgba(211, 19, 19, 0.4);
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.botonEliminarPuestoFalse {
+  background-color: rgba(211, 19, 19, 0.4);
+  padding: 15px 15px;
+  margin-top: 20px;
+  margin-right: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 3px 4px 0 rgba(211, 19, 19, 0.4);
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.inputInfoPuesto {
+  background-color: #f5f6f9;
+  width: 271px;
+}
+
+.espacioTextAreaInfoPuesto {
+  background-color: #f5f6f9;
+  border-color: red !important;
+  width: 271px;
+}
+
+.botonCerrarInfo {
+  height: 34px;
+  background-color: #fabb00;
+  width: 100px;
+  border-radius: 4px;
+  border: solid 0.8px #e1e1e1;
+  padding: 11px 32px 8px 31px;
+  margin: 50px 0 21px 50px;
+  cursor: pointer;
+}
+
+.contenedorBotonCerrarInfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.textoBotonCerrar {
+  color: #093c5d;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.alignContenedorBoton {
+  display: flex;
+  align-items: center;
+}
+
+.contenedorBotones {
+  display: flex;
+  justify-content: flex-end;
+  margin: 32px;
+}
+
+.botonCancelarUsuarios {
+  width: 100px;
+  height: 40px;
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: solid 0.8px #e1e1e1;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.BotonCancelarUsuariosAmarillo {
+  width: 100px;
+  height: 40px;
+  padding: 16px 40px;
+  border-radius: 4px;
+  border: solid 0.8px #e1e1e1;
+  margin-right: 10px;
+  background-color: #fabb00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textoBotonCancelarUsuariosAmarillo {
+  color: #093c5d;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: bold;
+}
+
+.ContenedorHistorial {
+  border: solid 1px #c7ccdc;
+  border-radius: 4px;
+  width: 68%;
+  margin-top: 15px;
+}
+
+.ContenedorTituloHistorial {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #323232;
+  font-weight: 700;
+}
+
+.ContenedorSubtituloHistorial {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f6f9;
+  height: 24px;
+  align-items: center;
+}
+
+.ContenedorSubtituloHistorialFecha {
+  width: 20%;
+  color: #323232;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 11px;
+}
+.ContenedorSubtituloHistorialDescripcion {
+  width: 80%;
+  color: #323232;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.ContenedorSubtituloHistorialLista {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  align-items: center;
+}
+
+.listaHistorial {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.ContenedorPrincipalHistorial {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ContenedorSubtituloHistorialFechaLista {
+  height: 24px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #c7ccdc;
+  font-size: 11px;
+  color: #222;
+  opacity: 0.6;
+}
+.ContenedorSubtituloHistorialDescripcionLista {
+  height: 24px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid 1px #c7ccdc;
+  font-size: 11px;
+  color: #222;
+  opacity: 0.6;
+  padding-left: 10px;
+}
+.UlListaHistorial {
+  margin: 0px;
+  padding: 0px;
+}
+
+.ContenedorListaOrganigrama {
+  width: 100% !important;
+  margin-top: 25px;
+}
+
+.listacolaborador {
+  padding: 10px !important;
+}
+
+.inputInfoPuesto, .espacioTextAreaInfoPuesto, .ContenedorHistorial
+{
+  width: 100%!Important;
+}
+
+.ContenedorHistorial{
+  margin-top: 20px;
+}
+.dialogoContent
+{
+  padding: 10px 30px!Important;
+}
+
+.botonCerrarInfo
+{
+  margin: 15px 0px 15px 0px!Important;
+}

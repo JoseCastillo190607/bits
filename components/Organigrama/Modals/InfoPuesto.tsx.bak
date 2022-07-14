@@ -1,0 +1,307 @@
+import react, {useState, useEffect, useContext} from "react";
+import {
+    createStyles,
+    Theme,
+    Grid,
+    Dialog,
+    DialogContent,
+    Typography,
+    Button,
+    withStyles,
+    WithStyles,
+    Box,
+    FormControl,
+    Select,
+    TextField,
+} from '@material-ui/core';
+import { OutlinedInput } from '@mui/material';
+import MuiDialogContent from '@material-ui/core/DialogContent';
+import MuiDialogActions from '@material-ui/core/DialogActions';
+import { closeOrganigramaModal } from "../../Team/Modals/ModalOrganigramaModal";
+import { getUsersDisponiblesPuesto, putUserPuestos, getUsersPuesto } from "../../../services/auth/userService";
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import '../Organigrama.css'
+import OrganigramaContext from "../../../context/OrganigramaContext/OrganigramaContext"
+import HistorialPuesto from "../HistorialPuesto";
+import ImagenColaborador from "../ImagenColaborador";
+
+
+
+const InfoPuesto = () =>{
+    const {state, dispatch} = useContext(OrganigramaContext)
+    const [cambio, setCambio] = useState(0)
+    const [valor, setValor] = useState()
+
+    const [adminsDisponibles, setUserDisponibles] = useState([])
+
+    
+    const handleClose = async () => {
+        await closeOrganigramaModal(dispatch)
+    }
+
+    function UsuariosDisponibles () {
+
+        const agregaUsuario = async (idUsuario: any, idPuesto: any, Puesto: any) =>{
+            let mensaje = `Usuario agregado a ${state.value}`
+            if (idPuesto === 'vacio'){
+                let idPuestoActualizado = state._id
+                let PuestoActualizado = state.value
+                const usuarioActualizado =  await putUserPuestos(idUsuario, state._id, state.client, mensaje)
+                setCambio(cambio + 1)
+            }else{
+                let idPuestoActualizado = (`${state._id},${idPuesto}`)
+                let PuestoActualizado = (`${state.value},${Puesto}`)
+                const usuarioActualizado =  await putUserPuestos(idUsuario, state._id, state.client, mensaje)
+                setCambio(cambio + 1)
+            }
+        }
+
+        useEffect(()=>{
+            obtenerDatos();
+        },[])
+
+        const obtenerDatos = async () =>{
+            let admins = await getUsersDisponiblesPuesto(state._id);
+            setUserDisponibles(admins.data)
+       }
+
+       const sidebar = (
+        <Box className="contenedorUsuarios">
+
+        <ul>
+            {adminsDisponibles?.map((lis:any)=>
+                <li key={lis._id} className="contenedorLista">
+                    <Box className="listaAdministradores">
+                        <Box>
+                            <img
+                                src={lis.img ? lis.img : '/assets/svg/user-avatar.svg'}
+                                alt="img"
+                                className="imgCollaborator__BITS"
+                            />
+                        </Box>
+                        <Box>
+                            <p className="textoLista" title={lis.Usuario}>{lis.Nombre}</p>
+                        </Box>
+                    </Box>
+                    <Box>
+
+                        <AddCircleIcon 
+                            className="botonAgregar"
+                            onClick={()=> agregaUsuario(lis._id,state._id, state.client)}
+                            />
+                    </Box>
+                </li>    
+            )}
+        </ul>
+        </Box>
+
+    );
+    return(
+        <div>
+            {sidebar}
+        </div>
+    )
+}
+
+
+function UserAsignadoPuesto(){
+    const [userDisponibles, setUserDisponibles] = useState([])
+    const eliminaUsuario = async (idUsuario: any, idPuesto: any, Puesto: any) =>{
+      
+        let mensaje = `Usuario eliminado de ${state.value}`
+        if (idPuesto === 'vacio'){
+            let idPuestoActualizado = state._id
+            let PuestoActualizado = state.NombrePuesto
+            const usuarioActualizado =  await putUserPuestos(idUsuario, idPuestoActualizado, PuestoActualizado, mensaje) 
+            setCambio(cambio + 1)
+        }else{
+            let idPuestoActualizado = (`${state._id},${idPuesto}`)
+            let PuestoActualizado = (`${state.NombrePuesto},${Puesto}`)
+            const usuarioActualizado =  await putUserPuestos(idUsuario, idPuestoActualizado, PuestoActualizado, mensaje)
+            setCambio(cambio + 1)
+        }
+    }
+    
+    useEffect(()=>{
+        obtenerDatos();
+    },[])
+
+    const obtenerDatos = async () =>{
+        let admins = await getUsersPuesto(state.NombrePuesto);
+        setUserDisponibles(admins.data)
+   }
+
+    const sidebar = (
+        <Box className='contenedorUsuariosPuestoInfo'>
+            <ul className='ulLista'>
+                {userDisponibles?.map((lis:any)=>
+                    <li key={lis._id} className="contenedorListaUsuariosPuesto">
+                        <div className='alineacionPuestoUsuario'>
+                            <div className="contenedorListaUsuarioBoton">
+                                <div>
+                                    {(lis.ImagenUsuario === undefined)?
+                                        <ImagenColaborador Nombre={lis.NombreUsuario} Apellido={lis.ApellidoUsuario}/>
+                                    :
+                                    <img    
+                                        src={lis.ImagenUsuario}
+                                        alt="img"
+                                        className="imgCollaborator__BITSss"
+                                    />
+                                    }
+                                </div>
+                                <div>
+                                    <div className='nombrePuesto'>
+                                        <span className='textoListaUsuario'>{lis.PrimerNombre} {lis.ApellidoUsuario}</span>
+                                    </div>
+                                    <div className='nombrePuesto'>
+                                        <span className='correoListaUsuario'>{lis.Usuario}</span>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>    
+                )}
+            </ul>
+        </Box>
+    );
+    return(
+        <div>
+            {sidebar}
+        </div>
+    )
+}
+
+
+    return(
+        <Dialog aria-labelledby='costumized-dialog-title' open={state.showInformacion} fullWidth={true}  onClose={handleClose} maxWidth={"sm"}>
+            <Box>
+                <p className="titulo">Información del puesto</p>
+            </Box>
+            <DialogContent>
+            <Box>
+            <Grid container spacing={1}>
+                        <Grid item xs={12}>
+                            <Box className="columnaGeneralPuesto">
+                                <Box className='contenedorizquierdo'>
+                                    <Grid container spacing={1} className="filaInput">
+                                        <Grid item xs={3}>
+                                            <div className="espacioTitulos">
+                                                <span>Nombre del puesto</span>
+                                            </div>
+                                        </Grid> 
+                                        <Grid item xs={8}>
+                                            <div className="espacioInputs">
+                                                <TextField
+                                                    error={false}
+                                                    type="text"
+                                                    variant="outlined"
+                                                    size="small"
+                                                    className="inputInfoPuesto"
+                                                    disabled
+                                                    value={state.NombrePuesto}
+                                                    />
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </Box>
+                                <Box className='contenedorizquierdo'>
+                                    <Grid container spacing={1} className="filaInput">
+                                        <Grid item xs={3}>
+                                            <div className="espacioTitulos">
+                                                <span>Área</span>
+                                            </div>
+                                        </Grid> 
+                                        <Grid item xs={8}>
+                                            <div className="espacioInputs">
+                                            <TextField
+                                                    error={false}
+                                                    type="text"
+                                                    variant="outlined"
+                                                    size="small"
+                                                    className="inputInfoPuesto"
+                                                    disabled
+                                                    value={state.AreaProyecto}
+                                                   />
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </Box>
+                                <Box className='contenedorizquierdo'>
+                                    <Grid container spacing={2} className="filaInput">
+                                        <Grid item xs={3}>
+                                            <div className="espacioTitulos">
+                                                <span>Puesto superior</span>
+                                            </div>
+                                        </Grid> 
+                                        <Grid item xs={8}>
+                                            <div className="espacioInputs">
+                                            <TextField
+                                                    error={false}
+                                                    type="text"
+                                                    variant="outlined"
+                                                    size="small"
+                                                    className="inputInfoPuesto"
+                                                    disabled
+                                                    value={state.AreaProyecto}
+                                                   />
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </Box>
+                                <Box className='contenedorizquierdo'>
+                                    <Grid container spacing={1} className="filaInput">
+                                        <Grid item xs={2}>
+                                            <div className="espacioTitulos">
+                                                <span className="tituloDescripcion">Colaborador</span>
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={9}>
+                                            <UserAsignadoPuesto />
+                                        </Grid>
+                                    </Grid>
+                                </Box>
+                                <Box className='contenedorizquierdo'>
+                                    <Grid container spacing={2} className="filaInput ">
+                                        <Grid item xs={3}>
+                                            <div className="espacioTitulosTextarea">
+                                                <span className="tituloDescripcion">Descripción</span>
+                                            </div>
+                                        </Grid> 
+                                        <Grid item xs={8}>
+                                            <div className="espacioTitulosTextarea" >
+                                                <TextField
+                                                    error={false}
+                                                    type="text"
+                                                    variant="outlined"
+                                                    multiline
+                                                    rows={4}
+                                                    size="small"
+                                                    value={state.Descripcion}
+                                                    disabled
+                                                    className="espacioTextAreaInfoPuesto"
+                                                    placeholder='Escribe lo que se debe realizar en el puesto...'
+                                                />
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </Box>
+                            </Box>
+                        </Grid>
+                        </Grid>
+
+                    </Box>
+                    <HistorialPuesto idPuesto={state._id} />
+            </DialogContent>
+            <div className="contenedorBotonCerrarInfo">
+                <button className="botonCerrarInfo" onClick={handleClose}>
+                    <div className="alignContenedorBoton">
+                      <span className="textoBotonCerrar">Cerrar</span>
+                    </div>
+                </button>
+            </div>
+        </Dialog>
+    )
+}
+
+export default InfoPuesto

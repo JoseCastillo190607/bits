@@ -1,0 +1,42 @@
+import { Route, Switch } from "react-router";
+import CandidateScreen from "../screens/CandidateScreen";
+import LoginScreen from "../screens/LoginScreen";
+import MiEmpresaScreen from "../screens/MiEmpresaScreen";
+import PasswordScreen from "../screens/PasswordScreen";
+import WelcomeScreen from "../screens/WelcomeScreen";
+
+import '../styles/Welcome.css';
+
+const BitsPublicRouter = () => {
+    return (
+        <div>
+            <Switch>
+                <Route
+                    path="/login"
+                    component={LoginScreen}
+                />
+
+                <Route
+                    path="/candidate/:register/:token/:tab"
+                    component={CandidateScreen}
+                />
+                {/* Regresar el componente de WelcomeScreen */}
+                <Route
+                    path="/Bienvenido"
+                    component={WelcomeScreen}
+                />
+
+                <Route
+                    path="/Contraseña/:email"
+                    component={PasswordScreen}
+                />
+                <Route 
+                    path="/Miempresa"
+                    component={MiEmpresaScreen}
+                />
+            </Switch>
+        </div>
+    )
+}
+
+export default BitsPublicRouter;

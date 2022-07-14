@@ -1,0 +1,12 @@
+.calendar__container {
+    background-color: #fff;
+}
+
+.calendar__boxProjects {
+    border: 1px solid grey;
+    background-color: lavender;
+    padding: 1px;
+    border-radius: 40%;
+    min-width: 30px;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-aniversario</title>
+    <g id="Admin-Bits" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="calendario" transform="translate(-561.000000, -314.000000)">
+            <g id="colaboradores" transform="translate(270.000000, 168.000000)">
+                <g id="declinados-list" transform="translate(27.000000, 131.000000)">
+                    <g id="icon-aniversario" transform="translate(264.000000, 15.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                        <g id="Group" transform="translate(2.000000, 1.000000)" fill="#848484" fill-rule="nonzero">
+                            <polygon id="Path" points="0 21 14 16 5 7"></polygon>
+                            <path d="M12.53,11.53 L18.12,5.94 C18.61,5.45 19.4,5.45 19.89,5.94 L20.48,6.53 L21.54,5.47 L20.95,4.88 C19.88,3.81 18.13,3.81 17.06,4.88 L11.47,10.47 L12.53,11.53 Z" id="Path"></path>
+                            <path d="M8.06,5.88 L7.47,6.47 L8.53,7.53 L9.12,6.94 C10.19,5.87 10.19,4.12 9.12,3.05 L8.53,2.46 L7.47,3.53 L8.06,4.12 C8.54,4.6 8.54,5.4 8.06,5.88 Z" id="Path"></path>
+                            <path d="M15.06,10.88 L13.47,12.47 L14.53,13.53 L16.12,11.94 C16.61,11.45 17.4,11.45 17.89,11.94 L19.5,13.55 L20.56,12.49 L18.95,10.88 C17.87,9.81 16.13,9.81 15.06,10.88 Z" id="Path"></path>
+                            <path d="M13.06,4.88 L9.47,8.47 L10.53,9.53 L14.12,5.94 C15.19,4.87 15.19,3.12 14.12,2.05 L12.53,0.46 L11.47,1.52 L13.06,3.11 C13.54,3.6 13.54,4.4 13.06,4.88 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

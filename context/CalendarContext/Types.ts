@@ -1,0 +1,7 @@
+export enum Types {
+    OPEN_MODAL = 'OPEN_MODAL',
+    OPEN_MENU = 'OPEN_MENU',
+    CLOSE_MENU = "CLOSE_MENU",
+    UPDATE_DATE = "UPDATE_DATE",
+    OPEN_MODAL_EDIT = "OPEN_MODAL_EDIT"
+};

@@ -1,0 +1,463 @@
+.Informacin-general {
+  width: 212px;
+  height: 25px;
+  margin: 0px 848px 21px 26px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.61px;
+  color: #323232;
+}
+/* TODO: Cambiarle el nombre a la clase*/
+.generalPrueba {
+  display: flex;
+  justify-content: center;
+}
+
+.Wrapp-info {
+  width: 1097px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 160px;
+  margin: 21px 0 0;
+  padding: 20px 26px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+
+.img-Info {
+  border: solid 1px #c7ccdc;
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  border: solid 1px #c7ccdc;
+}
+
+.Wrapp-info-text {
+  margin-left: 26px;
+}
+
+.Nombre {
+  width: 61px;
+  height: 19px;
+  margin: 0px 678px 6px 26px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  color: #323232;
+}
+
+.IT-Seekers-Company {
+  width: 210px;
+  height: 25px;
+  margin: 6px 529px 21px 26px;
+  opacity: 0.6;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.61px;
+  color: #323232;
+}
+
+.Fecha-de-fundacion {
+  width: 149px;
+  height: 19px;
+  margin: 6px 529px 21px 26px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  color: #323232;
+}
+
+.Junio-2014 {
+  width: 108px;
+  height: 19px;
+  margin: 6px 529px 21px 26px;
+  opacity: 0.6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  color: #323232;
+}
+
+.wrapp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonEditarCompania {
+  width: 160px;
+  height: 31px;
+  color: #093c5d;
+  background-color: #fff;
+  border: solid 1px #e9ebf1;
+  border-radius: 8px !important;
+  position: relative;
+  left: -40px;
+  font-family: Roboto;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttonEditarCompaniaOnEdit {
+  width: 160px;
+  height: 38px;
+  color: #093c5d;
+  background-color: #fff;
+  border: solid 1px #e9ebf1;
+  font-weight: 500;
+  border-radius: 8px !important;
+  position: relative;
+  left: -40px;
+  font-family: Roboto;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.button-Agregar-Compania {
+  width: 145px;
+  height: 28px;
+  border-radius: 8px !important;
+  border: solid 1px #e9ebf1;
+  background-color: #fabb00;
+  font-size: 13px;
+  font-weight: 800;
+  color: #093c5d;
+  font-family: Roboto;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.box-TuCompania {
+  /* border: 1px solid red; */
+  width: 1097px;
+  height: 32px;
+  margin: 21px 0 0;
+  padding: 0px 26px;
+  background-color: #e9ebf1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-Companias {
+  width: 1097px;
+  padding: 0px 26px;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+}
+
+.box-span {
+  padding: 14px;
+  border-bottom: 1px solid #c7ccdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.span-Companias {
+  width: 244px;
+  height: 19px;
+  opacity: 0.6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  color: #323232;
+}
+
+/*Inicio*/
+
+.contenedorBaseCompania {
+  /* border: 1px solid red; */
+  width: 100%;
+  /* width: 100%; */
+  background-color: white;
+  height: 435px;
+  border-radius: 20px;
+}
+
+.contenedorCompania {
+  width: 100%;
+  height: 114px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoCompania {
+  width: 60px;
+  height: 60px;
+  border: solid 1px #c7ccdc;
+  border-radius: 12px;
+  margin-left: 21px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ 
+}
+
+.logoCompania img{
+  width: 30px;
+}
+
+.ImgLogo {
+  width: 100%!Important;
+}
+
+
+.text-cancel-file-expediente{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(243, 96, 96);
+  width: 15px;
+  height: 15px;
+  margin-top: -35px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  top: 30px;
+  right: -8px;
+}
+
+.logoCompania_div{
+  display: flex;
+  align-items: center;
+}
+.contenedorinv {
+  width: 100%;
+  height: 21px;
+}
+
+.contenedorColumnaCompania {
+  margin-top: 21px;
+  width: 33%;
+}
+.columnaCompaniaOnEdit {
+  margin-top: 21px !important;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columnaCompania {
+  margin-top: 21px !important;
+}
+.columnaCompaniaButton {
+  margin-top: 21px !important;
+  display: flex !important;
+  justify-content: flex-end;
+}
+
+.textoTitulosCompania {
+  font-family: "Roboto", sans-serif;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textoCompania {
+  font-family: "Roboto", sans-serif;
+  color: #323232;
+  font-size: 22px;
+  opacity: 0.8;
+}
+
+.cuadroEmpresa {
+  /* border: 1px solid red; */
+  min-width: 240px;
+  min-width: 100px;
+  height: 125px;
+  width: 240px;
+  margin-left: 23px;
+  box-shadow: 0 2px 8px 0 rgba(9, 60, 93, 0.2);
+  border-radius: 8px;
+  margin-bottom: 13px;
+}
+
+.contenedorEmpresas {
+  display: flex;
+  justify-content: flex-start;
+  /* border: 1px solid blue; */
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: 250px;
+}
+
+.lineaIzquierda {
+  width: 4px;
+  height: 68px;
+  border: 0;
+  background-color: #093c5d;
+}
+
+.flex {
+  display: flex;
+}
+
+.contenedorDatosEmpresa {
+  width: 230px;
+  margin-left: -100px;
+}
+
+.mt-12 {
+  margin-top: -12px;
+}
+
+.tituloContenedorEmpresa {
+  /* border: 1px solid red; */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #303030;
+  margin-bottom: 0;
+}
+
+.textoContenedorEmpresa {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.36px;
+  color: #303030;
+  opacity: 0.8;
+}
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mr-20 {
+  margin-right: -10px;
+}
+
+.contenedorTituloEmpresa {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28px;
+  margin-bottom: 17px;
+  border-top: solid 1px #e9ebf1;
+  padding-top: 28px;
+  width: 96%;
+}
+
+.tituloEmpresa {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #323232;
+  font-size: 22px;
+  letter-spacing: 0.61px;
+}
+
+.contenedorTablaSedes {
+  background-color: #fff;
+}
+
+.conceptsHeaders {
+  width: 250px !important;
+  border-radius: 12px;
+  background-color: #e9ebf1;
+  height: 36px;
+  margin-bottom: 14px;
+}
+
+.configBotonHeader {
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 110px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.activo {
+  background-color: #fabb00;
+  color: #093c5d;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.desactivo {
+  background-color: #e9ebf1;
+  color: #828385;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.conceptsHeaders {
+  margin-top: 40px;
+}
+
+.tituloTarjeta {
+  /* border: 1px solid red; */
+  font-family: Roboto;
+  font-size: 9px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  color: #000;
+  margin: 0;
+  padding: 0px;
+}
+.pdata {
+  /* border: solid 1px red; */
+  margin: 0px;
+  margin-bottom: 4px;
+  padding: 0px;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.31px;
+  color: #303030;
+}
+
+Input {
+  width: 250px;
+  height: 34px;
+  border-radius: 8px;
+}

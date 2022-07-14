@@ -1,0 +1,80 @@
+import { useState, useContext, useEffect } from "react";
+import { Box, Grid } from "@material-ui/core";
+import AddTable from "../Collaborators/CollaboratorTab/AddTable";
+import SearcherTable from "../Collaborators/CollaboratorTab/SearcherTable";
+import TableBits from "../TableBits/TableBits";
+import NewsOptionsField from "./Fields/NewsOptionsField";
+import { NewsContext } from "../../context/NewContext/NewContext";
+import { getNews } from "../../services/newService";
+import ProjectsField from "../Notification/Fields/ProjectsField";
+import TitleField from "../Calendar/Fields/TitleField";
+import DateField from "./Fields/DateField";
+import {AdminContext} from '../../context/AdminContext/AdminContext'
+
+
+const columns: any = [
+    { id: "customDate", label: 'Fecha', align: 'left' },
+    { id: "Autor", label: 'Autor', align: 'left' },
+    { id: "Titulo", label: 'Título', align: 'left' },
+    { id: "Proyectos", label: 'Proyectos', align: 'left' },
+];
+
+const Body = () => {
+    const [news, setNews] = useState<Array<any>>([]);
+    const [newsFilter, setNewsFilter] = useState<Array<any>>([]);
+    const {state, dispatch } = useContext(NewsContext);
+    const {adminState} = useContext(AdminContext)
+
+    useEffect(() => {
+        async function fetchData() {
+            let result = await getNews();
+            let ProyectosAdmin = adminState?.Proyectos?.Proyectos
+            let ArrayFiltrado = result.filter((r:any) => ProyectosAdmin?.includes(r.Proyectos))
+            setNews(ArrayFiltrado);
+            setNewsFilter(ArrayFiltrado);
+        }
+        fetchData();
+    }, [state.sent]);
+
+    
+    return (
+        <Box display="flex" flexDirection="column" p={2}>
+            <Box p={1} pb={3} display="flex" flexDirection="row" >
+                <Grid container justify="flex-start">
+                    <SearcherTable
+                        initState={news}
+                        setState={setNewsFilter}
+                        label={"Buscar por Autor / Titulo / Proyecto(s) / Fecha"}
+                        fields={['Autor', 'Titulo', 'Proyectos', 'customDate']}
+                        width={400}
+                    />
+                </Grid>
+                <Box
+                    display="flex"
+                    flexDirection="row"
+                    justifyContent="flex-end"
+                    style={{ width: "100%" }}
+                >
+                    {(adminState?.PermisosContex?.Modulos?.Noticias?.Agregar) === true?
+                    <AddTable
+                        func={() => dispatch({ type: "OPEN_MODAL" })}
+                        img={"icono-agregar-event.svg"}
+                        text={"CREAR NUEVA NOTICIA"}
+                    />
+                    :null                    
+                    }
+
+                </Box>
+            </Box>
+
+            <TableBits
+                columns={columns}
+                rows={newsFilter}
+                components={[DateField, TitleField, null, ProjectsField]}
+                componentOptions={NewsOptionsField}
+            />
+        </Box>
+    )
+}
+
+export default Body;

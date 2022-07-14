@@ -1,0 +1,71 @@
+#WelcomeUser{
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding: 20px 20px 0;
+}
+
+#NoticesSpan {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+  
+#NoticeSpan {
+    color: #2186c6;
+}
+  
+#ReadMore {
+    color: #fabb00;
+}
+
+#allNotices{
+    margin: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.MuiTypography-colorTextSecondary{
+    color:white !important;
+}
+
+.ImageNotice{
+    border-radius: 8px;
+}
+
+#WatchNotice{
+    height: 16px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fabb00;
+}
+
+.NoticeList{
+    overflow-x: auto;
+    width: auto;
+    display: flex;
+    margin: 20px;
+}
+
+.CardNotice{
+    display: inline-block;
+}

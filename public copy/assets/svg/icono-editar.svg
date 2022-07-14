@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icono-editar</title>
+    <g id="Admin-Bits" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3-estructura-de-equipo" transform="translate(-610.000000, -287.000000)" fill="#2186C6" fill-rule="nonzero">
+            <g id="sedes" transform="translate(270.000000, 191.000000)">
+                <g id="line1" transform="translate(20.000000, 78.000000)">
+                    <g id="edit_black_24dp" transform="translate(315.000000, 13.000000)">
+                        <path d="M5,16.244549 L5,18.6086651 C5,18.8264127 5.17108735,18.9975 5.38883488,18.9975 L7.75295098,18.9975 C7.85404805,18.9975 7.95514512,18.9586165 8.0251354,18.8808495 L16.5172893,10.3964724 L13.6010276,7.48021073 L5.11665047,15.9645879 C5.03888349,16.0423549 5,16.1356753 5,16.244549 Z M18.7725316,8.14123004 C19.0758228,7.83793883 19.0758228,7.34800687 18.7725316,7.04471566 L16.9527843,5.22496841 C16.6494931,4.9216772 16.1595612,4.9216772 15.85627,5.22496841 L14.4331343,6.64810408 L17.3493959,9.56436571 L18.7725316,8.14123004 Z" id="icono-editar"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

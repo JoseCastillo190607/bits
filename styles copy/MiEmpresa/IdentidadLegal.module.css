@@ -1,0 +1,140 @@
+.contenedorNuevo{
+  display: flex;
+  justify-content: center;
+  margin-top: 31px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputLegal{
+  color: red;
+  width: 369px;
+  font-size: 8px;
+}
+
+.inputEjemplo{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.contenedorInput{
+  width: 100%;
+}
+
+.contenedorInternoLogo{
+  width: 390px;
+  height: 40px;
+
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: rgb(146,146, 146)
+}
+
+.textInternoLogo{
+  margin-left: 10px;
+}
+
+.contenedorInputLogo{
+  width: 420px;
+  display: flex;
+  height: 40px;
+  border: solid 1px #cbcbcb;
+  border-radius: 4px;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.contenedorInternoIconoLogo div{
+  height: 41px;
+  width: 40px;
+}
+
+.contenedorInternoIconoLogo{
+  width: 24px;
+  height: 24px;
+  background-color: #FABB00;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorInternoIconoLogoWithFile div{
+  height: 47px;
+  width: 40px;
+}
+.contenedorInternoIconoLogo:active{
+  background-color: #fddb73;
+}
+.iconoLogo{
+  background-image: url('/src/assets/svg/icono_subir_logo.svg');
+  width: 11px;
+  height: 14px;
+}
+
+.iconoSiguiente{
+  background-image: url('/src/assets/svg/icono_siguiente_empresa.svg');
+  width: 6.59px;
+  height: 11.17px;
+  margin-left: 12.50px;
+}
+
+.contenedorBotones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 31px;
+}
+
+.botonCancelar{
+  background-color: #fff;
+  border: 0.8px solid #C7CCDC;
+  height: 40px !important; 
+  cursor: pointer !important;
+  width: 100px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  border-radius: 8px !important;
+  font-family: 'Roboto';
+  line-height: 16px;
+  color: #093C5D;
+  margin-right: 16px;
+}
+
+.botonSiguiente{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px !important; 
+  cursor: pointer !important;
+  width: auto !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  border-radius: 8px !important;
+  background-color: #FABB00;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  line-height: 16px;
+  color: #093C5D;
+}
+
+.botonSiguiente:active{
+  background-color: #fddb73;
+}
+
+.contenedorError{
+  width: 100%;
+  text-align: center;
+  height: 23px;
+}
+
+.contenedorError > span{
+  font-family: 'Roboto', sans-serif;
+  color: #E0544B;
+  font-size: 11px;
+}

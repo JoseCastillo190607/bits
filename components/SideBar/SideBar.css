@@ -1,0 +1,254 @@
+:root{
+    --widthMenu:50px;
+    --marginLi:0;
+    --visibleText:hidden;
+    --heightA:0px;
+    --widthLi:60%;
+    --marginRightIconMenu:0;
+    --locationIconMenu:center;
+    --IconSelected:"dashboard-select";
+}
+
+.RectangleSideBar {
+    background-color: #154565;
+    width: var(--widthMenu) !important;
+    margin-top: 1px !important;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.RectangleSideBar nav ul{
+    padding-left: 5px;
+}
+nav{
+    height: 81vh;
+    overflow-x:auto;
+    overflow-y: scroll;
+}
+
+nav ul li{
+    overflow: hidden;
+    list-style: none;
+    padding: 5px;
+    min-height: 30px;
+    height: auto;
+    display:flex;
+    align-items: center;
+    margin: var(--marginLi);
+    margin-top: 5px;
+    width: var(--widthLi);
+}
+
+nav ul li#dashboardIcon{
+    padding-top: 0px !important;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li.selected{
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #fabb00;
+}
+
+nav ul li#IconMenu{
+    display: flex;
+    justify-content:var(--locationIconMenu);
+    margin-right: var(--marginRightIconMenu) !important;
+    padding-top: 0px !important;
+    margin: 0px;
+}
+
+nav ul li#IconMenu img{
+    border: 4px solid #154565 !important;
+    border-radius: 25px;
+    z-index: 99;
+}
+
+nav ul li#IconMenu:hover{
+    background: none !important;
+}
+
+nav ul li span{
+    visibility: var(--visibleText);
+    width: auto;
+    color:#fff;
+    opacity: 0.6;
+    margin: 6px;
+    height: var(--heightA);
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+nav ul li:hover span{
+    visibility: var(--visibleText);
+    width: auto;
+    color:#fff;
+    opacity: 0.6;
+    margin: 6px;
+    height: var(--heightA);
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+nav ul li.selected span{
+    color:#093c5d;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 14px;
+}
+
+nav ul li:hover .arrowRigthBlue{
+    visibility: var(--visibleText);
+}
+
+nav ul li .arrowRigthBlue{
+    margin-left: auto;
+    visibility: hidden;
+}
+
+/* Images li */
+nav ul li img{
+    height: 25px;
+}
+
+nav ul li#IconMenu img{
+    content: url("../..//assets/svg/icono-expander.svg");
+    cursor: pointer;
+}
+
+nav ul li#dashboardIcon img{
+    content: url("../..//assets/svg/icono-dashboard.svg");
+}
+nav ul li#dashboardIcon:hover img{
+    content: url("../..//assets/svg/icono-dashboard.svg");
+}
+
+nav ul li#dashboardIcon.selected img{
+    content: url("../..//assets/svg/icono-dashboard-select.svg") !important;
+}
+
+nav ul li#teamIcon img{
+    content: url("../..//assets/svg/icono-estructura.svg");
+}
+nav ul li#teamIcon:hover img{
+    content: url("../..//assets/svg/icono-estructura.svg");
+}
+
+nav ul li#teamIcon.selected img{
+    content: url("../..//assets/svg/icono-estructura-select.svg");
+}
+
+nav ul li#colaboradoresIcon img{
+    content: url("../..//assets/svg/icono-colaboradores.svg");
+}
+nav ul li#colaboradoresIcon:hover img{
+    content: url("../..//assets/svg/icono-colaboradores.svg");
+}
+
+nav ul li#colaboradoresIcon.selected img{
+    content: url("../..//assets/svg/icono-colaboradores-select.svg");
+}
+
+nav ul li#mymoodIcon img{
+    content: url("../..//assets/svg/icono-my-mood.svg");
+}
+nav ul li#mymoodIcon:hover img{
+    content: url("../..//assets/svg/icono-my-mood.svg");
+}
+nav ul li#mymoodIcon.selected img{
+    content: url("../..//assets/svg/icono-my-mood-select.svg");
+}
+
+nav ul li#notificationsIcon img{
+    content: url("../..//assets/svg/icono-notificaciones.svg");
+}
+nav ul li#notificationsIcon:hover img{
+    content: url("../..//assets/svg/icono-notificaciones.svg");
+}
+nav ul li#notificationsIcon.selected img{
+    content: url("../..//assets/svg/icono-notificaciones-select.svg");
+}
+
+nav ul li#noticesIcon img{
+    content: url("../..//assets/svg/icono-noticias.svg");
+}
+nav ul li#noticesIcon:hover img{
+    content: url("../..//assets/svg/icono-noticias.svg");
+}
+
+nav ul li#noticesIcon.selected img{
+    content: url("../..//assets/svg/icono-noticias-select.svg");
+}
+
+nav ul li#calendarIcon img{
+    content: url("../..//assets/svg/icono-calendario.svg");
+}
+nav ul li#calendarIcon:hover img{
+    content: url("../..//assets/svg/icono-calendario.svg");
+}
+nav ul li#calendarIcon.selected img{
+    content: url("../..//assets/svg/icono-calendario-select.svg");
+}
+
+nav ul li#feedbackIcon img{
+    content: url("../..//assets/svg/icono-feedback.svg");
+}
+nav ul li#feedbackIcon:hover img{
+    content: url("../..//assets/svg/icono-feedback.svg");
+}
+nav ul li#feedbackIcon.selected img{
+    content: url("../..//assets/svg/icono-feedback-select.svg");
+}
+
+nav ul li#organigramaIcon img{
+    content: url("../..//assets/svg/icono-organigrama.svg");
+}
+nav ul li#organigramaIcon:hover img{
+    content: url("../..//assets/svg/icono-organigrama.svg");    
+}
+nav ul li#organigramaIcon.selected img{
+    content: url("../..//assets/svg/icono-organigrama-select.svg");
+}
+
+nav ul li#empresaIcon img{
+    content: url("../..//assets/svg/icono-miEmpresa.svg");
+}
+nav ul li#empresaIcon:hover img{
+    content: url("../..//assets/svg/icono-miEmpresa.svg");    
+}
+nav ul li#empresaIcon.selected img{
+    content: url("../..//assets/svg/icono-miEmpresa-select.svg");
+}
+
+nav ul li#payrollIcon img{
+    content: url("../..//assets/svg/icono-nomina.svg");
+}
+nav ul li#payrollIcon:hover img{
+    content: url("../..//assets/svg/icono-nomina.svg");    
+}
+nav ul li#payrollIcon.selected img{
+    content: url("../..//assets/svg/icono-nomina-select.svg");
+}
+
+nav ul li#configPayrollIcon img{
+    content: url("../..//assets/svg/icono-configuracion-nomina.svg");
+}
+nav ul li#configPayrollIcon:hover img{
+    content: url("../..//assets/svg/icono-configuracion-nomina.svg");    
+}
+nav ul li#configPayrollIcon.selected img{
+    content: url("../..//assets/svg/icono-configuracion-nomina-select.svg");
+}
+/* End Images li */

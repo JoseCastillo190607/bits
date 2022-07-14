@@ -1,0 +1,15 @@
+import Swal from "sweetalert2";
+
+export const SuccessfulAlert = ({
+    title = '¡Éxito!',
+    text = '',
+    confirmButtonText = 'Entendido'
+}) => Swal.fire({
+    icon: 'success',
+    title,
+    text,
+    confirmButtonText,
+    customClass: {
+        confirmButton: 'buttonSave',
+    }
+});

@@ -1,0 +1,70 @@
+.titleAddCompany {
+  text-align: center;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #093c5d;
+  margin-bottom: 20px;
+}
+.boxForms {
+  display: flex;
+  width: 420px;
+  height: 32px;
+  width: 100%;
+  justify-content: center;
+}
+.boxFormsField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  background-color: #f1f2f5;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #093c5d;
+}
+.boxFormsEmpty {
+  display: flex;
+  border-bottom: 2px solid #c7ccdc;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 140px;
+  background-color: #f1f2f5;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #093c5d;
+}
+
+.boxFormsFull {
+  display: flex;
+  border-bottom: 2px solid #c7ccdc;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 140px;
+  background-color: #093c5d;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}

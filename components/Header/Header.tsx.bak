@@ -1,0 +1,20 @@
+import MenuHeader from './MenuHeader';
+import { Grid } from '@material-ui/core';
+
+const Header = () => {
+    console.log('Header')
+    return (
+        <header>
+            <Grid container item>
+                <Grid xs={8} item container>
+                    <img src="/assets/logo-bits.png" className="colum" alt="BITS" />
+                </Grid>
+                <Grid xs={4} justify="flex-end" item container className="colum userColum">
+                    <MenuHeader />
+                </Grid>
+            </Grid>
+        </header>
+    );
+};
+
+export default Header;

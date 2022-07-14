@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.contenedorPrincipal{
+  width: 500px;
+  height: auto;
+}
+
+.titulo{
+  margin-top: 49.5px;
+  width: 500px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+  color: #093C5D;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contenedorInputs{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textoInputs{
+  width: 350px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.input{
+  width: 350px;
+  height: 32px;
+  border-radius: 4px;
+  border: 0.8px solid #C7CCDC;  
+}
+
+.botonCancelar{
+  width: 110px;
+  height: 34px;
+  background-color: #ffffff;
+  border: 0.8px solid #E1E1E1;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #093C5D;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.botonGuardar{
+  width: 110px;
+  height: 34px;
+  border: none;
+  background-color: #FABB00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #093C5D;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.iconoGuardar{
+  background-image: url('/src/assets/svg/icono_guardar_sede.svg');
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+}
+
+.contenedorBotones{
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 26px;
+}
+
+
+.contenedorError{
+  width: 500px;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contenedorError > span{
+  color: #E0544B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}

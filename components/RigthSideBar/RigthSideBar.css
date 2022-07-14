@@ -1,0 +1,121 @@
+:root{
+    --widthMenuRigth:15px;
+    --visibilityRigth:hidden;
+    --lineColor:#154565;
+}
+
+.color *{
+    color: var(--color) !important;
+}
+
+.BorderRight{
+    border-right: 1px solid rgb(245, 246, 249,0.2);
+}
+
+.Stadistics span{
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+.Stadistics #text{
+    opacity: 0.7;
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.Stadistics #number{
+    font-size: 28px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+nav.RigthSideBar {
+    border-left: 2px solid  var(--lineColor) !important;
+    height: 10000vh;
+    width: var(--widthMenuRigth);
+}
+
+nav.RigthSideBar .Rectangle{
+    visibility: var(--visibilityRigth);
+}
+
+nav div#IconMenuRigth img{
+    content: url("../../assets/svg/icono-expander.svg");
+    cursor: pointer;
+    position: absolute;
+    padding-top: 20px;
+    height: 4%;
+    margin-left: -15px;
+    z-index: 1 !important;
+}
+
+@media (min-width:1300px){
+    nav div#IconMenuRigth img{
+        margin-left: -19px;
+    }
+}
+
+.ItsMyBirthday__Component{
+    height: auto;
+    max-height: 30vh;
+    overflow-y: scroll;
+    border-radius: 4px;
+    background-color: var(--backGroundRectangle);
+    margin: 5px !important;
+}
+
+.ItsMyBirthday{
+    background-image: url('../../assets/svg/ItsMyBirthday.svg');                  
+    background-repeat: no-repeat;
+    background-position:right; 
+}
+
+.ItsMyBirthday__person{
+    overflow-x: auto;
+    width: 20vh;
+    max-height: 20vh;
+}
+
+.ItsMyBirthday__person span{
+    display: block;
+    color: var(--color);
+}
+
+.ItsMyBirthday__person span:first-child{
+    font-size: 14px !important;
+}
+
+.ItsMyBirthday__person span:last-child{
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+.CurrentNews__Component{
+    height: auto;
+    overflow-y: scroll;
+    border-radius: 4px;
+    background-color: var(--backGroundRectangle);
+    margin: 5px !important;
+    visibility: var(--visibilityRigth);
+}
+
+.ItsMyBirthday__person img{
+    border-radius: 10px;
+}
+
+.Image__person{
+    padding-bottom: 20px;
+}
+
+.Image__person img{
+    width: 20vh;
+    height: 100%;
+    border-radius: 10px;
+}

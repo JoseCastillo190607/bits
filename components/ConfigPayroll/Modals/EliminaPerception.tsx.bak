@@ -1,0 +1,105 @@
+import {useState, useContext} from "react";
+import {
+    TextField
+  } from '@material-ui/core';
+import { Box, Dialog, DialogContent } from "@material-ui/core"
+
+import '../PayrollGroup.css'
+import PerceptionContext from '../../../context/ConfigPayrollContext/PerceptionContext';
+import { closePerceptionModal } from "../../Team/Modals/ModalPerceptionModal";
+import { useMutation } from "@apollo/client";
+import {  GET_ALL_PERCEPTIONS,DELETE_PERCEPTIONS } from "../../../Querys/querys";
+import {SuccessfulAlert} from "../../../alerts/successAlerts";
+
+const EliminaPerception = (props: any) =>{
+    const {state, dispatch} = useContext(PerceptionContext)
+    const [activo, setactivo] = useState(false)
+    const handleChange = (e: any) =>{ 
+        if(e.target.value === 'ELIMINAR'){
+            setactivo(true)
+        }else{
+            setactivo(false)
+        }
+    }
+
+
+    const [deletePerception] = useMutation(DELETE_PERCEPTIONS, {
+        refetchQueries: [{ query: GET_ALL_PERCEPTIONS }],
+      });
+
+
+    const handleDelete = async () =>{
+        try{
+            deletePerception({
+                variables: {
+                    deletePerceptionsId: state._id,
+                },
+              }).then(()=>{
+                SuccessfulAlert({text:"Percepcion eliminada correctamente"});
+            });
+
+                // await inactivePerception(state._id);
+                await closePerceptionModal(dispatch);
+                setactivo(false)
+                await props.getDatos();
+        }
+        catch{
+
+        }
+    }
+
+    const handleClose =  async () => {
+        state.showEliminar = false;
+        await closePerceptionModal(dispatch);
+    }
+
+
+
+    return(
+        <Dialog aria-labelledby='costumized-dialog-title' open={state.showEliminar} fullWidth={true}  onClose={handleClose} maxWidth={"md"}>
+            <Box>
+                <div className="contenedorCentrado">
+                    <p className="titulo">¿Confirmas eliminar esta percepcion?</p>
+                </div>
+                <div className="contenedorCentrado">
+                    <span className="nombreEliminar">{state.ConceptName}</span>
+                </div>
+                <div className="contenedorCentrado">
+                    <span className="textoEliminar">Una vez eliminado no podras recuperar la informacion</span>
+                </div>
+                <div className="contenedorCentrado">
+                    <span className="textoEliminar" >Escribe ELIMINAR para confirmar</span>
+                </div>
+                <div className="contenedorCentrado">
+                    <TextField
+                        error={false}
+                        type="text"
+                        variant="outlined"
+                        size="small"
+                        className="inputEliminar"
+                        onChange={(e) => handleChange(e)}
+                />
+                </div>
+                {(activo === true)?
+                <div className="contenedorCentrado">
+                    <button className="botonEliminarPuesto" onClick = {handleDelete} >
+                        Confirmar
+                    </button>                            
+                </div>
+                :
+                <div className="contenedorCentrado">
+                    <button className="botonEliminarPuestoFalse">
+                        Confirmar
+                    </button>
+                </div>
+                }
+
+            </Box>
+            <DialogContent>
+
+            </DialogContent>
+        </Dialog>
+    )
+}
+
+export default EliminaPerception

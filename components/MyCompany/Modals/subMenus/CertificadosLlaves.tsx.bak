@@ -1,0 +1,189 @@
+import { useState,useContext } from "react"
+import styles from "../../../../styles/MiEmpresa/CertificadosLlaves.module.css"
+import EmpresaContext from "../../../../context/Empresa/EmpresaContext"
+import { useFormik } from "formik"
+import * as Yup from "yup"
+import { Form } from "semantic-ui-react";
+import { updateState } from "../../../../context/Empresa/Actions"
+
+const CertificadosLlaves = () =>{
+  const {state, dispatch} =useContext(EmpresaContext)
+  const [registrosPatronales, setRegistrosPatronales] = useState<any[]>([])
+
+  const cambioEstado = async(event:any, value:{}) =>{
+    console.log('valor que entra',value)
+    await updateState(event, state, dispatch,'identidadLegal',value, 'tabDos')
+  }
+
+  const formik = useFormik({
+    initialValues: initialValues(),
+    validationSchema: Yup.object(validationSchema()),
+    onSubmit:(formData) =>{
+      console.log('hoal')
+      let objeto ={
+        registroPatronal: formData.uno,
+        primadeRiesgo: formData.dos
+      }
+      cambioEstado('', objeto)
+    },
+
+  })
+
+  return(
+    <>
+    <Form onSubmit={formik.handleSubmit}>
+      <div className={styles.contenedorLlaves}>
+        <div className={styles.tituloLlaves}>
+          Certificados IMSS
+        </div>
+        <div className={styles.contenedorArchivos}>
+          <div>
+            <div className={styles.textoArchivos}>
+            Llave del certificado de sello digital
+            </div>
+            <div className={styles.contenedorDocumento}>
+              <div className={styles.iconoVerDocumento}></div>
+              <div className={styles.textoVerDocumento}>
+                Ver documento
+              </div>
+            </div>
+          </div>
+          <div>
+            <button className={styles.botonsubirArchivosLlaves}>
+              <div className={styles.iconoSubirArchivos}></div>
+              <div>
+                Cambiar archivo
+              </div>
+            </button>
+          </div>
+        </div> 
+        <div className={`${styles.contenedorArchivos} ${styles.contenedorArchivosDos}`}>
+          <div className={styles.textoArchivos}>
+            Certificado de sello digital
+          </div>
+          <div>
+            <button className={styles.botonSeleccionarArchivo}>
+              <div className={styles.iconoSubirArchivos}></div>
+              <div>
+                Seleccionar archivo
+              </div>
+            </button>
+          </div>
+        </div>
+        <div className={styles.contenedorContrasena}>
+          <fieldset className={styles.fieldsetContrasena}>
+            <legend>Contrase&ntilde;a para el certificado de sello digital</legend>
+            <input type="password"></input>
+            <div className={styles.iconoVerContrasena}></div>
+          </fieldset>
+        </div>
+      </div>
+      <div className={styles.contenedorRegistro}>
+        <div className={styles.contenedorInputsRegistro}>
+          <div>
+            <input 
+              type="text" 
+              placeholder="Registro patronal"
+              name="uno"
+              onBlur={formik.handleBlur}
+              onChange={formik.handleChange}
+              className={styles.inputRegistroPatronal}
+              />
+          </div>
+          <div className={styles.lineaInputs}></div>
+          <div>
+            <input 
+              type="text" 
+              placeholder="Prima de riesgo"
+              name="dos"
+              onBlur={formik.handleBlur}
+              onChange={formik.handleChange}
+              className={styles.inputPrimaRiesgo}
+              />
+          </div>
+          <button 
+            className={styles.botonAgregarRegistroPatronal}
+            type="submit"
+            >
+            Agregar
+          </button>
+        </div>
+      </div>
+      <div className={styles.contenedorRegistros}>
+        <div>
+        <div className={styles.lineaRegistro}>
+          <div className={styles.lineanombreRegistro}>ABCD124563</div>
+          <div className={styles.lineaDivisionRegistro}></div>
+          <div className={styles.lineaprimaRiesgo}>410</div>
+          <div className={styles.lineaContenedorEliminar}>
+            <div className={styles.iconoLineaPrimaRiesgo}></div>
+          </div>
+        </div>
+        <div className={styles.lineaRegistro}>
+          <div className={styles.lineanombreRegistro}>ABCDE5678</div>
+          <div className={styles.lineaDivisionRegistro}></div>
+          <div className={styles.lineaprimaRiesgo}>6452315646</div>
+          <div className={styles.lineaContenedorEliminar}>
+            <div className={styles.iconoLineaPrimaRiesgo}></div>
+          </div>
+        </div>
+        <div className={styles.lineaRegistro}>
+          <div className={styles.lineanombreRegistro}>ABCDE5678</div>
+          <div className={styles.lineaDivisionRegistro}></div>
+          <div className={styles.lineaprimaRiesgo}>6452315646</div>
+          <div className={styles.lineaContenedorEliminar}>
+            <div className={styles.iconoLineaPrimaRiesgo}></div>
+          </div>
+        </div>
+        <div className={styles.lineaRegistro}>
+          <div className={styles.lineanombreRegistro}>ABCDE5678</div>
+          <div className={styles.lineaDivisionRegistro}></div>
+          <div className={styles.lineaprimaRiesgo}>6452315646</div>
+          <div className={styles.lineaContenedorEliminar}>
+            <div className={styles.iconoLineaPrimaRiesgo}></div>
+          </div>
+        </div>
+        <div className={styles.lineaRegistro}>
+          <div className={styles.lineanombreRegistro}>ABCDE5678</div>
+          <div className={styles.lineaDivisionRegistro}></div>
+          <div className={styles.lineaprimaRiesgo}>6452315646</div>
+          <div className={styles.lineaContenedorEliminar}>
+            <div className={styles.iconoLineaPrimaRiesgo}></div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div className={styles.contenedorBotones}>
+          <button className={styles.botonCancelar}>
+            Cancelar
+          </button>
+          <button 
+            className={styles.botonSiguiente}
+            >
+            <div>
+            Siguiente 
+            </div>
+            <div className={styles.iconoSiguiente}></div>
+          </button>
+        </div>
+      </Form>
+    </>
+  )
+}
+
+const initialValues = () =>{
+  return{
+    uno: '',
+    dos: ''
+  }
+}
+
+const validationSchema = () =>{
+  return{
+    uno: Yup.string().required("Obligatorio"),
+    dos: Yup.string().required("Obligatorio")
+  }
+}
+
+
+export default CertificadosLlaves

@@ -1,0 +1,321 @@
+import {useState, useEffect} from "react";
+import { getSubsidySemanal,getSubsidyCatorcenal,getSubsidyQuincenal,getSubsidyMensual } from '../../services/TableSubsidyService';
+import TableBits from "../TableBits/TableBits";
+import columns from "./TablesSubsidyColumns";
+import '../ConfigPayroll/PayrollGroup.css'
+import { Grid } from "@material-ui/core";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import './tableISR.css'
+
+interface TabPanelProps {
+    children?: React.ReactNode;
+    index: any;
+    value: any;
+};
+
+const TableISNTable = (props: TabPanelProps) =>{
+    const [tableSubsidySemanal, setTableSubsidySemanal] = useState([])
+    const [tableSubsidyCatorcenal, setTableSubsidyCatorcenal] = useState([])
+    const [tableSubsidyQuincenal, setTableSubsidyQuincenal] = useState([])
+    const [tableSubsidyMensual, setTableSubsidyMensual] = useState([])
+    const [iconoSemanal, setIconoSemanal] = useState(false)
+    const [iconoCatorcenal, setIconoCatorcenal] = useState(false)
+    const [iconoQuincenal, setIconoQuincenal] = useState(false)
+    const [iconoMensual, setIconoMensual] = useState(false)
+
+    useEffect(()=>{
+        console.log('Desde lista grupos de nominas')
+        obtenerDatos();
+    },[])
+
+    const obtenerDatos = async () =>{
+        console.log('Datos obtenidos desde lista grupos de nomina')
+        let TableSubsidySemanal = await getSubsidySemanal();
+        let TableSubsidyCatorcenal = await getSubsidyCatorcenal();
+        let TableSubsidyQuincenal = await getSubsidyQuincenal();
+        let TableSubsidyMensual = await getSubsidyMensual();
+
+        setTableSubsidySemanal(TableSubsidySemanal)
+        setTableSubsidyCatorcenal(TableSubsidyCatorcenal)
+        setTableSubsidyQuincenal(TableSubsidyQuincenal)
+        setTableSubsidyMensual(TableSubsidyMensual)
+        console.log('TablaMensual',TableSubsidyMensual)
+    }
+
+
+      return(
+        <>
+          <div className="contenedorHeader">
+            <div>
+              <span className="tituloHeader">Tablas periódicas de Subsidio</span>
+            </div>
+          </div>
+          <div>
+            <Accordion className="prueba"> 
+              <div className="contenedorTabla">
+                <div className="contenedorTituloTablaValores">
+                  <Grid container spacing={1}>
+                    <Grid item xs={5} className="tituloTablasValores centrado ">
+                      <div className="primerElementoTablaValores">
+                        <AccordionSummary
+                        aria-controls="panel2a-content"
+                        id="panel2a-header" 
+                        onClick={(e) => setIconoSemanal(!iconoSemanal)}>
+                          <div className={`iconoLista  ${iconoSemanal === true ? "iconoListaNoActivo": "iconoListaActivo"} `}>
+                            <span className={`${iconoSemanal === true ? "iconoNoActivo": "iconoActivo"}`}>^</span>
+                          </div>
+                        </AccordionSummary>
+                      </div>
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Tabla ISN semanal</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={2} className="tituloTablasValores centrado ">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Para ingresos de</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={2} className="tituloTablasValores centrado">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Hasta ingresos de</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={3} className="tituloTablasValores centrado">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Cantidad de subsidio para el empleo</span>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </div>
+              </div>
+              <AccordionDetails>
+                <div className="filaTablaValoresTop">
+                  {tableSubsidySemanal.map((lis:any)=>
+                    <Grid container spacing={1} className="contenedorTablaValores">
+                      <Grid item xs={5} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento">
+                        </div>
+                      </Grid>  
+                      <Grid item xs={2} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento segundoElementoTabla">
+                          <span className="textoValoresTabla">{lis.LowerIncome}</span>
+                        </div>
+                      </Grid>  
+                      <Grid item xs={2} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento tercerElementoTabla">
+                          <span className="textoValoresTabla">{lis.SuperiorIncome}</span>
+                        </div>
+                      </Grid>  
+                      <Grid item xs={3} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento cuartoElementoTabla" >
+                          <span className="textoValoresTabla">{lis.SubsidyAmount}</span>
+                        </div>
+                      </Grid>  
+                    </Grid>   
+                  )}
+                </div>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion> 
+              <div>
+                <div className="contenedorTituloTablaValores2">
+                  <Grid container spacing={1}>
+                    <Grid item xs={5} className="tituloTablasValores centrado ">
+                      <div className="primerElementoTablaValores">
+                        <AccordionSummary
+                        aria-controls="panel2a-content"
+                        id="panel2a-header" 
+                        onClick={(e) => setIconoCatorcenal(!iconoCatorcenal)}>
+                          <div className={`iconoLista  ${iconoCatorcenal === true ? "iconoListaNoActivo": "iconoListaActivo"} `}>
+                            <span className={`${iconoCatorcenal === true ? "iconoNoActivo": "iconoActivo"}`}>^</span>
+                          </div>
+                        </AccordionSummary>
+                      </div>
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Tabla ISN catorcenal</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={2} className="tituloTablasValores centrado ">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Para ingresos de</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={2} className="tituloTablasValores centrado">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Hasta ingresos de</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={3} className="tituloTablasValores centrado">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Cantidad de subsidio para el empleo</span>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </div>
+              </div>
+              <AccordionDetails>
+                <div className="filaTablaValoresTop">
+                  {tableSubsidyCatorcenal.map((lis:any)=>
+                    <Grid container spacing={1} className="contenedorTablaValores">
+                      <Grid item xs={5} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento">
+                        </div>
+                      </Grid>  
+                      <Grid item xs={2} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento segundoElementoTabla">
+                          <span className="textoValoresTabla">{lis.LowerIncome}</span>
+                        </div>
+                      </Grid>  
+                      <Grid item xs={2} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento tercerElementoTabla">
+                          <span className="textoValoresTabla">{lis.SuperiorIncome}</span>
+                        </div>
+                      </Grid>  
+                      <Grid item xs={3} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento cuartoElementoTabla" >
+                          <span className="textoValoresTabla">{lis.SubsidyAmount}</span>
+                        </div>
+                      </Grid>  
+                    </Grid>  
+                  )}
+                </div>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion> 
+              <div>
+                <div className="contenedorTituloTablaValores2">
+                  <Grid container spacing={1}>
+                    <Grid item xs={5} className="tituloTablasValores centrado ">
+                      <div className="primerElementoTablaValores">
+                        <AccordionSummary
+                        aria-controls="panel2a-content"
+                        id="panel2a-header" 
+                        onClick={(e) => setIconoQuincenal(!iconoQuincenal)}>
+                          <div className={`iconoLista  ${iconoQuincenal === true ? "iconoListaNoActivo": "iconoListaActivo"} `}>
+                            <span className={`${iconoQuincenal === true ? "iconoNoActivo": "iconoActivo"}`}>^</span>
+                          </div>
+                        </AccordionSummary>
+                      </div>
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Tabla ISN quincenal</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={2} className="tituloTablasValores centrado ">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Para ingresos de</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={2} className="tituloTablasValores centrado">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Hasta ingresos de</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={3} className="tituloTablasValores centrado">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Cantidad de subsidio para el empleo</span>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </div>
+              </div>
+              <AccordionDetails>
+                <div className="filaTablaValoresTop">
+                  {tableSubsidyQuincenal.map((lis:any)=>
+                    <Grid container spacing={1} className="contenedorTablaValores">
+                      <Grid item xs={5} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento">
+                        </div>
+                      </Grid>  
+                      <Grid item xs={2} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento segundoElementoTabla">
+                          <span className="textoValoresTabla">{lis.LowerIncome}</span>
+                        </div>
+                      </Grid>  
+                      <Grid item xs={2} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento tercerElementoTabla">
+                          <span className="textoValoresTabla">{lis.SuperiorIncome}</span>
+                        </div>
+                      </Grid>  
+                      <Grid item xs={3} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento cuartoElementoTabla" >
+                          <span className="textoValoresTabla">{lis.SubsidyAmount}</span>
+                        </div>
+                      </Grid>  
+                    </Grid>  
+                  )}
+                </div>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion> 
+              <div>
+                <div className="contenedorTituloTablaValores2">
+                  <Grid container spacing={1}>
+                    <Grid item xs={5} className="tituloTablasValores centrado ">
+                      <div className="primerElementoTablaValores">
+                        <AccordionSummary
+                        aria-controls="panel2a-content"
+                        id="panel2a-header" 
+                        onClick={(e) => setIconoMensual(!iconoMensual)}>
+                          <div className={`iconoLista  ${iconoMensual === true ? "iconoListaNoActivo": "iconoListaActivo"} `}>
+                            <span className={`${iconoMensual === true ? "iconoNoActivo": "iconoActivo"}`}>^</span>
+                          </div>
+                        </AccordionSummary>
+                      </div>
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Tabla ISN mensual</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={2} className="tituloTablasValores centrado ">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Para ingresos de</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={2} className="tituloTablasValores centrado">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Hasta ingresos de</span>
+                      </div>
+                    </Grid>
+                    <Grid item xs={3} className="tituloTablasValores centrado">
+                      <div className="tableValuesPrimerElemento">
+                        <span className="textotituloTabla">Cantidad de subsidio para el empleo</span>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </div>
+              </div>
+              <AccordionDetails>
+                <div className="filaTablaValoresTop">
+                  {tableSubsidyMensual.map((lis:any)=>
+                    <Grid container spacing={1} className="contenedorTablaValores">
+                      <Grid item xs={5} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento">
+                        </div>
+                      </Grid>  
+                      <Grid item xs={2} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento segundoElementoTabla">
+                          <span className="textoValoresTabla">{lis.LowerIncome}</span>
+                        </div>
+                      </Grid>  
+                      <Grid item xs={2} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento tercerElementoTabla">
+                          <span className="textoValoresTabla">{lis.SuperiorIncome}</span>
+                        </div>
+                      </Grid>  
+                      <Grid item xs={3} className="filaTablaValores tituloTablasValores">
+                        <div className="tableValuesPrimerElemento cuartoElementoTabla" >
+                          <span className="textoValoresTabla">{lis.LowerIncome}</span>
+                        </div>
+                      </Grid>  
+                    </Grid>   
+                  )}
+                </div>
+              </AccordionDetails>
+            </Accordion>
+          </div>
+        </>
+      )
+}
+
+export default TableISNTable

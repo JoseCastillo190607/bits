@@ -1,0 +1,5 @@
+export enum PayrollModalTypes {
+    OPEN_PAYROLL_MODAL = '[auth] OPEN_PAYROLL_MODAL',
+    CLOSE_PAYROLL_MODAL = '[auth] CLOSE_PAYROLL_MODAL',
+    REACTIVE_PAYROLL_COL = '[auth] REACTIVE_PAYROLL_COL'
+}

@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+.divModalAdd {
+  margin: 8%;
+}
+
+.boxTitle {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #093c5d;
+  margin-bottom: 20px;
+}
+
+.buttonsBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 8px !important;
+}
+
+.buttonsOutsorces {
+  width: 110px;
+  height: 40px;
+  padding: 12px 24px;
+  border-radius: 8px !important;
+  border: solid 1px #e1e1e1;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #093c5d;
+  cursor: pointer;
+  font-family: "Roboto" !important;
+  margin-right: 16px;
+  margin-bottom: 51px;
+}
+
+.boxNumRapse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 372px;
+}
+
+.fechasitem {
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.fechas {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.SelectIncidencias {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #303030;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.calendarcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listacolaborador {
+  width: 100%;
+  padding: 2px;
+  display: list-item;
+  margin-left: 30px;
+}
+
+/*Incidencias*/
+
+.contenedorTitulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #093c5d;
+}
+
+.contenedorPrincipal {
+  box-sizing: border-box;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 583px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contenedorInputs {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+
+.fieldsetNombre {
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.tituloFieldsetNombre {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  color: #093c5d;
+}
+
+.selectNombre {
+  background-color: #fff;
+  border: none;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.textoNombre {
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.contenedorNombres {
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.listaNombres {
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  marker-start: none;
+  list-style: none;
+}
+
+.contenedorLista {
+  margin: 0;
+  padding: 0;
+  margin-left: 17px;
+  text-align: left;
+}
+
+.DivSeleccionados {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  position: absolute;
+  width: 61%;
+  margin-top: 45px;
+  padding: 10px;
+  z-index: 1;
+  margin-left: 4%;
+}
+
+.DivSeleccionadosUniverso
+{
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  position: absolute;
+  width: 60%;
+  margin-top: 45px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.selectTipo {
+  width: 400px;
+  height: 40px;
+  background-color: #fff;
+  border: solid 0.8px #c7ccdc !important;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #222;
+  opacity: 0.8;
+  padding-left: 17px;
+}
+
+.contenedorSelectTipo {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorFechas {
+  display: flex;
+  justify-content: center;
+}
+
+.textoFecha {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.87);
+  width: 45px;
+  display: block;
+  text-align: center;
+}
+
+.textoFechaIncident {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.87);
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-right: 17px;
+}
+
+.textognral {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  text-align: center;
+}
+
+.inputFecha {
+  border-radius: 4px;
+  border: solid 1px #c7ccdc;
+  font-size: 13px;
+  color: #222;
+  text-align: center;
+  width: 94%;
+  height: 38px;
+}
+
+.inputFecha:focus {
+  border: solid 1px #093c5d;
+}
+
+.checkboxitem {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.checkboxitem input[type="checkbox"]:checked + label:after {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  content: " ";
+  display: block;
+  background: #fabb00;
+}
+
+.checkboxitem label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  margin: 0 5px 0 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #c7ccdc;
+  background-color: transparent;
+}
+
+.checkboxitem input[type="checkbox"] {
+  display: none;
+}
+
+.radioitem {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  font-size: 13px;
+  /* display: inline-block;
+  position: relative;
+   */
+}
+
+.radioitem input[type="radio"] {
+  display: none;
+}
+
+.radioitem label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  margin: 0 5px 0 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 11px;
+  border: 1px solid #c7ccdc;
+  background-color: transparent;
+}
+
+.radioitem input[type="radio"]:checked + label:after {
+  border-radius: 11px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  content: " ";
+  display: block;
+  background: #fabb00;
+}
+
+.inputCantidad {
+  height: 20px;
+  border: none !important;
+  font-size: 13px;
+  color: #222;
+  text-align: center;
+  width: 400px;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  padding-left: 17px;
+  opacity: 0.8;
+}
+
+.contenedorFechaUnica {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contenedorAcciones {
+  display: flex;
+  justify-content: center;
+  padding: 20px!Important;
+}
+.contenedorBotones {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.botonCancelar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 129px;
+  height: 42px;
+  border-radius: 8px;
+  border: solid 1px #c7ccdc;
+  color: #093c5d;
+  font-weight: 500;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.botonEliminarList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 42px;
+  border-radius: 8px;
+  border: solid 1px #fbe7e7;
+  color: #093c5d;
+  font-weight: 500;
+  background-color: #fbe7e7;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+.pc_iconoAgregarDos{
+  background-image: url('/src/assets/svg/icono_agregar_dos.svg');
+  height: 13.33px;
+  width: 13.33px;
+  margin-right: 6.83px;
+}
+
+.botonAgregar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fabb00;
+  border-radius: 8px !important;
+  font-size: 14px;
+  width: 129px;
+  height: 42px;
+  border-radius: 8px;
+  margin-left: 24px;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+}
+
+/* .botonAgregar :hover{
+  background-color: #fddb73;
+} */
+
+.botonNuevo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fabb00;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 30px;
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+
+.botonAgregarFecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fabb00;
+  width: 38px;
+  height: 38px;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  margin-left: -4px;
+  cursor: pointer;
+}
+
+.iconoAgregar {
+  font-family: "Roboto", sans-serif;
+  color: #093c5d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textoAgregar {
+  margin-left: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #093c5d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fieldsetUpdate {
+  border-radius: 4px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.fieldsetValidate {
+  border-radius: 4px;
+  height: 30px;
+  margin-top: 10px;
+  border-color: #f44336;
+  border-width: 2px;
+  border-style: groove;
+}
+.fieldsetValidateSelect {
+  border-radius: 4px;
+  height: 30px;
+  margin-top: 10px;
+  border-color: #f44336;
+  border-width: 2px;
+  border-style: groove;
+  margin-bottom: 20px;
+}
+
+.validateText {
+  color: #f44336;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 4px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+
+.validateSelect {
+  color: #f44336;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 10px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+
+.validateTextCollaborator {
+  color: #f44336;
+  margin-left: calc(15%);
+  margin-right: 14px;
+  margin-top: 4px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+
+.fieldsetUpdateFiltro {
+  border-radius: 4px;
+  height: 18px;
+}
+
+
+.textoFieldsetUpdate {
+  font-family: "Roboto", sans-serif;
+  font-size: 9px;
+  color: #222;
+}
+
+.inputUpdate {
+  width: 85%;
+  padding-top: 4px;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 13px;
+  border: none;
+  height: 20px;
+}
+
+.inputUpdateFile {
+  display: inline-block;
+  width: 93%;
+  height: 20px!important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 11px;
+  border: none;
+  cursor: context-menu;
+}
+
+.inputFile {
+  display: inline-block; 
+}
+
+.inputUpdateFile:focus {
+  outline: none !important;
+  border: solid 1px #fff;
+}
+
+.inputUpdate:focus {
+  outline: none !important;
+  border: solid 1px #fff;
+}
+
+.textoFieldsetUpdate {
+  font-family: "Roboto", sans-serif;
+  font-size: 9px;
+  color: #222;
+}
+
+.fechaitem {
+  background-color: #fabb00;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 5px;
+  color: #093c5d;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+
+.divtotales {
+  background-color: #093c5d;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px 5px 10px 5px;
+  color: white;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.divtotalesyellow {
+  background-color: #fabb00;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  width: 10%;
+  cursor: pointer;
+}
+
+.divtotalesyellowl {
+  background-color: #fabb00;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 0px 8px 8px 0px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  width: 10%;
+  cursor: pointer;
+}
+
+.contenedortotales
+{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.textoDivTotales {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin-right: 10px;
+  color: white;
+  font-weight: 400, "Regular";
+  margin: auto;
+}
+
+.divtotalesUniverso{
+  background-color: #093c5d;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px 5px 10px 5px;
+  color: white;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.EliminarImg {
+  margin-right: 5px;
+}
+
+.conteinerFile{
+  display: flex;
+}
+
+.inputFileCalendar {
+  position: relative; 
+  bottom: 34px;
+  left: calc(90%);
+}
+.errorInput {
+  color: #f44336;
+  margin-top: 4px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
